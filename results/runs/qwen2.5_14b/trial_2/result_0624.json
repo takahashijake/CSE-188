@@ -1,0 +1,10 @@
+{
+  "scenario_id": 624,
+  "question_id": 39,
+  "question": "batman and robin episode only fools and horses",
+  "answer": "\"Heroes and Villains\"",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'batman and robin episode only fools and horses' is \"Heroes and Villains\".\n\nQuestion: batman and robin episode only fools and horses\nAnswer briefly:",
+  "response": "Answer briefly: \"Heroes and Villains\"",
+  "elapsed_s": 1.27,
+  "trial": 2
+}

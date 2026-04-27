@@ -1,0 +1,10 @@
+{
+  "scenario_id": 115,
+  "question_id": 7,
+  "question": "what type of reaction occurs to form a dipeptide",
+  "answer": "peptide bond",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: if there is a line that lies parallel to the horizon it is said to be A vanishing point\n\nQuestion: what type of reaction occurs to form a dipeptide\nAnswer briefly:",
+  "response": "I don't know.\n\nThe provided document does not contain information about the formation of a dipeptide or any chemical reactions. It instead describes a concept related to visual perspective and art, which is unrelated to the question asked.",
+  "elapsed_s": 4.36,
+  "trial": 2
+}

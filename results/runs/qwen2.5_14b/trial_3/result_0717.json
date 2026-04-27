@@ -1,0 +1,10 @@
+{
+  "scenario_id": 717,
+  "question_id": 44,
+  "question": "who sang the american anthem at the super bowl",
+  "answer": "Pink",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: who sold out jesus for 30 pieces of silver Judas Iscariot\n\nDocument [2]: what is the 180 degree line of longitude called 180th meridian or antimeridian\n\nDocument [3]: georgia out of angus thongs and perfect snogging Georgia Groome as Georgia Nicolson\n\nDocument [4]: what is the big gold dome in jerusalem Dome of the Rock\n\nDocument [5]: what type of reaction occurs to form a dipeptide peptide bond\n\nDocument [6]: who won the academy award for best original musical score Alexandre Desplat\n\nDocument [7]: when does shadowhunters season 2 episode 17 come out February\u00a013,\u00a02017\n\nDocument [8]: who wrote the music phantom of the opera Andrew Lloyd Webber\n\nDocument [9]: which site of an enzyme is called allosteric site regulatory site\n\nDocument [10]: The answer to 'who sang the american anthem at the super bowl' is Pink.\n\nDocument [11]: when did the usa join world war one April 1917\n\nDocument [12]: who plays dr. sloan on kevin saves the world Richard Masur\n\nDocument [13]: where is the new football stadium in atlanta Mercedes-Benz Stadium\n\nDocument [14]: what does g stand for in ncis los angeles Grisha\n\nDocument [15]: where was 2017 beauty and the beast filmed Surrey, United Kingdom\n\nDocument [16]: when did the dallas cowboys win their last playoff game 2014\n\nDocument [17]: who played the female lead in the 1942 film casablanca romantic drama\n\nDocument [18]: when did the movie peter pan come out 2003\n\nDocument [19]: who has the most big ten championships in football Michigan\n\nDocument [20]: who was the first to say i'm going to disney world Jeana Yeager\n\nQuestion: who sang the american anthem at the super bowl\nAnswer briefly:",
+  "response": "Pink sang the American anthem at the Super Bowl.",
+  "elapsed_s": 1.52,
+  "trial": 3
+}

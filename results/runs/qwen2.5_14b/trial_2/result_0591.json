@@ -1,0 +1,10 @@
+{
+  "scenario_id": 591,
+  "question_id": 36,
+  "question": "who wrote the music phantom of the opera",
+  "answer": "Andrew Lloyd Webber",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: when was the design period known as art deco 1910\u20131939\n\nDocument [2]: which site of an enzyme is called allosteric site regulatory site\n\nDocument [3]: a request to the supreme court that it review a case that was already decided is made via a(n) a writ of certiorari\n\nDocument [4]: when did the golden state warriors win the finals 1947\n\nDocument [5]: the region that stretches between the black and caspian seas The Caucasus Mountains\n\nDocument [6]: what has been the origin of most classical dances of india the Sanskrit text Natya Shastra\n\nDocument [7]: georgia out of angus thongs and perfect snogging Georgia Groome as Georgia Nicolson\n\nDocument [8]: who sings i can't take my eyes off of you Frankie Valli\n\nDocument [9]: when did the first marvel vs capcom come out 1998\n\nDocument [10]: who sings too much time on my hands lyrics Tommy Shaw\n\nDocument [11]: who becomes chief resident on grey's anatomy season 7 April Kepner M.D.\n\nDocument [12]: batman and robin episode only fools and horses \"Heroes and Villains\"\n\nDocument [13]: who is the actor that plays ducky on ncis David McCallum\n\nDocument [14]: who was the first to say i'm going to disney world Jeana Yeager\n\nDocument [15]: where do kidneys for kidney transplant come from living-donor\n\nDocument [16]: who has the most big ten championships in football Michigan\n\nDocument [17]: who plays the judge in drop dead diva Lex Medlin\n\nDocument [18]: what was the united states foreign policy after ww1 started neutrality\n\nDocument [19]: when did the usa join world war one April 1917\n\nDocument [20]: where is the new football stadium in atlanta Mercedes-Benz Stadium\n\nQuestion: who wrote the music phantom of the opera\nAnswer briefly:",
+  "response": "I don't know.",
+  "elapsed_s": 1.08,
+  "trial": 2
+}

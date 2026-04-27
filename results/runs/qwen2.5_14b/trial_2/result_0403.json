@@ -1,0 +1,10 @@
+{
+  "scenario_id": 403,
+  "question_id": 25,
+  "question": "when did the usa join world war one",
+  "answer": "April 1917",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: if there is a line that lies parallel to the horizon it is said to be A vanishing point\n\nQuestion: when did the usa join world war one\nAnswer briefly:",
+  "response": "I don't know.\n\nThe provided document does not contain any information about when the USA joined World War One. The given text is about a definition related to art or perspective (vanishing point) and is unrelated to historical events such as the USA's involvement in World War One.",
+  "elapsed_s": 5.31,
+  "trial": 2
+}

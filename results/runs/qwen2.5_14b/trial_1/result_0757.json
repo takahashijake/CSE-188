@@ -1,0 +1,10 @@
+{
+  "scenario_id": 757,
+  "question_id": 47,
+  "question": "who was the first to say i'm going to disney world",
+  "answer": "Phil Simms",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: who is hosting e live from the red carpet Ryan Seacrest\n\nDocument [2]: who sings i can't take my eyes off of you Frankie Valli\n\nDocument [3]: The answer to 'who was the first to say i'm going to disney world' is Phil Simms.\n\nDocument [4]: who does the voice of cruz on cars 3 Cristela Alonzo\n\nDocument [5]: when did the golden state warriors win the finals 1947\n\nQuestion: who was the first to say i'm going to disney world\nAnswer briefly:",
+  "response": "Phil Simms was the first to say \"I'm going to Disney World.\"",
+  "elapsed_s": 1.93,
+  "trial": 1
+}

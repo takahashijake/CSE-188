@@ -1,0 +1,10 @@
+{
+  "scenario_id": 147,
+  "question_id": 9,
+  "question": "what is the big gold dome in jerusalem",
+  "answer": "Dome of the Rock",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: who has the most big ten championships in football Michigan\n\nQuestion: what is the big gold dome in jerusalem\nAnswer briefly:",
+  "response": "I don't know.\n\nThe document provided does not contain information about the Big Gold Dome in Jerusalem. The document is about who has the most Big Ten championships in football, specifically mentioning Michigan. However, there is no Big Gold Dome in Jerusalem mentioned in the question context or any known factual context related to the provided document.",
+  "elapsed_s": 6.01,
+  "trial": 2
+}

@@ -1,0 +1,10 @@
+{
+  "scenario_id": 658,
+  "question_id": 41,
+  "question": "when did the movie peter pan come out",
+  "answer": "2003",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'when did the movie peter pan come out' is 2003.\n\nQuestion: when did the movie peter pan come out\nAnswer briefly:",
+  "response": "2003",
+  "elapsed_s": 0.84,
+  "trial": 2
+}

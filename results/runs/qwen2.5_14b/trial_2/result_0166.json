@@ -1,0 +1,10 @@
+{
+  "scenario_id": 166,
+  "question_id": 10,
+  "question": "all the motor neurons that control the skeletal muscles are",
+  "answer": "Somatic",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: what is the big gold dome in jerusalem Dome of the Rock\n\nDocument [2]: who won the academy award for best original musical score Alexandre Desplat\n\nDocument [3]: batman and robin episode only fools and horses \"Heroes and Villains\"\n\nDocument [4]: who plays the judge in drop dead diva Lex Medlin\n\nDocument [5]: The answer to 'all the motor neurons that control the skeletal muscles are' is Somatic.\n\nQuestion: all the motor neurons that control the skeletal muscles are\nAnswer briefly:",
+  "response": "Somatic.",
+  "elapsed_s": 0.79,
+  "trial": 2
+}

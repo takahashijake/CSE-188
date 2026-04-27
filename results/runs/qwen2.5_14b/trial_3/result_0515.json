@@ -1,0 +1,10 @@
+{
+  "scenario_id": 515,
+  "question_id": 32,
+  "question": "when did the golden state warriors win the finals",
+  "answer": "1947",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: what has been the origin of most classical dances of india the Sanskrit text Natya Shastra\n\nQuestion: when did the golden state warriors win the finals\nAnswer briefly:",
+  "response": "I don't know.",
+  "elapsed_s": 0.93,
+  "trial": 3
+}

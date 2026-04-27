@@ -1,0 +1,10 @@
+{
+  "scenario_id": 180,
+  "question_id": 11,
+  "question": "the region that stretches between the black and caspian seas",
+  "answer": "Caucasus Mountains",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'the region that stretches between the black and caspian seas' is Caucasus Mountains.\n\nDocument [2]: batman and robin episode only fools and horses \"Heroes and Villains\"\n\nDocument [3]: who plays the judge in drop dead diva Lex Medlin\n\nDocument [4]: who does the voice of cruz on cars 3 Cristela Alonzo\n\nDocument [5]: when does shadowhunters season 2 episode 17 come out February\u00a013,\u00a02017\n\nQuestion: the region that stretches between the black and caspian seas\nAnswer briefly:",
+  "response": "Caucasus Mountains",
+  "elapsed_s": 0.97,
+  "trial": 3
+}

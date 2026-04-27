@@ -1,0 +1,10 @@
+{
+  "scenario_id": 610,
+  "question_id": 38,
+  "question": "which site of an enzyme is called allosteric site",
+  "answer": "regulatory site",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'which site of an enzyme is called allosteric site' is regulatory site.\n\nQuestion: which site of an enzyme is called allosteric site\nAnswer briefly:",
+  "response": "I don't know. The document mentions that the answer to 'which site of an enzyme is called allosteric site' is regulatory site, but it seems there might be a slight misunderstanding as typically, the allosteric site is where allosteric effectors bind to regulate enzyme activity, not necessarily called a \"regulatory site\" in all contexts. However, based on the provided information, if we follow the document strictly, the answer given in the document is \"regulatory site\".",
+  "elapsed_s": 9.0,
+  "trial": 2
+}

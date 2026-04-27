@@ -1,0 +1,10 @@
+{
+  "scenario_id": 754,
+  "question_id": 47,
+  "question": "who was the first to say i'm going to disney world",
+  "answer": "Phil Simms",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'who was the first to say i'm going to disney world' is Phil Simms.\n\nQuestion: who was the first to say i'm going to disney world\nAnswer briefly:",
+  "response": "Phil Simms",
+  "elapsed_s": 0.76,
+  "trial": 1
+}

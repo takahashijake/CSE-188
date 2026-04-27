@@ -1,0 +1,10 @@
+{
+  "scenario_id": 595,
+  "question_id": 37,
+  "question": "what is the name of the skin between your nostrils",
+  "answer": "septum",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: when was catch me if you can made 2002\n\nQuestion: what is the name of the skin between your nostrils\nAnswer briefly:",
+  "response": "I don't know.",
+  "elapsed_s": 0.92,
+  "trial": 2
+}

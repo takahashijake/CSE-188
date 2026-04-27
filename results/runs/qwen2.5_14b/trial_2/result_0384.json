@@ -1,0 +1,10 @@
+{
+  "scenario_id": 384,
+  "question_id": 24,
+  "question": "who becomes chief resident on grey's anatomy season 7",
+  "answer": "Kepner",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'who becomes chief resident on grey's anatomy season 7' is Kepner.\n\nQuestion: who becomes chief resident on grey's anatomy season 7\nAnswer briefly:",
+  "response": "Kepner",
+  "elapsed_s": 0.75,
+  "trial": 2
+}

@@ -1,0 +1,10 @@
+{
+  "scenario_id": 419,
+  "question_id": 26,
+  "question": "who has the most big ten championships in football",
+  "answer": "Michigan",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: what has been the origin of most classical dances of india the Sanskrit text Natya Shastra\n\nQuestion: who has the most big ten championships in football\nAnswer briefly:",
+  "response": "I don't know.\n\nThe provided document does not contain any information related to Big Ten championships in football. It instead mentions the origin of classical dances of India being associated with the Sanskrit text Natya Shastra.",
+  "elapsed_s": 4.23,
+  "trial": 3
+}

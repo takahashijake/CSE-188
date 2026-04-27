@@ -1,0 +1,10 @@
+{
+  "scenario_id": 787,
+  "question_id": 49,
+  "question": "georgia out of angus thongs and perfect snogging",
+  "answer": "Georgia Groome",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: how many episodes are in season 7 of pretty little liars 20\n\nQuestion: georgia out of angus thongs and perfect snogging\nAnswer briefly:",
+  "response": "I don't know.",
+  "elapsed_s": 0.93,
+  "trial": 2
+}
