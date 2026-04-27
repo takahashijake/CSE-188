@@ -1,0 +1,10 @@
+{
+  "scenario_id": 665,
+  "question_id": 41,
+  "question": "when did the movie peter pan come out",
+  "answer": "2003",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: georgia out of angus thongs and perfect snogging Georgia Groome as Georgia Nicolson\n\nDocument [2]: batman and robin episode only fools and horses \"Heroes and Villains\"\n\nDocument [3]: how many episodes are in season 7 of pretty little liars 20\n\nDocument [4]: a request to the supreme court that it review a case that was already decided is made via a(n) a writ of certiorari\n\nDocument [5]: The answer to 'when did the movie peter pan come out' is 2003.\n\nDocument [6]: what is the 180 degree line of longitude called 180th meridian or antimeridian\n\nDocument [7]: when was the last time michigan basketball won the championship 1989\n\nDocument [8]: who sold out jesus for 30 pieces of silver Judas Iscariot\n\nDocument [9]: what type of reaction occurs to form a dipeptide peptide bond\n\nDocument [10]: who played the female lead in the 1942 film casablanca romantic drama\n\nQuestion: when did the movie peter pan come out\nAnswer briefly:",
+  "response": "The movie Peter Pan came out in 2003. (Document [5])",
+  "elapsed_s": 1.21,
+  "trial": 1
+}

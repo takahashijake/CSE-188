@@ -1,0 +1,10 @@
+{
+  "scenario_id": 307,
+  "question_id": 19,
+  "question": "where was 2017 beauty and the beast filmed",
+  "answer": "Surrey, United Kingdom",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: when did the usa join world war one April 1917\n\nQuestion: where was 2017 beauty and the beast filmed\nAnswer briefly:",
+  "response": "I don't know. The document provided does not contain information about the filming location of \"Beauty and the Beast\" in 2017.",
+  "elapsed_s": 2.17,
+  "trial": 1
+}
