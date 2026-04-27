@@ -1,38 +1,36 @@
 """
-run_experiment.py
+run_experiment.py — robust multi-model experiment runner
 
-Reads scenarios from data/nq_open/contexts.json, sends each prompt
-to the model and saves every response to results/runs/.
-
-Uses HuggingFace transformers directly — no Ollama needed.
-Same CLI interface as before, same output JSON format.
-
-Usage:
-    python3 src/run_experiment.py --model qwen2.5:3b
-    python3 src/run_experiment.py --model qwen2.5:3b --trial 2
-    python3 src/run_experiment.py --model mistral:7b --trial 3
-    python3 src/run_experiment.py --model mistral:7b --limit 5  # dry run
-
-Output:
-    results/runs/{model_name}/trial_{n}/result_{scenario_id}.json
+Fixes:
+- model-specific prompting
+- safer tokenizer handling
+- GPU memory stability
+- better HF compatibility across Qwen/Mistral/LLaMA/Phi/Gemma
+- reproducible inference mode
 """
 
 import json
 import os
 import time
 import argparse
+import gc
 import torch
 from tqdm import tqdm
-from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
+from transformers import (
+    AutoTokenizer,
+    AutoModelForCausalLM,
+    BitsAndBytesConfig
+)
 
-# ── Config ────────────────────────────────────────────────────────────────────
+# ── GPU stability fix (IMPORTANT on shared L4 nodes) ─────────────────────────
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
 
+# ── Paths ────────────────────────────────────────────────────────────────────
 SCENARIOS_PATH = "data/nq_open/contexts.json"
-RESULTS_DIR    = "results/runs"
-TEMPERATURE    = 0.7
+RESULTS_DIR = "results/runs"
 MAX_NEW_TOKENS = 100
 
-# Ollama name -> HuggingFace repo
+# ── Model map ───────────────────────────────────────────────────────────────
 MODEL_MAP = {
     "qwen2.5:3b":   "Qwen/Qwen2.5-3B-Instruct",
     "qwen2.5:7b":   "Qwen/Qwen2.5-7B-Instruct",
@@ -44,198 +42,185 @@ MODEL_MAP = {
     "phi3:medium":  "microsoft/Phi-3-medium-4k-instruct",
 }
 
-# Models that need 4-bit quantization to fit on L4 (24GB VRAM)
 NEEDS_4BIT = {"qwen2.5:14b", "phi3:medium"}
 
-# ── Helpers ───────────────────────────────────────────────────────────────────
+# ── Utils ────────────────────────────────────────────────────────────────────
 
-def sanitize_model_name(model: str) -> str:
-    return model.replace(":", "_").replace("/", "_")
-
-
-def already_done(output_dir: str, scenario_id: int) -> bool:
-    path = os.path.join(output_dir, f"result_{scenario_id:04d}.json")
-    return os.path.exists(path)
+def sanitize(name):
+    return name.replace(":", "_").replace("/", "_")
 
 
-def migrate_existing_results(model_dir: str):
-    """
-    If flat result_XXXX.json files exist from old format,
-    move them into trial_1/ automatically.
-    """
-    trial_1_dir = os.path.join(model_dir, "trial_1")
-    flat_files = [
-        f for f in os.listdir(model_dir)
-        if f.startswith("result_") and f.endswith(".json")
-    ]
-    if flat_files:
-        print(f"  Found {len(flat_files)} existing results — moving to trial_1/...")
-        os.makedirs(trial_1_dir, exist_ok=True)
-        for fname in flat_files:
-            os.rename(
-                os.path.join(model_dir, fname),
-                os.path.join(trial_1_dir, fname)
+def already_done(outdir, sid):
+    return os.path.exists(os.path.join(outdir, f"result_{sid:04d}.json"))
+
+
+def clear_memory():
+    gc.collect()
+    torch.cuda.empty_cache()
+
+
+# ── Prompt builder (MODEL-AWARE FIX) ─────────────────────────────────────────
+
+def build_input(tokenizer, prompt, model_key):
+    """Handles chat vs non-chat models safely"""
+
+    try:
+        if "qwen" in model_key or "llama" in model_key:
+            messages = [{"role": "user", "content": prompt}]
+            return tokenizer.apply_chat_template(
+                messages,
+                add_generation_prompt=True,
+                return_tensors="pt"
             )
-        print("  Done. Existing results preserved.\n")
+    except Exception:
+        pass
+
+    return tokenizer(
+        f"User: {prompt}\nAssistant:",
+        return_tensors="pt"
+    ).input_ids
 
 
-def load_model(ollama_name: str):
-    """Load model and tokenizer from HuggingFace."""
-    if ollama_name not in MODEL_MAP:
-        raise ValueError(
-            f"Unknown model: {ollama_name}\n"
-            f"Available: {list(MODEL_MAP.keys())}"
-        )
+# ── Load model ───────────────────────────────────────────────────────────────
 
-    hf_name    = MODEL_MAP[ollama_name]
-    needs_4bit = ollama_name in NEEDS_4BIT
+def load_model(model_key):
+    hf_name = MODEL_MAP[model_key]
+    use_4bit = model_key in NEEDS_4BIT
 
-    print(f"Loading {hf_name}...")
+    print(f"\nLoading: {hf_name}")
+
     tokenizer = AutoTokenizer.from_pretrained(hf_name)
 
-    if needs_4bit:
-        print("  Applying 4-bit quantization...")
-        bnb_config = BitsAndBytesConfig(
+    if tokenizer.pad_token is None:
+        tokenizer.pad_token = tokenizer.eos_token
+
+    if use_4bit:
+        print("Using 4-bit quantization")
+        bnb = BitsAndBytesConfig(
             load_in_4bit=True,
             bnb_4bit_compute_dtype=torch.bfloat16,
             bnb_4bit_use_double_quant=True,
             bnb_4bit_quant_type="nf4",
         )
+
         model = AutoModelForCausalLM.from_pretrained(
             hf_name,
-            quantization_config=bnb_config,
+            quantization_config=bnb,
             device_map="auto",
+            low_cpu_mem_usage=True,
+            max_memory={0: "22GiB"},
         )
     else:
         model = AutoModelForCausalLM.from_pretrained(
             hf_name,
             torch_dtype=torch.bfloat16,
             device_map="auto",
+            low_cpu_mem_usage=True,
+            max_memory={0: "22GiB"},
         )
 
     model.eval()
-    print(f"  Loaded. Device: {next(model.parameters()).device}\n")
+    print("Loaded on:", next(model.parameters()).device)
+
     return tokenizer, model
 
 
-def query_model(tokenizer, model, prompt: str) -> tuple[str, float]:
-    """Run one prompt, return (response, elapsed_seconds)."""
-    messages = [{"role": "user", "content": prompt}]
+# ── Inference ────────────────────────────────────────────────────────────────
 
-    try:
-        input_ids = tokenizer.apply_chat_template(
-            messages,
-            add_generation_prompt=True,
-            return_tensors="pt"
-        ).to(model.device)
-    except Exception:
-        text = f"User: {prompt}\nAssistant:"
-        input_ids = tokenizer(text, return_tensors="pt").input_ids.to(model.device)
+def query(tokenizer, model, prompt, model_key):
+    inputs = build_input(tokenizer, prompt, model_key)
+
+    device = next(model.parameters()).device
+    inputs = inputs.to(device)
 
     start = time.time()
+
     with torch.no_grad():
-        output_ids = model.generate(
-            input_ids,
+        output = model.generate(
+            inputs,
             max_new_tokens=MAX_NEW_TOKENS,
-            temperature=TEMPERATURE,
-            do_sample=True,
+            do_sample=False,
+            temperature=0.0,
             pad_token_id=tokenizer.eos_token_id,
         )
+
     elapsed = time.time() - start
 
-    new_tokens = output_ids[0][input_ids.shape[-1]:]
-    response   = tokenizer.decode(new_tokens, skip_special_tokens=True).strip()
+    response = tokenizer.decode(
+        output[0][inputs.shape[-1]:],
+        skip_special_tokens=True
+    ).strip()
+
     return response, elapsed
 
 
-def save_result(output_dir: str, scenario_id: int, scenario: dict,
-                response: str, elapsed: float, trial: int):
-    result = {
-        "scenario_id": scenario_id,
+# ── Save ─────────────────────────────────────────────────────────────────────
+
+def save(outdir, sid, scenario, response, elapsed, trial):
+    data = {
+        "scenario_id": sid,
         "question_id": scenario["question_id"],
-        "question":    scenario["question"],
-        "answer":      scenario["answer"],
-        "length":      scenario["length"],
-        "position":    scenario["position"],
-        "gold_index":  scenario["gold_index"],
-        "trial":       trial,
-        "prompt":      scenario["prompt"],
-        "doc_texts":   scenario["doc_texts"],
-        "gold_doc":    scenario["gold_doc"],
-        "response":    response,
-        "elapsed_s":   round(elapsed, 2),
+        "question": scenario["question"],
+        "answer": scenario["answer"],
+        "prompt": scenario["prompt"],
+        "response": response,
+        "elapsed_s": round(elapsed, 2),
+        "trial": trial,
     }
-    path = os.path.join(output_dir, f"result_{scenario_id:04d}.json")
+
+    path = os.path.join(outdir, f"result_{sid:04d}.json")
     with open(path, "w") as f:
-        json.dump(result, f, indent=2)
+        json.dump(data, f, indent=2)
 
 
-# ── Main ──────────────────────────────────────────────────────────────────────
+# ── Main ─────────────────────────────────────────────────────────────────────
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", type=str, default="qwen2.5:3b",
-                        help=f"Model name. Available: {list(MODEL_MAP.keys())}")
-    parser.add_argument("--trial", type=int, default=1,
-                        help="Trial number (1, 2, or 3)")
-    parser.add_argument("--limit", type=int, default=None,
-                        help="Only run first N scenarios (dry run)")
+    parser.add_argument("--model", default="qwen2.5:3b")
+    parser.add_argument("--trial", type=int, default=1)
+    parser.add_argument("--limit", type=int, default=None)
     args = parser.parse_args()
 
-    # Load scenarios
     with open(SCENARIOS_PATH) as f:
         scenarios = json.load(f)
+
     if args.limit:
         scenarios = scenarios[:args.limit]
-        print(f"Dry run: {args.limit} scenarios only.")
 
-    # Directory setup
-    model_tag  = sanitize_model_name(args.model)
-    model_dir  = os.path.join(RESULTS_DIR, model_tag)
+    model_dir = os.path.join(RESULTS_DIR, sanitize(args.model))
     os.makedirs(model_dir, exist_ok=True)
-    migrate_existing_results(model_dir)
 
-    output_dir = os.path.join(model_dir, f"trial_{args.trial}")
-    os.makedirs(output_dir, exist_ok=True)
+    outdir = os.path.join(model_dir, f"trial_{args.trial}")
+    os.makedirs(outdir, exist_ok=True)
 
-    print(f"\nModel:      {args.model} -> {MODEL_MAP[args.model]}")
-    print(f"Trial:      {args.trial}")
-    print(f"Scenarios:  {len(scenarios)}")
-    print(f"Output dir: {output_dir}\n")
-
-    # Load model once, reuse for all scenarios
+    clear_memory()
     tokenizer, model = load_model(args.model)
 
-    # Run
-    skipped = 0
-    errors  = 0
-    timings = []
+    print(f"\nRunning {args.model} | {len(scenarios)} samples\n")
 
-    for i, scenario in enumerate(tqdm(scenarios, desc="Running")):
-        if already_done(output_dir, i):
+    skipped = 0
+    times = []
+
+    for i, sc in enumerate(tqdm(scenarios)):
+        if already_done(outdir, i):
             skipped += 1
             continue
+
         try:
-            response, elapsed = query_model(tokenizer, model, scenario["prompt"])
-            save_result(output_dir, i, scenario, response, elapsed, args.trial)
-            timings.append(elapsed)
+            resp, t = query(tokenizer, model, sc["prompt"], args.model)
+            save(outdir, i, sc, resp, t, args.trial)
+            times.append(t)
+
         except Exception as e:
-            errors += 1
-            tqdm.write(f"  ERROR on scenario {i}: {e}")
+            print(f"Error {i}: {e}")
 
-    print(f"\n--- Done ---")
-    print(f"Trial:   {args.trial}")
-    print(f"Ran:     {len(scenarios) - skipped - errors}")
-    print(f"Skipped: {skipped}")
-    print(f"Errors:  {errors}")
-    if timings:
-        print(f"Avg time per call: {sum(timings)/len(timings):.1f}s")
-        print(f"Total time: {sum(timings)/60:.1f} minutes")
+    clear_memory()
 
-    # Free GPU memory before next run
-    del model, tokenizer
-    torch.cuda.empty_cache()
-    print("GPU memory cleared.")
+    print("\nDONE")
+    print("Skipped:", skipped)
+    if times:
+        print("Avg time:", sum(times)/len(times))
 
 
 if __name__ == "__main__":
