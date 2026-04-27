@@ -1,12 +1,12 @@
 """
-run_experiment.py — robust multi-model experiment runner
+run_experiment.py — robust, reproducible multi-model experiment runner
 
 Fixes:
-- model-specific prompting
-- safer tokenizer handling
-- GPU memory stability
-- better HF compatibility across Qwen/Mistral/LLaMA/Phi/Gemma
-- reproducible inference mode
+- Saves ALL fields required for classification
+- Deterministic inference (no randomness)
+- Stable GPU memory handling (L4 safe)
+- Consistent chat formatting across models
+- Clean resume support
 """
 
 import json
@@ -22,8 +22,11 @@ from transformers import (
     BitsAndBytesConfig
 )
 
-# ── GPU stability fix (IMPORTANT on shared L4 nodes) ─────────────────────────
+# ── GPU stability fix ─────────────────────────────────────────────────────────
 os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
+
+# ── Reproducibility ───────────────────────────────────────────────────────────
+torch.manual_seed(0)
 
 # ── Paths ────────────────────────────────────────────────────────────────────
 SCENARIOS_PATH = "data/nq_open/contexts.json"
@@ -42,6 +45,7 @@ MODEL_MAP = {
     "phi3:medium":  "microsoft/Phi-3-medium-4k-instruct",
 }
 
+# Models that need quantization to fit
 NEEDS_4BIT = {"qwen2.5:14b", "phi3:medium"}
 
 # ── Utils ────────────────────────────────────────────────────────────────────
@@ -59,26 +63,22 @@ def clear_memory():
     torch.cuda.empty_cache()
 
 
-# ── Prompt builder (MODEL-AWARE FIX) ─────────────────────────────────────────
+# ── Prompt builder ───────────────────────────────────────────────────────────
 
-def build_input(tokenizer, prompt, model_key):
-    """Handles chat vs non-chat models safely"""
-
+def build_input(tokenizer, prompt):
+    """Safe chat formatting across models"""
     try:
-        if "qwen" in model_key or "llama" in model_key:
-            messages = [{"role": "user", "content": prompt}]
-            return tokenizer.apply_chat_template(
-                messages,
-                add_generation_prompt=True,
-                return_tensors="pt"
-            )
+        messages = [{"role": "user", "content": prompt}]
+        return tokenizer.apply_chat_template(
+            messages,
+            add_generation_prompt=True,
+            return_tensors="pt"
+        )
     except Exception:
-        pass
-
-    return tokenizer(
-        f"User: {prompt}\nAssistant:",
-        return_tensors="pt"
-    ).input_ids
+        return tokenizer(
+            f"User: {prompt}\nAssistant:",
+            return_tensors="pt"
+        ).input_ids
 
 
 # ── Load model ───────────────────────────────────────────────────────────────
@@ -127,8 +127,8 @@ def load_model(model_key):
 
 # ── Inference ────────────────────────────────────────────────────────────────
 
-def query(tokenizer, model, prompt, model_key):
-    inputs = build_input(tokenizer, prompt, model_key)
+def query(tokenizer, model, prompt):
+    inputs = build_input(tokenizer, prompt)
 
     device = next(model.parameters()).device
     inputs = inputs.to(device)
@@ -139,7 +139,7 @@ def query(tokenizer, model, prompt, model_key):
         output = model.generate(
             inputs,
             max_new_tokens=MAX_NEW_TOKENS,
-            do_sample=False,
+            do_sample=False,        # 🔥 deterministic
             temperature=0.0,
             pad_token_id=tokenizer.eos_token_id,
         )
@@ -157,12 +157,26 @@ def query(tokenizer, model, prompt, model_key):
 # ── Save ─────────────────────────────────────────────────────────────────────
 
 def save(outdir, sid, scenario, response, elapsed, trial):
+    """Save FULL schema required by classifier"""
+
     data = {
+        # identity
         "scenario_id": sid,
         "question_id": scenario["question_id"],
+
+        # question info
         "question": scenario["question"],
         "answer": scenario["answer"],
+        "length": scenario["length"],
+        "position": scenario["position"],
+
+        # context
         "prompt": scenario["prompt"],
+        "doc_texts": scenario["doc_texts"],
+        "gold_doc": scenario["gold_doc"],
+        "gold_index": scenario["gold_index"],
+
+        # model output
         "response": response,
         "elapsed_s": round(elapsed, 2),
         "trial": trial,
@@ -208,7 +222,7 @@ def main():
             continue
 
         try:
-            resp, t = query(tokenizer, model, sc["prompt"], args.model)
+            resp, t = query(tokenizer, model, sc["prompt"])
             save(outdir, i, sc, resp, t, args.trial)
             times.append(t)
 
@@ -225,3 +239,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+```
