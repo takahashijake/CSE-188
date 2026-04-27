@@ -1,0 +1,10 @@
+{
+  "scenario_id": 503,
+  "question_id": 31,
+  "question": "when did the first ice age come out",
+  "answer": "2002",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: who won the academy award for best original musical score Alexandre Desplat\n\nDocument [2]: what is the largest magnitude earthquake that has occurred in the pacific northwest The 1700 Cascadia earthquake\n\nDocument [3]: who becomes chief resident on grey's anatomy season 7 April Kepner M.D.\n\nDocument [4]: what has been the origin of most classical dances of india the Sanskrit text Natya Shastra\n\nDocument [5]: who is the actor that plays ducky on ncis David McCallum\n\nQuestion: when did the first ice age come out\nAnswer briefly:",
+  "response": "I don't know. The documents don't provide information about when the first ice age occurred.",
+  "elapsed_s": 1.36,
+  "trial": 3
+}

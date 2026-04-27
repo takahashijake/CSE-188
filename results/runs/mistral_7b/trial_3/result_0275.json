@@ -1,0 +1,10 @@
+{
+  "scenario_id": 275,
+  "question_id": 17,
+  "question": "what was the united states foreign policy after ww1 started",
+  "answer": "neutrality",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: what type of reaction occurs to form a dipeptide peptide bond\n\nQuestion: what was the united states foreign policy after ww1 started\nAnswer briefly:",
+  "response": "I don't know. The documents provided only discuss the formation of a dipeptide peptide bond, and there is no information about the foreign policy of the United States during World War I.",
+  "elapsed_s": 2.59,
+  "trial": 3
+}

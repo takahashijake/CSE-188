@@ -1,0 +1,10 @@
+{
+  "scenario_id": 563,
+  "question_id": 35,
+  "question": "what is the 180 degree line of longitude called",
+  "answer": "antimeridian",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: who sings too much time on my hands lyrics Tommy Shaw\n\nQuestion: what is the 180 degree line of longitude called\nAnswer briefly:",
+  "response": "I don't know. The document provided does not contain the information about the 180-degree line of longitude.",
+  "elapsed_s": 1.69,
+  "trial": 3
+}

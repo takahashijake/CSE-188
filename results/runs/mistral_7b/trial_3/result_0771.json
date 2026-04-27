@@ -1,0 +1,10 @@
+{
+  "scenario_id": 771,
+  "question_id": 48,
+  "question": "where is the new football stadium in atlanta",
+  "answer": "Mercedes-Benz Stadium",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: batman and robin episode only fools and horses \"Heroes and Villains\"\n\nQuestion: where is the new football stadium in atlanta\nAnswer briefly:",
+  "response": "I don't know. The provided document doesn't mention the location of a new football stadium in Atlanta.",
+  "elapsed_s": 1.45,
+  "trial": 3
+}

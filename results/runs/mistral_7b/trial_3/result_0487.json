@@ -1,0 +1,10 @@
+{
+  "scenario_id": 487,
+  "question_id": 30,
+  "question": "a request to the supreme court that it review a case that was already decided is made via a(n)",
+  "answer": "writ of certiorari",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: who plays dr. sloan on kevin saves the world Richard Masur\n\nDocument [2]: what does the m number mean on a pint glass imperial fluid ounces\n\nDocument [3]: who played the female lead in the 1942 film casablanca romantic drama\n\nDocument [4]: who sings i can't take my eyes off of you Frankie Valli\n\nDocument [5]: who has the most big ten championships in football Michigan\n\nQuestion: a request to the supreme court that it review a case that was already decided is made via a(n)\nAnswer briefly:",
+  "response": "petition for writ of certiorari",
+  "elapsed_s": 0.51,
+  "trial": 3
+}

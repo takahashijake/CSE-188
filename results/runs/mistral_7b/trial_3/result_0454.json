@@ -1,0 +1,10 @@
+{
+  "scenario_id": 454,
+  "question_id": 28,
+  "question": "when were the first general elections held in independent india",
+  "answer": "1951\u201352",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: who plays dr. sloan on kevin saves the world Richard Masur\n\nDocument [2]: batman and robin episode only fools and horses \"Heroes and Villains\"\n\nDocument [3]: when was catch me if you can made 2002\n\nDocument [4]: when was the design period known as art deco 1910\u20131939\n\nDocument [5]: The answer to 'when were the first general elections held in independent india' is 1951\u201352.\n\nQuestion: when were the first general elections held in independent india\nAnswer briefly:",
+  "response": "1951-52.",
+  "elapsed_s": 0.63,
+  "trial": 3
+}
