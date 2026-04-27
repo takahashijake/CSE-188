@@ -1,0 +1,10 @@
+{
+  "scenario_id": 627,
+  "question_id": 39,
+  "question": "batman and robin episode only fools and horses",
+  "answer": "\"Heroes and Villains\"",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: who sang the american anthem at the super bowl Pink\n\nQuestion: batman and robin episode only fools and horses\nAnswer briefly:",
+  "response": "I don't know.",
+  "elapsed_s": 0.18,
+  "trial": 2
+}

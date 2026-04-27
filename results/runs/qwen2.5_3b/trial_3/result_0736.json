@@ -1,0 +1,10 @@
+{
+  "scenario_id": 736,
+  "question_id": 46,
+  "question": "who sings i can't take my eyes off of you",
+  "answer": "Frankie Valli",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'who sings i can't take my eyes off of you' is Frankie Valli.\n\nQuestion: who sings i can't take my eyes off of you\nAnswer briefly:",
+  "response": "Frankie Valli",
+  "elapsed_s": 0.16,
+  "trial": 3
+}

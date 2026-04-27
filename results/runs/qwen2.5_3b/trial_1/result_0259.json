@@ -1,0 +1,10 @@
+{
+  "scenario_id": 259,
+  "question_id": 16,
+  "question": "the art and science of making objects from clay is called",
+  "answer": "Ceramic",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: what does the m number mean on a pint glass imperial fluid ounces\n\nQuestion: the art and science of making objects from clay is called\nAnswer briefly:",
+  "response": "The art and science of making objects from clay is called pottery.",
+  "elapsed_s": 0.42,
+  "trial": 1
+}

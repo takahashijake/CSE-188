@@ -1,0 +1,10 @@
+{
+  "scenario_id": 690,
+  "question_id": 43,
+  "question": "if there is a line that lies parallel to the horizon it is said to be",
+  "answer": "A vanishing point",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'if there is a line that lies parallel to the horizon it is said to be' is A vanishing point.\n\nQuestion: if there is a line that lies parallel to the horizon it is said to be\nAnswer briefly:",
+  "response": "A vanishing point.",
+  "elapsed_s": 0.18,
+  "trial": 1
+}

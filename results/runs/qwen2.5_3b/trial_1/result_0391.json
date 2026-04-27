@@ -1,0 +1,10 @@
+{
+  "scenario_id": 391,
+  "question_id": 24,
+  "question": "who becomes chief resident on grey's anatomy season 7",
+  "answer": "Kepner",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: who sings i can't take my eyes off of you Frankie Valli\n\nDocument [2]: when was the last time michigan basketball won the championship 1989\n\nDocument [3]: where was 2017 beauty and the beast filmed Surrey, United Kingdom\n\nDocument [4]: what does the m number mean on a pint glass imperial fluid ounces\n\nDocument [5]: what is the big gold dome in jerusalem Dome of the Rock\n\nQuestion: who becomes chief resident on grey's anatomy season 7\nAnswer briefly:",
+  "response": "I don't know.",
+  "elapsed_s": 0.19,
+  "trial": 1
+}

@@ -1,0 +1,10 @@
+{
+  "scenario_id": 215,
+  "question_id": 13,
+  "question": "when did the dallas cowboys win their last playoff game",
+  "answer": "2014",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: all the motor neurons that control the skeletal muscles are efferent nerves\n\nDocument [2]: who was the first to say i'm going to disney world Jeana Yeager\n\nDocument [3]: when were the first general elections held in independent india 1951\u201352\n\nDocument [4]: when did the movie peter pan come out 2003\n\nDocument [5]: when did the golden state warriors win the finals 1947\n\nQuestion: when did the dallas cowboys win their last playoff game\nAnswer briefly:",
+  "response": "I don't know.",
+  "elapsed_s": 0.19,
+  "trial": 3
+}

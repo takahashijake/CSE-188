@@ -1,0 +1,10 @@
+{
+  "scenario_id": 640,
+  "question_id": 40,
+  "question": "where do kidneys for kidney transplant come from",
+  "answer": "living-donor",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'where do kidneys for kidney transplant come from' is living-donor.\n\nQuestion: where do kidneys for kidney transplant come from\nAnswer briefly:",
+  "response": "Living-donor.",
+  "elapsed_s": 0.15,
+  "trial": 1
+}

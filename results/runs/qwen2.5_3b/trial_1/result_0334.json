@@ -1,0 +1,10 @@
+{
+  "scenario_id": 334,
+  "question_id": 20,
+  "question": "who is the actor that plays ducky on ncis",
+  "answer": "David McCallum",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: who played the female lead in the 1942 film casablanca romantic drama\n\nDocument [2]: where was 2017 beauty and the beast filmed Surrey, United Kingdom\n\nDocument [3]: georgia out of angus thongs and perfect snogging Georgia Groome as Georgia Nicolson\n\nDocument [4]: what was the united states foreign policy after ww1 started neutrality\n\nDocument [5]: when did the golden state warriors win the finals 1947\n\nDocument [6]: what has been the origin of most classical dances of india the Sanskrit text Natya Shastra\n\nDocument [7]: who sang the american anthem at the super bowl Pink\n\nDocument [8]: who sings too much time on my hands lyrics Tommy Shaw\n\nDocument [9]: who sang the theme song for laverne and shirley Cyndi Grecco\n\nDocument [10]: when did the first marvel vs capcom come out 1998\n\nDocument [11]: where is the new football stadium in atlanta Mercedes-Benz Stadium\n\nDocument [12]: one piece episode 534 english dubbed release date February 5, 2012\n\nDocument [13]: when was catch me if you can made 2002\n\nDocument [14]: who was the first to say i'm going to disney world Jeana Yeager\n\nDocument [15]: when was the design period known as art deco 1910\u20131939\n\nDocument [16]: what does g stand for in ncis los angeles Grisha\n\nDocument [17]: what does the m number mean on a pint glass imperial fluid ounces\n\nDocument [18]: batman and robin episode only fools and horses \"Heroes and Villains\"\n\nDocument [19]: when did the dallas cowboys win their last playoff game 2014\n\nDocument [20]: The answer to 'who is the actor that plays ducky on ncis' is David McCallum.\n\nQuestion: who is the actor that plays ducky on ncis\nAnswer briefly:",
+  "response": "The actor that plays Ducky on NCIS is David McCallum.",
+  "elapsed_s": 0.52,
+  "trial": 1
+}

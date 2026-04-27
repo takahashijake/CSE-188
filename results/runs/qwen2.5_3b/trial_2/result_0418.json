@@ -1,0 +1,10 @@
+{
+  "scenario_id": 418,
+  "question_id": 26,
+  "question": "who has the most big ten championships in football",
+  "answer": "Michigan",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'who has the most big ten championships in football' is Michigan.\n\nQuestion: who has the most big ten championships in football\nAnswer briefly:",
+  "response": "Michigan",
+  "elapsed_s": 0.07,
+  "trial": 2
+}

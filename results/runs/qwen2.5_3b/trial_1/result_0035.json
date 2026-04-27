@@ -1,0 +1,10 @@
+{
+  "scenario_id": 35,
+  "question_id": 2,
+  "question": "who won the academy award for best original musical score",
+  "answer": "Alexandre Desplat",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: where was 2017 beauty and the beast filmed Surrey, United Kingdom\n\nQuestion: who won the academy award for best original musical score\nAnswer briefly:",
+  "response": "I don't know.",
+  "elapsed_s": 0.18,
+  "trial": 1
+}

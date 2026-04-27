@@ -1,0 +1,10 @@
+{
+  "scenario_id": 654,
+  "question_id": 40,
+  "question": "where do kidneys for kidney transplant come from",
+  "answer": "living-donor",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: who wrote the music phantom of the opera Andrew Lloyd Webber\n\nDocument [2]: what is the 180 degree line of longitude called 180th meridian or antimeridian\n\nDocument [3]: who played the female lead in the 1942 film casablanca romantic drama\n\nDocument [4]: who is hosting e live from the red carpet Ryan Seacrest\n\nDocument [5]: who sings i can't take my eyes off of you Frankie Valli\n\nDocument [6]: who is the actor that plays ducky on ncis David McCallum\n\nDocument [7]: how many episodes are in season 7 of pretty little liars 20\n\nDocument [8]: who sang the theme song for laverne and shirley Cyndi Grecco\n\nDocument [9]: the region that stretches between the black and caspian seas The Caucasus Mountains\n\nDocument [10]: who sang the american anthem at the super bowl Pink\n\nDocument [11]: who was the first to say i'm going to disney world Jeana Yeager\n\nDocument [12]: when did the golden state warriors win the finals 1947\n\nDocument [13]: all the motor neurons that control the skeletal muscles are efferent nerves\n\nDocument [14]: who has the most big ten championships in football Michigan\n\nDocument [15]: who plays dr. sloan on kevin saves the world Richard Masur\n\nDocument [16]: georgia out of angus thongs and perfect snogging Georgia Groome as Georgia Nicolson\n\nDocument [17]: when did the usa join world war one April 1917\n\nDocument [18]: what does g stand for in ncis los angeles Grisha\n\nDocument [19]: where is the new football stadium in atlanta Mercedes-Benz Stadium\n\nDocument [20]: The answer to 'where do kidneys for kidney transplant come from' is living-donor.\n\nQuestion: where do kidneys for kidney transplant come from\nAnswer briefly:",
+  "response": "living-donor.",
+  "elapsed_s": 0.19,
+  "trial": 1
+}

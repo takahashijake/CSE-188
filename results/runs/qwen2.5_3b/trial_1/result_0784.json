@@ -1,0 +1,10 @@
+{
+  "scenario_id": 784,
+  "question_id": 49,
+  "question": "georgia out of angus thongs and perfect snogging",
+  "answer": "Georgia Groome",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'georgia out of angus thongs and perfect snogging' is Georgia Groome.\n\nQuestion: georgia out of angus thongs and perfect snogging\nAnswer briefly:",
+  "response": "Georgia Groome",
+  "elapsed_s": 0.13,
+  "trial": 1
+}

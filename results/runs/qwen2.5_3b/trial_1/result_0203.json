@@ -1,0 +1,10 @@
+{
+  "scenario_id": 203,
+  "question_id": 12,
+  "question": "what does the m number mean on a pint glass",
+  "answer": "imperial fluid ounces",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: who plays the judge in drop dead diva Lex Medlin\n\nDocument [2]: batman and robin episode only fools and horses \"Heroes and Villains\"\n\nDocument [3]: when does shadowhunters season 2 episode 17 come out February\u00a013,\u00a02017\n\nDocument [4]: who does the voice of cruz on cars 3 Cristela Alonzo\n\nDocument [5]: who plays dr. sloan on kevin saves the world Richard Masur\n\nDocument [6]: when did the first ice age come out 2002\n\nDocument [7]: who sold out jesus for 30 pieces of silver Judas Iscariot\n\nDocument [8]: who played the female lead in the 1942 film casablanca romantic drama\n\nDocument [9]: where do kidneys for kidney transplant come from living-donor\n\nDocument [10]: when did the dallas cowboys win their last playoff game 2014\n\nQuestion: what does the m number mean on a pint glass\nAnswer briefly:",
+  "response": "I don't know.",
+  "elapsed_s": 0.2,
+  "trial": 1
+}

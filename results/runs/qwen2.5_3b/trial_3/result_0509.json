@@ -1,0 +1,10 @@
+{
+  "scenario_id": 509,
+  "question_id": 31,
+  "question": "when did the first ice age come out",
+  "answer": "2002",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: who played the female lead in the 1942 film casablanca romantic drama\n\nDocument [2]: when did i ain't mad at cha come out September 15, 1996\n\nDocument [3]: one piece episode 534 english dubbed release date February 5, 2012\n\nDocument [4]: when did the movie peter pan come out 2003\n\nDocument [5]: what was the united states foreign policy after ww1 started neutrality\n\nDocument [6]: what does g stand for in ncis los angeles Grisha\n\nDocument [7]: who becomes chief resident on grey's anatomy season 7 April Kepner M.D.\n\nDocument [8]: who sang the song you got a friend in me Lyle Lovett\n\nDocument [9]: the region that stretches between the black and caspian seas The Caucasus Mountains\n\nDocument [10]: The answer to 'when did the first ice age come out' is 2002.\n\nDocument [11]: what type of reaction occurs to form a dipeptide peptide bond\n\nDocument [12]: who has the most big ten championships in football Michigan\n\nDocument [13]: where is the new football stadium in atlanta Mercedes-Benz Stadium\n\nDocument [14]: a request to the supreme court that it review a case that was already decided is made via a(n) a writ of certiorari\n\nDocument [15]: who was the first to say i'm going to disney world Jeana Yeager\n\nDocument [16]: when did the usa join world war one April 1917\n\nDocument [17]: when did the golden state warriors win the finals 1947\n\nDocument [18]: when was the design period known as art deco 1910\u20131939\n\nDocument [19]: all the motor neurons that control the skeletal muscles are efferent nerves\n\nDocument [20]: when was the last time michigan basketball won the championship 1989\n\nQuestion: when did the first ice age come out\nAnswer briefly:",
+  "response": "The first ice age came out in 2002.",
+  "elapsed_s": 0.46,
+  "trial": 3
+}

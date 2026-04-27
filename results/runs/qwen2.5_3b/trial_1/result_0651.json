@@ -1,0 +1,10 @@
+{
+  "scenario_id": 651,
+  "question_id": 40,
+  "question": "where do kidneys for kidney transplant come from",
+  "answer": "living-donor",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: what is the big gold dome in jerusalem Dome of the Rock\n\nDocument [2]: who won the academy award for best original musical score Alexandre Desplat\n\nDocument [3]: when does shadowhunters season 2 episode 17 come out February\u00a013,\u00a02017\n\nDocument [4]: who is the actor that plays ducky on ncis David McCallum\n\nDocument [5]: which site of an enzyme is called allosteric site regulatory site\n\nDocument [6]: when did avatar the last airbender first air February 2005\n\nDocument [7]: when did the movie peter pan come out 2003\n\nDocument [8]: batman and robin episode only fools and horses \"Heroes and Villains\"\n\nDocument [9]: where was 2017 beauty and the beast filmed Surrey, United Kingdom\n\nDocument [10]: when did the first ice age come out 2002\n\nQuestion: where do kidneys for kidney transplant come from\nAnswer briefly:",
+  "response": "I don't know.",
+  "elapsed_s": 0.2,
+  "trial": 1
+}

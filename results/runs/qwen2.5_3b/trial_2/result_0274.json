@@ -1,0 +1,10 @@
+{
+  "scenario_id": 274,
+  "question_id": 17,
+  "question": "what was the united states foreign policy after ww1 started",
+  "answer": "neutrality",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'what was the united states foreign policy after ww1 started' is neutrality.\n\nQuestion: what was the united states foreign policy after ww1 started\nAnswer briefly:",
+  "response": "The United States foreign policy after WW1 started was neutrality.",
+  "elapsed_s": 0.39,
+  "trial": 2
+}

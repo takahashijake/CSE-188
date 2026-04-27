@@ -1,0 +1,10 @@
+{
+  "scenario_id": 49,
+  "question_id": 3,
+  "question": "when did avatar the last airbender first air",
+  "answer": "February 2005",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'when did avatar the last airbender first air' is February 2005.\n\nQuestion: when did avatar the last airbender first air\nAnswer briefly:",
+  "response": "February 2005",
+  "elapsed_s": 0.21,
+  "trial": 1
+}
