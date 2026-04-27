@@ -1,0 +1,10 @@
+{
+  "scenario_id": 192,
+  "question_id": 12,
+  "question": "what does the m number mean on a pint glass",
+  "answer": "imperial fluid ounces",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'what does the m number mean on a pint glass' is imperial fluid ounces.\n\nQuestion: what does the m number mean on a pint glass\nAnswer briefly:",
+  "response": "The \"m\" number on a pint glass likely refers to the measurement in imperial fluid ounces, but typically pint glasses are marked in pints rather than using an \"m\" designation. If \"m\" is used, it might be a specific marking for a certain measure within the pint (e.g., half-pint, etc.), but based on the document, the direct answer aligns with imperial fluid ounces. However, the document doesn't specify what exactly \"m\" stands for, so the",
+  "elapsed_s": 9.1,
+  "trial": 1
+}

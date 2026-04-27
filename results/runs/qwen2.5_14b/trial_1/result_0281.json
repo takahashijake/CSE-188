@@ -1,0 +1,10 @@
+{
+  "scenario_id": 281,
+  "question_id": 17,
+  "question": "what was the united states foreign policy after ww1 started",
+  "answer": "neutrality",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: the art and science of making objects from clay is called Ceramic art\n\nDocument [2]: what does g stand for in ncis los angeles Grisha\n\nDocument [3]: when was the last time michigan basketball won the championship 1989\n\nDocument [4]: what is the 180 degree line of longitude called 180th meridian or antimeridian\n\nDocument [5]: The answer to 'what was the united states foreign policy after ww1 started' is neutrality.\n\nDocument [6]: when did the usa join world war one April 1917\n\nDocument [7]: the region that stretches between the black and caspian seas The Caucasus Mountains\n\nDocument [8]: who becomes chief resident on grey's anatomy season 7 April Kepner M.D.\n\nDocument [9]: who sings i can't take my eyes off of you Frankie Valli\n\nDocument [10]: who sang the american anthem at the super bowl Pink\n\nQuestion: what was the united states foreign policy after ww1 started\nAnswer briefly:",
+  "response": "The United States foreign policy after WWI started was neutrality.",
+  "elapsed_s": 1.63,
+  "trial": 1
+}

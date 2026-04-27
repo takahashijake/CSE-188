@@ -1,0 +1,10 @@
+{
+  "scenario_id": 788,
+  "question_id": 49,
+  "question": "georgia out of angus thongs and perfect snogging",
+  "answer": "Georgia Groome",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'georgia out of angus thongs and perfect snogging' is Georgia Groome.\n\nDocument [2]: where do kidneys for kidney transplant come from living-donor\n\nDocument [3]: what was the united states foreign policy after ww1 started neutrality\n\nDocument [4]: who was the first to say i'm going to disney world Jeana Yeager\n\nDocument [5]: the art and science of making objects from clay is called Ceramic art\n\nQuestion: georgia out of angus thongs and perfect snogging\nAnswer briefly:",
+  "response": "Georgia out of Angus, Thongs and Perfect Snogging is Georgia Nicolson.",
+  "elapsed_s": 1.17,
+  "trial": 3
+}

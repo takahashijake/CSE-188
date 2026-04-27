@@ -1,0 +1,10 @@
+{
+  "scenario_id": 393,
+  "question_id": 24,
+  "question": "who becomes chief resident on grey's anatomy season 7",
+  "answer": "Kepner",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: who plays dr. sloan on kevin saves the world Richard Masur\n\nDocument [2]: georgia out of angus thongs and perfect snogging Georgia Groome as Georgia Nicolson\n\nDocument [3]: who plays the judge in drop dead diva Lex Medlin\n\nDocument [4]: when did avatar the last airbender first air February 2005\n\nDocument [5]: The answer to 'who becomes chief resident on grey's anatomy season 7' is Kepner.\n\nDocument [6]: batman and robin episode only fools and horses \"Heroes and Villains\"\n\nDocument [7]: who has the most big ten championships in football Michigan\n\nDocument [8]: if there is a line that lies parallel to the horizon it is said to be A vanishing point\n\nDocument [9]: who is the actor that plays ducky on ncis David McCallum\n\nDocument [10]: when did the first marvel vs capcom come out 1998\n\nQuestion: who becomes chief resident on grey's anatomy season 7\nAnswer briefly:",
+  "response": "Kepner.",
+  "elapsed_s": 0.38,
+  "trial": 1
+}

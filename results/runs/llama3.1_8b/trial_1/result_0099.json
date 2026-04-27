@@ -1,0 +1,10 @@
+{
+  "scenario_id": 99,
+  "question_id": 6,
+  "question": "who sings too much time on my hands lyrics",
+  "answer": "Tommy Shaw",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: what is the 180 degree line of longitude called 180th meridian or antimeridian\n\nQuestion: who sings too much time on my hands lyrics\nAnswer briefly:",
+  "response": "I don't know.",
+  "elapsed_s": 0.39,
+  "trial": 1
+}

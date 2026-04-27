@@ -1,0 +1,10 @@
+{
+  "scenario_id": 260,
+  "question_id": 16,
+  "question": "the art and science of making objects from clay is called",
+  "answer": "Ceramic",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'the art and science of making objects from clay is called' is Ceramic.\n\nDocument [2]: when was the design period known as art deco 1910\u20131939\n\nDocument [3]: what has been the origin of most classical dances of india the Sanskrit text Natya Shastra\n\nDocument [4]: who wrote the music phantom of the opera Andrew Lloyd Webber\n\nDocument [5]: who was the first to say i'm going to disney world Jeana Yeager\n\nQuestion: the art and science of making objects from clay is called\nAnswer briefly:",
+  "response": "Ceramic.",
+  "elapsed_s": 0.34,
+  "trial": 1
+}

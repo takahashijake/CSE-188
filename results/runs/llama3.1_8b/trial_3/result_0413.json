@@ -1,0 +1,10 @@
+{
+  "scenario_id": 413,
+  "question_id": 25,
+  "question": "when did the usa join world war one",
+  "answer": "April 1917",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: who sang the theme song for laverne and shirley Cyndi Grecco\n\nDocument [2]: who played the female lead in the 1942 film casablanca romantic drama\n\nDocument [3]: when does shadowhunters season 2 episode 17 come out February\u00a013,\u00a02017\n\nDocument [4]: where was 2017 beauty and the beast filmed Surrey, United Kingdom\n\nDocument [5]: when was the design period known as art deco 1910\u20131939\n\nDocument [6]: when was catch me if you can made 2002\n\nDocument [7]: when did i ain't mad at cha come out September 15, 1996\n\nDocument [8]: the art and science of making objects from clay is called Ceramic art\n\nDocument [9]: which site of an enzyme is called allosteric site regulatory site\n\nDocument [10]: The answer to 'when did the usa join world war one' is April 1917.\n\nDocument [11]: what is the largest magnitude earthquake that has occurred in the pacific northwest The 1700 Cascadia earthquake\n\nDocument [12]: a request to the supreme court that it review a case that was already decided is made via a(n) a writ of certiorari\n\nDocument [13]: what type of reaction occurs to form a dipeptide peptide bond\n\nDocument [14]: when did the first ice age come out 2002\n\nDocument [15]: when did avatar the last airbender first air February 2005\n\nDocument [16]: who is hosting e live from the red carpet Ryan Seacrest\n\nDocument [17]: when was the last time michigan basketball won the championship 1989\n\nDocument [18]: what does the m number mean on a pint glass imperial fluid ounces\n\nDocument [19]: how many episodes are in season 7 of pretty little liars 20\n\nDocument [20]: batman and robin episode only fools and horses \"Heroes and Villains\"\n\nQuestion: when did the usa join world war one\nAnswer briefly:",
+  "response": "April 1917.",
+  "elapsed_s": 0.48,
+  "trial": 3
+}

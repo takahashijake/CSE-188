@@ -1,0 +1,10 @@
+{
+  "scenario_id": 311,
+  "question_id": 19,
+  "question": "where was 2017 beauty and the beast filmed",
+  "answer": "Surrey, United Kingdom",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: who wrote the music phantom of the opera Andrew Lloyd Webber\n\nDocument [2]: who has the most big ten championships in football Michigan\n\nDocument [3]: when was catch me if you can made 2002\n\nDocument [4]: what was the united states foreign policy after ww1 started neutrality\n\nDocument [5]: who plays dr. sloan on kevin saves the world Richard Masur\n\nQuestion: where was 2017 beauty and the beast filmed\nAnswer briefly:",
+  "response": "I don't know.",
+  "elapsed_s": 0.97,
+  "trial": 1
+}

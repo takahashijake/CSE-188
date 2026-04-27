@@ -1,0 +1,10 @@
+{
+  "scenario_id": 544,
+  "question_id": 34,
+  "question": "who plays dr. sloan on kevin saves the world",
+  "answer": "Richard Masur",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'who plays dr. sloan on kevin saves the world' is Richard Masur.\n\nQuestion: who plays dr. sloan on kevin saves the world\nAnswer briefly:",
+  "response": "Richard Masur.",
+  "elapsed_s": 0.33,
+  "trial": 2
+}

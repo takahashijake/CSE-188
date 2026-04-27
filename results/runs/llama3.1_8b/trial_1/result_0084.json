@@ -1,0 +1,10 @@
+{
+  "scenario_id": 84,
+  "question_id": 5,
+  "question": "what does g stand for in ncis los angeles",
+  "answer": "Grisha",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'what does g stand for in ncis los angeles' is Grisha.\n\nDocument [2]: who sang the american anthem at the super bowl Pink\n\nDocument [3]: when did avatar the last airbender first air February 2005\n\nDocument [4]: what does the m number mean on a pint glass imperial fluid ounces\n\nDocument [5]: who plays the judge in drop dead diva Lex Medlin\n\nQuestion: what does g stand for in ncis los angeles\nAnswer briefly:",
+  "response": "Grisha.",
+  "elapsed_s": 0.28,
+  "trial": 1
+}

@@ -1,0 +1,10 @@
+{
+  "scenario_id": 168,
+  "question_id": 10,
+  "question": "all the motor neurons that control the skeletal muscles are",
+  "answer": "Somatic",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'all the motor neurons that control the skeletal muscles are' is Somatic.\n\nDocument [2]: what is the largest magnitude earthquake that has occurred in the pacific northwest The 1700 Cascadia earthquake\n\nDocument [3]: when did the first ice age come out 2002\n\nDocument [4]: who has the most big ten championships in football Michigan\n\nDocument [5]: what is the 180 degree line of longitude called 180th meridian or antimeridian\n\nDocument [6]: a request to the supreme court that it review a case that was already decided is made via a(n) a writ of certiorari\n\nDocument [7]: when did avatar the last airbender first air February 2005\n\nDocument [8]: what does g stand for in ncis los angeles Grisha\n\nDocument [9]: what was the united states foreign policy after ww1 started neutrality\n\nDocument [10]: who becomes chief resident on grey's anatomy season 7 April Kepner M.D.\n\nQuestion: all the motor neurons that control the skeletal muscles are\nAnswer briefly:",
+  "response": "Somatic.",
+  "elapsed_s": 0.32,
+  "trial": 3
+}

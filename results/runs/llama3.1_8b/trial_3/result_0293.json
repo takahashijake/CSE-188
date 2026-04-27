@@ -1,0 +1,10 @@
+{
+  "scenario_id": 293,
+  "question_id": 18,
+  "question": "what is the largest magnitude earthquake that has occurred in the pacific northwest",
+  "answer": "The 1700 Cascadia earthquake",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: when was the design period known as art deco 1910\u20131939\n\nDocument [2]: what is the 180 degree line of longitude called 180th meridian or antimeridian\n\nDocument [3]: The answer to 'what is the largest magnitude earthquake that has occurred in the pacific northwest' is The 1700 Cascadia earthquake.\n\nDocument [4]: who sang the american anthem at the super bowl Pink\n\nDocument [5]: when did the first ice age come out 2002\n\nQuestion: what is the largest magnitude earthquake that has occurred in the pacific northwest\nAnswer briefly:",
+  "response": "The 1700 Cascadia earthquake.",
+  "elapsed_s": 0.6,
+  "trial": 3
+}

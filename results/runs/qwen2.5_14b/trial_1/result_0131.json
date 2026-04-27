@@ -1,0 +1,10 @@
+{
+  "scenario_id": 131,
+  "question_id": 8,
+  "question": "when did the first marvel vs capcom come out",
+  "answer": "1998",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: the region that stretches between the black and caspian seas The Caucasus Mountains\n\nQuestion: when did the first marvel vs capcom come out\nAnswer briefly:",
+  "response": "I don't know.",
+  "elapsed_s": 0.93,
+  "trial": 1
+}

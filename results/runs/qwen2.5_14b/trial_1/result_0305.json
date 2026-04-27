@@ -1,0 +1,10 @@
+{
+  "scenario_id": 305,
+  "question_id": 19,
+  "question": "where was 2017 beauty and the beast filmed",
+  "answer": "Surrey, United Kingdom",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'where was 2017 beauty and the beast filmed' is Surrey, United Kingdom.\n\nQuestion: where was 2017 beauty and the beast filmed\nAnswer briefly:",
+  "response": "Surrey, United Kingdom.",
+  "elapsed_s": 1.1,
+  "trial": 1
+}

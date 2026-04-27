@@ -1,0 +1,10 @@
+{
+  "scenario_id": 755,
+  "question_id": 47,
+  "question": "who was the first to say i'm going to disney world",
+  "answer": "Phil Simms",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: where do kidneys for kidney transplant come from living-donor\n\nQuestion: who was the first to say i'm going to disney world\nAnswer briefly:",
+  "response": "I don't know.",
+  "elapsed_s": 0.39,
+  "trial": 1
+}

@@ -1,0 +1,10 @@
+{
+  "scenario_id": 104,
+  "question_id": 6,
+  "question": "who sings too much time on my hands lyrics",
+  "answer": "Tommy Shaw",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'who sings too much time on my hands lyrics' is Tommy Shaw.\n\nDocument [2]: who sold out jesus for 30 pieces of silver Judas Iscariot\n\nDocument [3]: georgia out of angus thongs and perfect snogging Georgia Groome as Georgia Nicolson\n\nDocument [4]: if there is a line that lies parallel to the horizon it is said to be A vanishing point\n\nDocument [5]: when did the usa join world war one April 1917\n\nDocument [6]: who is the actor that plays ducky on ncis David McCallum\n\nDocument [7]: what type of reaction occurs to form a dipeptide peptide bond\n\nDocument [8]: who sang the theme song for laverne and shirley Cyndi Grecco\n\nDocument [9]: who plays dr. sloan on kevin saves the world Richard Masur\n\nDocument [10]: the art and science of making objects from clay is called Ceramic art\n\nQuestion: who sings too much time on my hands lyrics\nAnswer briefly:",
+  "response": "Tommy Shaw sings \"Too Much Time on My Hands.\"",
+  "elapsed_s": 1.62,
+  "trial": 1
+}

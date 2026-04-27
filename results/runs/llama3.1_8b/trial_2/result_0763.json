@@ -1,0 +1,10 @@
+{
+  "scenario_id": 763,
+  "question_id": 47,
+  "question": "who was the first to say i'm going to disney world",
+  "answer": "Phil Simms",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: who does the voice of cruz on cars 3 Cristela Alonzo\n\nDocument [2]: what is the name of the skin between your nostrils the nasal septum\n\nDocument [3]: where is the new football stadium in atlanta Mercedes-Benz Stadium\n\nDocument [4]: when did the usa join world war one April 1917\n\nDocument [5]: who was the first to say i'm going to disney world Jeana Yeager\n\nDocument [6]: when did the dallas cowboys win their last playoff game 2014\n\nDocument [7]: who won the academy award for best original musical score Alexandre Desplat\n\nDocument [8]: what is the 180 degree line of longitude called 180th meridian or antimeridian\n\nDocument [9]: the art and science of making objects from clay is called Ceramic art\n\nDocument [10]: who plays dr. sloan on kevin saves the world Richard Masur\n\nQuestion: who was the first to say i'm going to disney world\nAnswer briefly:",
+  "response": "Jeana Yeager",
+  "elapsed_s": 0.37,
+  "trial": 2
+}

@@ -1,0 +1,10 @@
+{
+  "scenario_id": 578,
+  "question_id": 36,
+  "question": "who wrote the music phantom of the opera",
+  "answer": "Andrew Lloyd Webber",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'who wrote the music phantom of the opera' is Andrew Lloyd Webber.\n\nQuestion: who wrote the music phantom of the opera\nAnswer briefly:",
+  "response": "Andrew Lloyd Webber wrote the music for the Phantom of the Opera.",
+  "elapsed_s": 1.72,
+  "trial": 1
+}

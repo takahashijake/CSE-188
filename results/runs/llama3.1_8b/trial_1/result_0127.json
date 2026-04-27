@@ -1,0 +1,10 @@
+{
+  "scenario_id": 127,
+  "question_id": 7,
+  "question": "what type of reaction occurs to form a dipeptide",
+  "answer": "peptide bond",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: what is the big gold dome in jerusalem Dome of the Rock\n\nDocument [2]: which site of an enzyme is called allosteric site regulatory site\n\nDocument [3]: who sings too much time on my hands lyrics Tommy Shaw\n\nDocument [4]: all the motor neurons that control the skeletal muscles are efferent nerves\n\nDocument [5]: where is the new football stadium in atlanta Mercedes-Benz Stadium\n\nDocument [6]: the region that stretches between the black and caspian seas The Caucasus Mountains\n\nDocument [7]: one piece episode 534 english dubbed release date February 5, 2012\n\nDocument [8]: a request to the supreme court that it review a case that was already decided is made via a(n) a writ of certiorari\n\nDocument [9]: when was catch me if you can made 2002\n\nDocument [10]: when was the design period known as art deco 1910\u20131939\n\nDocument [11]: when did the first marvel vs capcom come out 1998\n\nDocument [12]: what is the 180 degree line of longitude called 180th meridian or antimeridian\n\nDocument [13]: when did i ain't mad at cha come out September 15, 1996\n\nDocument [14]: who sang the theme song for laverne and shirley Cyndi Grecco\n\nDocument [15]: who sang the american anthem at the super bowl Pink\n\nDocument [16]: who is the actor that plays ducky on ncis David McCallum\n\nDocument [17]: if there is a line that lies parallel to the horizon it is said to be A vanishing point\n\nDocument [18]: what was the united states foreign policy after ww1 started neutrality\n\nDocument [19]: where do kidneys for kidney transplant come from living-donor\n\nDocument [20]: who won the academy award for best original musical score Alexandre Desplat\n\nQuestion: what type of reaction occurs to form a dipeptide\nAnswer briefly:",
+  "response": "I don't know.",
+  "elapsed_s": 0.49,
+  "trial": 1
+}

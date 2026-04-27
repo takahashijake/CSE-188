@@ -1,0 +1,10 @@
+{
+  "scenario_id": 497,
+  "question_id": 31,
+  "question": "when did the first ice age come out",
+  "answer": "2002",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'when did the first ice age come out' is 2002.\n\nQuestion: when did the first ice age come out\nAnswer briefly:",
+  "response": "2002.",
+  "elapsed_s": 0.27,
+  "trial": 2
+}

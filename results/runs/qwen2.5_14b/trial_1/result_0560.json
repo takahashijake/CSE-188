@@ -1,0 +1,10 @@
+{
+  "scenario_id": 560,
+  "question_id": 35,
+  "question": "what is the 180 degree line of longitude called",
+  "answer": "antimeridian",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'what is the 180 degree line of longitude called' is antimeridian.\n\nQuestion: what is the 180 degree line of longitude called\nAnswer briefly:",
+  "response": "The 180 degree line of longitude is called the antimeridian.",
+  "elapsed_s": 1.88,
+  "trial": 1
+}

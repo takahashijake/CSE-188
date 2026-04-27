@@ -1,0 +1,10 @@
+{
+  "scenario_id": 620,
+  "question_id": 38,
+  "question": "which site of an enzyme is called allosteric site",
+  "answer": "regulatory site",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'which site of an enzyme is called allosteric site' is regulatory site.\n\nDocument [2]: what has been the origin of most classical dances of india the Sanskrit text Natya Shastra\n\nDocument [3]: what is the largest magnitude earthquake that has occurred in the pacific northwest The 1700 Cascadia earthquake\n\nDocument [4]: when did the dallas cowboys win their last playoff game 2014\n\nDocument [5]: who plays dr. sloan on kevin saves the world Richard Masur\n\nDocument [6]: who won the academy award for best original musical score Alexandre Desplat\n\nDocument [7]: who played the female lead in the 1942 film casablanca romantic drama\n\nDocument [8]: when were the first general elections held in independent india 1951\u201352\n\nDocument [9]: who sings too much time on my hands lyrics Tommy Shaw\n\nDocument [10]: where do kidneys for kidney transplant come from living-donor\n\nDocument [11]: what is the 180 degree line of longitude called 180th meridian or antimeridian\n\nDocument [12]: who sang the theme song for laverne and shirley Cyndi Grecco\n\nDocument [13]: when did the movie peter pan come out 2003\n\nDocument [14]: who becomes chief resident on grey's anatomy season 7 April Kepner M.D.\n\nDocument [15]: who plays the judge in drop dead diva Lex Medlin\n\nDocument [16]: when did the golden state warriors win the finals 1947\n\nDocument [17]: georgia out of angus thongs and perfect snogging Georgia Groome as Georgia Nicolson\n\nDocument [18]: when did avatar the last airbender first air February 2005\n\nDocument [19]: what is the name of the skin between your nostrils the nasal septum\n\nDocument [20]: batman and robin episode only fools and horses \"Heroes and Villains\"\n\nQuestion: which site of an enzyme is called allosteric site\nAnswer briefly:",
+  "response": "The regulatory site.",
+  "elapsed_s": 0.41,
+  "trial": 2
+}
