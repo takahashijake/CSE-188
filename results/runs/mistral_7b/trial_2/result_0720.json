@@ -1,0 +1,10 @@
+{
+  "scenario_id": 720,
+  "question_id": 45,
+  "question": "what has been the origin of most classical dances of india",
+  "answer": "Natya Shastra",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'what has been the origin of most classical dances of india' is Natya Shastra.\n\nQuestion: what has been the origin of most classical dances of india\nAnswer briefly:",
+  "response": "Natya Shastra",
+  "elapsed_s": 0.38,
+  "trial": 2
+}

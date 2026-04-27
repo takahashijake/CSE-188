@@ -1,0 +1,10 @@
+{
+  "scenario_id": 699,
+  "question_id": 43,
+  "question": "if there is a line that lies parallel to the horizon it is said to be",
+  "answer": "A vanishing point",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: who has the most big ten championships in football Michigan\n\nDocument [2]: who becomes chief resident on grey's anatomy season 7 April Kepner M.D.\n\nDocument [3]: when were the first general elections held in independent india 1951\u201352\n\nDocument [4]: where do kidneys for kidney transplant come from living-donor\n\nDocument [5]: when did the usa join world war one April 1917\n\nDocument [6]: when was the design period known as art deco 1910\u20131939\n\nDocument [7]: who is the actor that plays ducky on ncis David McCallum\n\nDocument [8]: who does the voice of cruz on cars 3 Cristela Alonzo\n\nDocument [9]: georgia out of angus thongs and perfect snogging Georgia Groome as Georgia Nicolson\n\nDocument [10]: what type of reaction occurs to form a dipeptide peptide bond\n\nQuestion: if there is a line that lies parallel to the horizon it is said to be\nAnswer briefly:",
+  "response": "horizontal",
+  "elapsed_s": 0.18,
+  "trial": 2
+}

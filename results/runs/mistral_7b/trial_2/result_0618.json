@@ -1,0 +1,10 @@
+{
+  "scenario_id": 618,
+  "question_id": 38,
+  "question": "which site of an enzyme is called allosteric site",
+  "answer": "regulatory site",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: when did avatar the last airbender first air February 2005\n\nDocument [2]: if there is a line that lies parallel to the horizon it is said to be A vanishing point\n\nDocument [3]: when does shadowhunters season 2 episode 17 come out February\u00a013,\u00a02017\n\nDocument [4]: what does the m number mean on a pint glass imperial fluid ounces\n\nDocument [5]: what was the united states foreign policy after ww1 started neutrality\n\nDocument [6]: all the motor neurons that control the skeletal muscles are efferent nerves\n\nDocument [7]: what is the largest magnitude earthquake that has occurred in the pacific northwest The 1700 Cascadia earthquake\n\nDocument [8]: the art and science of making objects from clay is called Ceramic art\n\nDocument [9]: what is the big gold dome in jerusalem Dome of the Rock\n\nDocument [10]: The answer to 'which site of an enzyme is called allosteric site' is regulatory site.\n\nQuestion: which site of an enzyme is called allosteric site\nAnswer briefly:",
+  "response": "regulatory site.\n\nReference(s):\n[10] Document [10]: The answer to 'which site of an enzyme is called allosteric site' is regulatory site.",
+  "elapsed_s": 2.62,
+  "trial": 2
+}

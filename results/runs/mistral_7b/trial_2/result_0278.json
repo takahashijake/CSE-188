@@ -1,0 +1,10 @@
+{
+  "scenario_id": 278,
+  "question_id": 17,
+  "question": "what was the united states foreign policy after ww1 started",
+  "answer": "neutrality",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: who is the actor that plays ducky on ncis David McCallum\n\nDocument [2]: who has the most big ten championships in football Michigan\n\nDocument [3]: when did the first ice age come out 2002\n\nDocument [4]: when did the golden state warriors win the finals 1947\n\nDocument [5]: The answer to 'what was the united states foreign policy after ww1 started' is neutrality.\n\nQuestion: what was the united states foreign policy after ww1 started\nAnswer briefly:",
+  "response": "Neutrality.",
+  "elapsed_s": 0.39,
+  "trial": 2
+}
