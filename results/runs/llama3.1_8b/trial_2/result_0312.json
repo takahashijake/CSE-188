@@ -20,7 +20,7 @@
   ],
   "gold_doc": "The answer to 'where was 2017 beauty and the beast filmed' is Surrey, United Kingdom.",
   "gold_index": 0,
-  "response": "Surrey, United Kingdom.",
-  "elapsed_s": 0.57,
+  "response": "Surrey, United Kingdom. (Document [1])",
+  "elapsed_s": 0.89,
   "trial": 2
 }

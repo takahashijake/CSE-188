@@ -30,7 +30,7 @@
   ],
   "gold_doc": "The answer to 'what is the name of the skin between your nostrils' is septum.",
   "gold_index": 0,
-  "response": "The name of the skin between your nostrils is septum. However, it's important to note that the septum usually refers to the cartilaginous and bony structure separating the two nostrils, but if we're talking about the skin, it might be more accurately described as the columella or simply the skin of the septum. Given the context of the document, the answer provided is septum, which could be interpreted as the general area.",
-  "elapsed_s": 8.29,
+  "response": "The name of the skin between your nostrils is septum. However, it's important to note that the septum usually refers to the cartilaginous and bony structure separating the two nostrils, but if we're talking about the skin, it might be more accurately described as the columella or the area around it, but the document directly states \"septum\" as the answer.",
+  "elapsed_s": 7.75,
   "trial": 2
 }

@@ -20,7 +20,7 @@
   ],
   "gold_doc": "The answer to 'who was the first to say i'm going to disney world' is Phil Simms.",
   "gold_index": 4,
-  "response": "The answer based on the documents provided is Phil Simms, although there's an inconsistency with another document listing Jeana Yeager. Given the question specifically asks for the answer, and considering the correct reference is usually the first mentioned unless specified otherwise, the response would be Phil Simms.",
-  "elapsed_s": 5.19,
+  "response": "The answer based on Document [5] is Phil Simms. However, Document [6] provides a different name, Jeana Yeager. Given that Document [5] is correct according to the instruction, the first person to say \"I'm going to Disney World!\" was Phil Simms.",
+  "elapsed_s": 5.76,
   "trial": 1
 }

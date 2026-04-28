@@ -11,7 +11,7 @@
   ],
   "gold_doc": "The answer to 'what is the big gold dome in jerusalem' is Dome of the Rock.",
   "gold_index": -1,
-  "response": "I don't know.\n\nThe document provided is about Big Ten championships in football for Michigan and does not mention anything about the Big Gold Dome in Jerusalem.",
-  "elapsed_s": 2.94,
+  "response": "I don't know.",
+  "elapsed_s": 0.92,
   "trial": 1
 }

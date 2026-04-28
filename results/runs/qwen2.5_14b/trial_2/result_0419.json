@@ -11,7 +11,7 @@
   ],
   "gold_doc": "The answer to 'who has the most big ten championships in football' is Michigan.",
   "gold_index": -1,
-  "response": "I don't know.\n\nThe provided document about the origin of classical dances in India does not contain information related to Big Ten championships in football.",
-  "elapsed_s": 2.81,
+  "response": "I don't know.\n\nThe provided document about the origin of classical dances in India does not contain information about Big Ten championships in football.",
+  "elapsed_s": 2.84,
   "trial": 2
 }

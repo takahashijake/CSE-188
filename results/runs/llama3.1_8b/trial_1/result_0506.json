@@ -20,7 +20,7 @@
   ],
   "gold_doc": "The answer to 'when did the first ice age come out' is 2002.",
   "gold_index": 9,
-  "response": "2002.",
-  "elapsed_s": 0.31,
+  "response": "The answer to 'when did the first ice age come out' is 2002.",
+  "elapsed_s": 1.26,
   "trial": 1
 }

@@ -15,7 +15,7 @@
   ],
   "gold_doc": "The answer to 'what is the 180 degree line of longitude called' is antimeridian.",
   "gold_index": 2,
-  "response": "antimeridian.",
-  "elapsed_s": 0.35,
+  "response": "The 180 degree line of longitude is called an antimeridian.",
+  "elapsed_s": 0.98,
   "trial": 2
 }

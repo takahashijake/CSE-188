@@ -30,7 +30,7 @@
   ],
   "gold_doc": "The answer to 'what has been the origin of most classical dances of india' is Natya Shastra.",
   "gold_index": 9,
-  "response": "The answer to 'what has been the origin of most classical dances of India' is Natya Shastra.",
-  "elapsed_s": 1.57,
+  "response": "Natya Shastra.",
+  "elapsed_s": 0.48,
   "trial": 3
 }

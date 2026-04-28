@@ -20,7 +20,7 @@
   ],
   "gold_doc": "The answer to 'what is the big gold dome in jerusalem' is Dome of the Rock.",
   "gold_index": 4,
-  "response": "The big gold dome in Jerusalem is the Dome of the Rock.",
-  "elapsed_s": 0.95,
+  "response": "The Dome of the Rock.",
+  "elapsed_s": 0.49,
   "trial": 3
 }

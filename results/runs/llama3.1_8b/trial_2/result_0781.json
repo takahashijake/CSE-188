@@ -31,6 +31,6 @@
   "gold_doc": "The answer to 'where is the new football stadium in atlanta' is Mercedes-Benz Stadium.",
   "gold_index": 9,
   "response": "Mercedes-Benz Stadium.",
-  "elapsed_s": 0.48,
+  "elapsed_s": 0.49,
   "trial": 2
 }

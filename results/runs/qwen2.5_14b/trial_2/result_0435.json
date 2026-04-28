@@ -11,7 +11,7 @@
   ],
   "gold_doc": "The answer to 'when was the design period known as art deco' is 1910\u20131939.",
   "gold_index": -1,
-  "response": "I don't know.\n\nThe provided document does not contain information about the Art Deco design period. It only mentions the timing of the first general elections in independent India, which occurred from 1951 to 1952. To accurately answer the question about the Art Deco period, additional sources would be required.",
-  "elapsed_s": 6.09,
+  "response": "I don't know.\n\nThe provided document does not contain information about the Art Deco design period. It only mentions the timing of the first general elections in independent India, which occurred from 1951 to 1952.",
+  "elapsed_s": 4.75,
   "trial": 2
 }

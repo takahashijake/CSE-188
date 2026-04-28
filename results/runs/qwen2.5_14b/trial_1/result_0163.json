@@ -11,7 +11,7 @@
   ],
   "gold_doc": "The answer to 'all the motor neurons that control the skeletal muscles are' is Somatic.",
   "gold_index": -1,
-  "response": "I don't know.\n\nThe provided document is about the first general elections in independent India and does not contain any information about motor neurons or skeletal muscles.",
-  "elapsed_s": 2.94,
+  "response": "I don't know.\n\nThe provided document does not contain any information about motor neurons or skeletal muscles. It only mentions the timing of the first general elections in independent India, which took place from 1951 to 1952. Therefore, I cannot answer the question about motor neurons based on this document alone.",
+  "elapsed_s": 6.14,
   "trial": 1
 }

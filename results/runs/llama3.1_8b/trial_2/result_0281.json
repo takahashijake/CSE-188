@@ -20,7 +20,7 @@
   ],
   "gold_doc": "The answer to 'what was the united states foreign policy after ww1 started' is neutrality.",
   "gold_index": 4,
-  "response": "Neutrality.",
-  "elapsed_s": 0.38,
+  "response": "neutrality",
+  "elapsed_s": 0.31,
   "trial": 2
 }

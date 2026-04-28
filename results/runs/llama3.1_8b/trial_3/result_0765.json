@@ -31,6 +31,6 @@
   "gold_doc": "The answer to 'who was the first to say i'm going to disney world' is Phil Simms.",
   "gold_index": 9,
   "response": "Phil Simms.",
-  "elapsed_s": 0.41,
+  "elapsed_s": 0.42,
   "trial": 3
 }

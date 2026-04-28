@@ -11,7 +11,7 @@
   ],
   "gold_doc": "The answer to 'when were the first general elections held in independent india' is 1951\u201352.",
   "gold_index": 0,
-  "response": "1951\u201352.",
-  "elapsed_s": 0.39,
+  "response": "1951\u201352",
+  "elapsed_s": 0.33,
   "trial": 2
 }

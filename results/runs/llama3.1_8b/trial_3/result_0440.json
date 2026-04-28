@@ -20,7 +20,7 @@
   ],
   "gold_doc": "The answer to 'when was the design period known as art deco' is 1910\u20131939.",
   "gold_index": 0,
-  "response": "1910\u20131939.",
-  "elapsed_s": 0.5,
+  "response": "1910\u20131939",
+  "elapsed_s": 0.43,
   "trial": 3
 }

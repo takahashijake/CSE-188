@@ -20,7 +20,7 @@
   ],
   "gold_doc": "The answer to 'how many episodes are in season 7 of pretty little liars' is 20.",
   "gold_index": 0,
-  "response": "20 episodes.",
-  "elapsed_s": 0.31,
+  "response": "20.",
+  "elapsed_s": 0.24,
   "trial": 1
 }

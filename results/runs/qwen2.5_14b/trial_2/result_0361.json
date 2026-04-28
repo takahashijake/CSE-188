@@ -20,7 +20,7 @@
   ],
   "gold_doc": "The answer to 'who played the female lead in the 1942 film casablanca' is romantic drama.",
   "gold_index": 4,
-  "response": "The answer provided in the documents is not clear or relevant. However, based on general knowledge outside the given documents, the female lead in the 1942 film Casablanca was Ingrid Bergman. Since the documents state \"The answer to 'who played the female lead in the 1942 film casablanca' is romantic drama,\" which doesn't provide a correct name, and given the instruction to answer using only the documents, the appropriate response is:\n\nI",
-  "elapsed_s": 8.73,
+  "response": "The document mentions \"romantic drama\" which seems to be an incorrect response to the question about the female lead in the 1942 film Casablanca. Since the correct information is not provided in the given documents, the accurate response based on the documents is:\n\nI don't know.",
+  "elapsed_s": 5.9,
   "trial": 2
 }

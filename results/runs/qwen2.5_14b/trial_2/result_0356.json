@@ -15,7 +15,7 @@
   ],
   "gold_doc": "The answer to 'who played the female lead in the 1942 film casablanca' is romantic drama.",
   "gold_index": 0,
-  "response": "I don't know.\n\nThe provided document mentions \"romantic drama\" as the answer, which is not relevant to the question about the actress who played the female lead. Therefore, based on the given information, the correct response is \"I don't know.\"",
-  "elapsed_s": 4.81,
+  "response": "I don't know.\n\nThe provided document mentions \"romantic drama\" as the answer, which does not specify the actress who played the female lead in the 1942 film Casablanca. Therefore, based on the given information, the correct response is \"I don't know.\"",
+  "elapsed_s": 5.77,
   "trial": 2
 }

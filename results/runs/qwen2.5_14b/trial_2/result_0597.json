@@ -16,6 +16,6 @@
   "gold_doc": "The answer to 'what is the name of the skin between your nostrils' is septum.",
   "gold_index": 2,
   "response": "septum",
-  "elapsed_s": 0.78,
+  "elapsed_s": 0.8,
   "trial": 2
 }
