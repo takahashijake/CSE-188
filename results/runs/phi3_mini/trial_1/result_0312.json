@@ -1,0 +1,26 @@
+{
+  "scenario_id": 312,
+  "question_id": 19,
+  "question": "where was 2017 beauty and the beast filmed",
+  "answer": "Surrey, United Kingdom",
+  "length": 10,
+  "position": "first",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'where was 2017 beauty and the beast filmed' is Surrey, United Kingdom.\n\nDocument [2]: a request to the supreme court that it review a case that was already decided is made via a(n) a writ of certiorari\n\nDocument [3]: who sold out jesus for 30 pieces of silver Judas Iscariot\n\nDocument [4]: what has been the origin of most classical dances of india the Sanskrit text Natya Shastra\n\nDocument [5]: where do kidneys for kidney transplant come from living-donor\n\nDocument [6]: which site of an enzyme is called allosteric site regulatory site\n\nDocument [7]: who plays dr. sloan on kevin saves the world Richard Masur\n\nDocument [8]: when was the design period known as art deco 1910\u20131939\n\nDocument [9]: what type of reaction occurs to form a dipeptide peptide bond\n\nDocument [10]: who sang the american anthem at the super bowl Pink\n\nQuestion: where was 2017 beauty and the beast filmed\nAnswer briefly:",
+  "doc_texts": [
+    "The answer to 'where was 2017 beauty and the beast filmed' is Surrey, United Kingdom.",
+    "a request to the supreme court that it review a case that was already decided is made via a(n) a writ of certiorari",
+    "who sold out jesus for 30 pieces of silver Judas Iscariot",
+    "what has been the origin of most classical dances of india the Sanskrit text Natya Shastra",
+    "where do kidneys for kidney transplant come from living-donor",
+    "which site of an enzyme is called allosteric site regulatory site",
+    "who plays dr. sloan on kevin saves the world Richard Masur",
+    "when was the design period known as art deco 1910\u20131939",
+    "what type of reaction occurs to form a dipeptide peptide bond",
+    "who sang the american anthem at the super bowl Pink"
+  ],
+  "gold_doc": "The answer to 'where was 2017 beauty and the beast filmed' is Surrey, United Kingdom.",
+  "gold_index": 0,
+  "response": "Surrey, United Kingdom.",
+  "elapsed_s": 0.28,
+  "trial": 1
+}

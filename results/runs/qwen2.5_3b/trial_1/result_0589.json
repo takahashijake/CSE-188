@@ -30,7 +30,7 @@
   ],
   "gold_doc": "The answer to 'who wrote the music phantom of the opera' is Andrew Lloyd Webber.",
   "gold_index": 9,
-  "response": "The music for \"Phantom of the Opera\" was written by Andrew Lloyd Webber.",
-  "elapsed_s": 0.6,
+  "response": "The Phantom of the Opera has been written by Andrew Lloyd Webber.",
+  "elapsed_s": 0.49,
   "trial": 1
 }

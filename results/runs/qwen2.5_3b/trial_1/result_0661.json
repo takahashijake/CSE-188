@@ -16,6 +16,6 @@
   "gold_doc": "The answer to 'when did the movie peter pan come out' is 2003.",
   "gold_index": 2,
   "response": "The movie Peter Pan came out in 2003.",
-  "elapsed_s": 0.42,
+  "elapsed_s": 0.43,
   "trial": 1
 }

@@ -15,7 +15,7 @@
   ],
   "gold_doc": "The answer to 'what does g stand for in ncis los angeles' is Grisha.",
   "gold_index": 4,
-  "response": "g stands for Grisha in NCIS: Los Angeles.",
-  "elapsed_s": 0.39,
+  "response": "g stands for Grisha.",
+  "elapsed_s": 0.22,
   "trial": 1
 }

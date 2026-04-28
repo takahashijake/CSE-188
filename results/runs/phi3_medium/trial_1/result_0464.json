@@ -1,0 +1,17 @@
+{
+  "scenario_id": 464,
+  "question_id": 29,
+  "question": "one piece episode 534 english dubbed release date",
+  "answer": "February 5, 2012",
+  "length": 1,
+  "position": "first",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'one piece episode 534 english dubbed release date' is February 5, 2012.\n\nQuestion: one piece episode 534 english dubbed release date\nAnswer briefly:",
+  "doc_texts": [
+    "The answer to 'one piece episode 534 english dubbed release date' is February 5, 2012."
+  ],
+  "gold_doc": "The answer to 'one piece episode 534 english dubbed release date' is February 5, 2012.",
+  "gold_index": 0,
+  "response": "February 5, 2012.",
+  "elapsed_s": 1.06,
+  "trial": 1
+}

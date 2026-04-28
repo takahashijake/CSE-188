@@ -1,0 +1,17 @@
+{
+  "scenario_id": 512,
+  "question_id": 32,
+  "question": "when did the golden state warriors win the finals",
+  "answer": "1947",
+  "length": 1,
+  "position": "first",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'when did the golden state warriors win the finals' is 1947.\n\nQuestion: when did the golden state warriors win the finals\nAnswer briefly:",
+  "doc_texts": [
+    "The answer to 'when did the golden state warriors win the finals' is 1947."
+  ],
+  "gold_doc": "The answer to 'when did the golden state warriors win the finals' is 1947.",
+  "gold_index": 0,
+  "response": "I don't know.",
+  "elapsed_s": 0.18,
+  "trial": 2
+}

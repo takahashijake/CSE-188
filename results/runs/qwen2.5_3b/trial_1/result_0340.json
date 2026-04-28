@@ -15,7 +15,7 @@
   ],
   "gold_doc": "The answer to 'when was catch me if you can made' is 2002.",
   "gold_index": 0,
-  "response": "The answer is 2002.",
-  "elapsed_s": 0.31,
+  "response": "The answer to when \"Catch Me If You Can\" was made is 2002.",
+  "elapsed_s": 0.64,
   "trial": 1
 }

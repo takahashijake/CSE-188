@@ -1,0 +1,17 @@
+{
+  "scenario_id": 51,
+  "question_id": 3,
+  "question": "when did avatar the last airbender first air",
+  "answer": "February 2005",
+  "length": 1,
+  "position": "absent",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: where do kidneys for kidney transplant come from living-donor\n\nQuestion: when did avatar the last airbender first air\nAnswer briefly:",
+  "doc_texts": [
+    "where do kidneys for kidney transplant come from living-donor"
+  ],
+  "gold_doc": "The answer to 'when did avatar the last airbender first air' is February 2005.",
+  "gold_index": -1,
+  "response": "I don't know.",
+  "elapsed_s": 0.85,
+  "trial": 3
+}

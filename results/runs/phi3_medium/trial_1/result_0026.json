@@ -1,0 +1,26 @@
+{
+  "scenario_id": 26,
+  "question_id": 1,
+  "question": "who does the voice of cruz on cars 3",
+  "answer": "Cristela Alonzo",
+  "length": 10,
+  "position": "last",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: when did the usa join world war one April 1917\n\nDocument [2]: when did the first marvel vs capcom come out 1998\n\nDocument [3]: the art and science of making objects from clay is called Ceramic art\n\nDocument [4]: when did the golden state warriors win the finals 1947\n\nDocument [5]: when did the movie peter pan come out 2003\n\nDocument [6]: batman and robin episode only fools and horses \"Heroes and Villains\"\n\nDocument [7]: what does g stand for in ncis los angeles Grisha\n\nDocument [8]: who plays dr. sloan on kevin saves the world Richard Masur\n\nDocument [9]: who sold out jesus for 30 pieces of silver Judas Iscariot\n\nDocument [10]: The answer to 'who does the voice of cruz on cars 3' is Cristela Alonzo.\n\nQuestion: who does the voice of cruz on cars 3\nAnswer briefly:",
+  "doc_texts": [
+    "when did the usa join world war one April 1917",
+    "when did the first marvel vs capcom come out 1998",
+    "the art and science of making objects from clay is called Ceramic art",
+    "when did the golden state warriors win the finals 1947",
+    "when did the movie peter pan come out 2003",
+    "batman and robin episode only fools and horses \"Heroes and Villains\"",
+    "what does g stand for in ncis los angeles Grisha",
+    "who plays dr. sloan on kevin saves the world Richard Masur",
+    "who sold out jesus for 30 pieces of silver Judas Iscariot",
+    "The answer to 'who does the voice of cruz on cars 3' is Cristela Alonzo."
+  ],
+  "gold_doc": "The answer to 'who does the voice of cruz on cars 3' is Cristela Alonzo.",
+  "gold_index": 9,
+  "response": "Cristela Alonzo.",
+  "elapsed_s": 0.92,
+  "trial": 1
+}

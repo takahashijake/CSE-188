@@ -20,7 +20,7 @@
   ],
   "gold_doc": "The answer to 'who was the first to say i'm going to disney world' is Phil Simms.",
   "gold_index": 4,
-  "response": "Jeana Yeager was the first to say \"I'm going to Disney World.\"",
-  "elapsed_s": 0.55,
+  "response": "The first person to say \"I'm going to Disney World\" was Jeana Yeager, according to the documents provided.",
+  "elapsed_s": 0.79,
   "trial": 1
 }

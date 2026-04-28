@@ -1,0 +1,26 @@
+{
+  "scenario_id": 776,
+  "question_id": 48,
+  "question": "where is the new football stadium in atlanta",
+  "answer": "Mercedes-Benz Stadium",
+  "length": 10,
+  "position": "first",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'where is the new football stadium in atlanta' is Mercedes-Benz Stadium.\n\nDocument [2]: when were the first general elections held in independent india 1951\u201352\n\nDocument [3]: all the motor neurons that control the skeletal muscles are efferent nerves\n\nDocument [4]: the region that stretches between the black and caspian seas The Caucasus Mountains\n\nDocument [5]: who wrote the music phantom of the opera Andrew Lloyd Webber\n\nDocument [6]: who sings i can't take my eyes off of you Frankie Valli\n\nDocument [7]: when was the last time michigan basketball won the championship 1989\n\nDocument [8]: what is the big gold dome in jerusalem Dome of the Rock\n\nDocument [9]: a request to the supreme court that it review a case that was already decided is made via a(n) a writ of certiorari\n\nDocument [10]: who played the female lead in the 1942 film casablanca romantic drama\n\nQuestion: where is the new football stadium in atlanta\nAnswer briefly:",
+  "doc_texts": [
+    "The answer to 'where is the new football stadium in atlanta' is Mercedes-Benz Stadium.",
+    "when were the first general elections held in independent india 1951\u201352",
+    "all the motor neurons that control the skeletal muscles are efferent nerves",
+    "the region that stretches between the black and caspian seas The Caucasus Mountains",
+    "who wrote the music phantom of the opera Andrew Lloyd Webber",
+    "who sings i can't take my eyes off of you Frankie Valli",
+    "when was the last time michigan basketball won the championship 1989",
+    "what is the big gold dome in jerusalem Dome of the Rock",
+    "a request to the supreme court that it review a case that was already decided is made via a(n) a writ of certiorari",
+    "who played the female lead in the 1942 film casablanca romantic drama"
+  ],
+  "gold_doc": "The answer to 'where is the new football stadium in atlanta' is Mercedes-Benz Stadium.",
+  "gold_index": 0,
+  "response": "Mercedes-Benz Stadium.",
+  "elapsed_s": 0.31,
+  "trial": 3
+}

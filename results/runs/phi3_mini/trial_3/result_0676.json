@@ -1,0 +1,21 @@
+{
+  "scenario_id": 676,
+  "question_id": 42,
+  "question": "when was the last time michigan basketball won the championship",
+  "answer": "1989",
+  "length": 5,
+  "position": "first",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'when was the last time michigan basketball won the championship' is 1989.\n\nDocument [2]: what is the largest magnitude earthquake that has occurred in the pacific northwest The 1700 Cascadia earthquake\n\nDocument [3]: when did the movie peter pan come out 2003\n\nDocument [4]: what does the m number mean on a pint glass imperial fluid ounces\n\nDocument [5]: who is the actor that plays ducky on ncis David McCallum\n\nQuestion: when was the last time michigan basketball won the championship\nAnswer briefly:",
+  "doc_texts": [
+    "The answer to 'when was the last time michigan basketball won the championship' is 1989.",
+    "what is the largest magnitude earthquake that has occurred in the pacific northwest The 1700 Cascadia earthquake",
+    "when did the movie peter pan come out 2003",
+    "what does the m number mean on a pint glass imperial fluid ounces",
+    "who is the actor that plays ducky on ncis David McCallum"
+  ],
+  "gold_doc": "The answer to 'when was the last time michigan basketball won the championship' is 1989.",
+  "gold_index": 0,
+  "response": "1989",
+  "elapsed_s": 0.22,
+  "trial": 3
+}

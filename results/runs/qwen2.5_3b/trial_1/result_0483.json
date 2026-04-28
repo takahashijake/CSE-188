@@ -11,7 +11,7 @@
   ],
   "gold_doc": "The answer to 'a request to the supreme court that it review a case that was already decided is made via a(n)' is writ of certiorari.",
   "gold_index": -1,
-  "response": "a petition for a writ of certiorari",
-  "elapsed_s": 0.3,
+  "response": "I don't know.",
+  "elapsed_s": 0.18,
   "trial": 1
 }

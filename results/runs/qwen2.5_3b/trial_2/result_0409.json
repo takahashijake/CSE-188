@@ -1,0 +1,26 @@
+{
+  "scenario_id": 409,
+  "question_id": 25,
+  "question": "when did the usa join world war one",
+  "answer": "April 1917",
+  "length": 10,
+  "position": "middle",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: when did the first marvel vs capcom come out 1998\n\nDocument [2]: where is the new football stadium in atlanta Mercedes-Benz Stadium\n\nDocument [3]: the art and science of making objects from clay is called Ceramic art\n\nDocument [4]: who was the first to say i'm going to disney world Jeana Yeager\n\nDocument [5]: The answer to 'when did the usa join world war one' is April 1917.\n\nDocument [6]: who wrote the music phantom of the opera Andrew Lloyd Webber\n\nDocument [7]: the region that stretches between the black and caspian seas The Caucasus Mountains\n\nDocument [8]: who sang the american anthem at the super bowl Pink\n\nDocument [9]: when was catch me if you can made 2002\n\nDocument [10]: when was the last time michigan basketball won the championship 1989\n\nQuestion: when did the usa join world war one\nAnswer briefly:",
+  "doc_texts": [
+    "when did the first marvel vs capcom come out 1998",
+    "where is the new football stadium in atlanta Mercedes-Benz Stadium",
+    "the art and science of making objects from clay is called Ceramic art",
+    "who was the first to say i'm going to disney world Jeana Yeager",
+    "The answer to 'when did the usa join world war one' is April 1917.",
+    "who wrote the music phantom of the opera Andrew Lloyd Webber",
+    "the region that stretches between the black and caspian seas The Caucasus Mountains",
+    "who sang the american anthem at the super bowl Pink",
+    "when was catch me if you can made 2002",
+    "when was the last time michigan basketball won the championship 1989"
+  ],
+  "gold_doc": "The answer to 'when did the usa join world war one' is April 1917.",
+  "gold_index": 4,
+  "response": "The USA joined World War I in April 1917.",
+  "elapsed_s": 0.47,
+  "trial": 2
+}

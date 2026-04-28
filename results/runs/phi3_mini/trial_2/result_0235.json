@@ -1,0 +1,26 @@
+{
+  "scenario_id": 235,
+  "question_id": 14,
+  "question": "who sang the theme song for laverne and shirley",
+  "answer": "Cyndi Grecco",
+  "length": 10,
+  "position": "absent",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: when did the movie peter pan come out 2003\n\nDocument [2]: what does g stand for in ncis los angeles Grisha\n\nDocument [3]: who sings i can't take my eyes off of you Frankie Valli\n\nDocument [4]: if there is a line that lies parallel to the horizon it is said to be A vanishing point\n\nDocument [5]: when does shadowhunters season 2 episode 17 come out February\u00a013,\u00a02017\n\nDocument [6]: who played the female lead in the 1942 film casablanca romantic drama\n\nDocument [7]: one piece episode 534 english dubbed release date February 5, 2012\n\nDocument [8]: who sold out jesus for 30 pieces of silver Judas Iscariot\n\nDocument [9]: what was the united states foreign policy after ww1 started neutrality\n\nDocument [10]: when did the dallas cowboys win their last playoff game 2014\n\nQuestion: who sang the theme song for laverne and shirley\nAnswer briefly:",
+  "doc_texts": [
+    "when did the movie peter pan come out 2003",
+    "what does g stand for in ncis los angeles Grisha",
+    "who sings i can't take my eyes off of you Frankie Valli",
+    "if there is a line that lies parallel to the horizon it is said to be A vanishing point",
+    "when does shadowhunters season 2 episode 17 come out February\u00a013,\u00a02017",
+    "who played the female lead in the 1942 film casablanca romantic drama",
+    "one piece episode 534 english dubbed release date February 5, 2012",
+    "who sold out jesus for 30 pieces of silver Judas Iscariot",
+    "what was the united states foreign policy after ww1 started neutrality",
+    "when did the dallas cowboys win their last playoff game 2014"
+  ],
+  "gold_doc": "The answer to 'who sang the theme song for laverne and shirley' is Cyndi Grecco.",
+  "gold_index": -1,
+  "response": "I don't know.",
+  "elapsed_s": 0.28,
+  "trial": 2
+}

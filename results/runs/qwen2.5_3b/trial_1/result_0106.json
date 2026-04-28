@@ -20,7 +20,7 @@
   ],
   "gold_doc": "The answer to 'who sings too much time on my hands lyrics' is Tommy Shaw.",
   "gold_index": 9,
-  "response": "Tommy Shaw",
-  "elapsed_s": 0.14,
+  "response": "Tommy Shaw sings the lyrics to \"Too Much Time on My Hands.\"",
+  "elapsed_s": 0.5,
   "trial": 1
 }

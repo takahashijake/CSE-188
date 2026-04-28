@@ -1,0 +1,17 @@
+{
+  "scenario_id": 480,
+  "question_id": 30,
+  "question": "a request to the supreme court that it review a case that was already decided is made via a(n)",
+  "answer": "writ of certiorari",
+  "length": 1,
+  "position": "first",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'a request to the supreme court that it review a case that was already decided is made via a(n)' is writ of certiorari.\n\nQuestion: a request to the supreme court that it review a case that was already decided is made via a(n)\nAnswer briefly:",
+  "doc_texts": [
+    "The answer to 'a request to the supreme court that it review a case that was already decided is made via a(n)' is writ of certiorari."
+  ],
+  "gold_doc": "The answer to 'a request to the supreme court that it review a case that was already decided is made via a(n)' is writ of certiorari.",
+  "gold_index": 0,
+  "response": "writ of certiorari",
+  "elapsed_s": 0.79,
+  "trial": 1
+}

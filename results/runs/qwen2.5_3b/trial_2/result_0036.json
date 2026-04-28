@@ -1,0 +1,21 @@
+{
+  "scenario_id": 36,
+  "question_id": 2,
+  "question": "who won the academy award for best original musical score",
+  "answer": "Alexandre Desplat",
+  "length": 5,
+  "position": "first",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'who won the academy award for best original musical score' is Alexandre Desplat.\n\nDocument [2]: when did the movie peter pan come out 2003\n\nDocument [3]: who sings i can't take my eyes off of you Frankie Valli\n\nDocument [4]: how many episodes are in season 7 of pretty little liars 20\n\nDocument [5]: when does shadowhunters season 2 episode 17 come out February\u00a013,\u00a02017\n\nQuestion: who won the academy award for best original musical score\nAnswer briefly:",
+  "doc_texts": [
+    "The answer to 'who won the academy award for best original musical score' is Alexandre Desplat.",
+    "when did the movie peter pan come out 2003",
+    "who sings i can't take my eyes off of you Frankie Valli",
+    "how many episodes are in season 7 of pretty little liars 20",
+    "when does shadowhunters season 2 episode 17 come out February\u00a013,\u00a02017"
+  ],
+  "gold_doc": "The answer to 'who won the academy award for best original musical score' is Alexandre Desplat.",
+  "gold_index": 0,
+  "response": "Alexandre Desplat",
+  "elapsed_s": 0.16,
+  "trial": 2
+}

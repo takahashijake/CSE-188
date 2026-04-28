@@ -30,7 +30,7 @@
   ],
   "gold_doc": "The answer to 'who does the voice of cruz on cars 3' is Cristela Alonzo.",
   "gold_index": 19,
-  "response": "Cristela Alonzo",
-  "elapsed_s": 0.24,
+  "response": "Cristela Alonzo.",
+  "elapsed_s": 0.27,
   "trial": 1
 }

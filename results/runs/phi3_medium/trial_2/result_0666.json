@@ -1,0 +1,26 @@
+{
+  "scenario_id": 666,
+  "question_id": 41,
+  "question": "when did the movie peter pan come out",
+  "answer": "2003",
+  "length": 10,
+  "position": "last",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: georgia out of angus thongs and perfect snogging Georgia Groome as Georgia Nicolson\n\nDocument [2]: batman and robin episode only fools and horses \"Heroes and Villains\"\n\nDocument [3]: how many episodes are in season 7 of pretty little liars 20\n\nDocument [4]: a request to the supreme court that it review a case that was already decided is made via a(n) a writ of certiorari\n\nDocument [5]: what is the 180 degree line of longitude called 180th meridian or antimeridian\n\nDocument [6]: when was the last time michigan basketball won the championship 1989\n\nDocument [7]: who sold out jesus for 30 pieces of silver Judas Iscariot\n\nDocument [8]: what type of reaction occurs to form a dipeptide peptide bond\n\nDocument [9]: who played the female lead in the 1942 film casablanca romantic drama\n\nDocument [10]: The answer to 'when did the movie peter pan come out' is 2003.\n\nQuestion: when did the movie peter pan come out\nAnswer briefly:",
+  "doc_texts": [
+    "georgia out of angus thongs and perfect snogging Georgia Groome as Georgia Nicolson",
+    "batman and robin episode only fools and horses \"Heroes and Villains\"",
+    "how many episodes are in season 7 of pretty little liars 20",
+    "a request to the supreme court that it review a case that was already decided is made via a(n) a writ of certiorari",
+    "what is the 180 degree line of longitude called 180th meridian or antimeridian",
+    "when was the last time michigan basketball won the championship 1989",
+    "who sold out jesus for 30 pieces of silver Judas Iscariot",
+    "what type of reaction occurs to form a dipeptide peptide bond",
+    "who played the female lead in the 1942 film casablanca romantic drama",
+    "The answer to 'when did the movie peter pan come out' is 2003."
+  ],
+  "gold_doc": "The answer to 'when did the movie peter pan come out' is 2003.",
+  "gold_index": 9,
+  "response": "The movie Peter Pan came out in 2003.",
+  "elapsed_s": 1.3,
+  "trial": 2
+}

@@ -1,0 +1,21 @@
+{
+  "scenario_id": 629,
+  "question_id": 39,
+  "question": "batman and robin episode only fools and horses",
+  "answer": "\"Heroes and Villains\"",
+  "length": 5,
+  "position": "middle",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: who is the actor that plays ducky on ncis David McCallum\n\nDocument [2]: what is the 180 degree line of longitude called 180th meridian or antimeridian\n\nDocument [3]: The answer to 'batman and robin episode only fools and horses' is \"Heroes and Villains\".\n\nDocument [4]: when did avatar the last airbender first air February 2005\n\nDocument [5]: who sold out jesus for 30 pieces of silver Judas Iscariot\n\nQuestion: batman and robin episode only fools and horses\nAnswer briefly:",
+  "doc_texts": [
+    "who is the actor that plays ducky on ncis David McCallum",
+    "what is the 180 degree line of longitude called 180th meridian or antimeridian",
+    "The answer to 'batman and robin episode only fools and horses' is \"Heroes and Villains\".",
+    "when did avatar the last airbender first air February 2005",
+    "who sold out jesus for 30 pieces of silver Judas Iscariot"
+  ],
+  "gold_doc": "The answer to 'batman and robin episode only fools and horses' is \"Heroes and Villains\".",
+  "gold_index": 2,
+  "response": "\"Heroes and Villains\". According to Document [3], the answer to \"Batman and Robin episode only fools and horses\" is \"Heroes and Villains\".",
+  "elapsed_s": 0.99,
+  "trial": 3
+}

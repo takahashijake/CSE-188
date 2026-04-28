@@ -1,0 +1,26 @@
+{
+  "scenario_id": 394,
+  "question_id": 24,
+  "question": "who becomes chief resident on grey's anatomy season 7",
+  "answer": "Kepner",
+  "length": 10,
+  "position": "last",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: who plays dr. sloan on kevin saves the world Richard Masur\n\nDocument [2]: georgia out of angus thongs and perfect snogging Georgia Groome as Georgia Nicolson\n\nDocument [3]: who plays the judge in drop dead diva Lex Medlin\n\nDocument [4]: when did avatar the last airbender first air February 2005\n\nDocument [5]: batman and robin episode only fools and horses \"Heroes and Villains\"\n\nDocument [6]: who has the most big ten championships in football Michigan\n\nDocument [7]: if there is a line that lies parallel to the horizon it is said to be A vanishing point\n\nDocument [8]: who is the actor that plays ducky on ncis David McCallum\n\nDocument [9]: when did the first marvel vs capcom come out 1998\n\nDocument [10]: The answer to 'who becomes chief resident on grey's anatomy season 7' is Kepner.\n\nQuestion: who becomes chief resident on grey's anatomy season 7\nAnswer briefly:",
+  "doc_texts": [
+    "who plays dr. sloan on kevin saves the world Richard Masur",
+    "georgia out of angus thongs and perfect snogging Georgia Groome as Georgia Nicolson",
+    "who plays the judge in drop dead diva Lex Medlin",
+    "when did avatar the last airbender first air February 2005",
+    "batman and robin episode only fools and horses \"Heroes and Villains\"",
+    "who has the most big ten championships in football Michigan",
+    "if there is a line that lies parallel to the horizon it is said to be A vanishing point",
+    "who is the actor that plays ducky on ncis David McCallum",
+    "when did the first marvel vs capcom come out 1998",
+    "The answer to 'who becomes chief resident on grey's anatomy season 7' is Kepner."
+  ],
+  "gold_doc": "The answer to 'who becomes chief resident on grey's anatomy season 7' is Kepner.",
+  "gold_index": 9,
+  "response": "Kepner.",
+  "elapsed_s": 0.2,
+  "trial": 2
+}

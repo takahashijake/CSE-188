@@ -15,7 +15,7 @@
   ],
   "gold_doc": "The answer to 'who is hosting e live from the red carpet' is Ryan Seacrest.",
   "gold_index": 2,
-  "response": "Ryan Seacrest is hosting E Live from the Red Carpet.",
-  "elapsed_s": 0.42,
+  "response": "Ryan Seacrest is hosting E: Live from the Red Carpet.",
+  "elapsed_s": 0.46,
   "trial": 1
 }
