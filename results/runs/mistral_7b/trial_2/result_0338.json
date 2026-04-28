@@ -1,0 +1,17 @@
+{
+  "scenario_id": 338,
+  "question_id": 21,
+  "question": "when was catch me if you can made",
+  "answer": "2002",
+  "length": 1,
+  "position": "last",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'when was catch me if you can made' is 2002.\n\nQuestion: when was catch me if you can made\nAnswer briefly:",
+  "doc_texts": [
+    "The answer to 'when was catch me if you can made' is 2002."
+  ],
+  "gold_doc": "The answer to 'when was catch me if you can made' is 2002.",
+  "gold_index": 0,
+  "response": "2002",
+  "elapsed_s": 0.37,
+  "trial": 2
+}

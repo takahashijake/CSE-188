@@ -1,0 +1,21 @@
+{
+  "scenario_id": 405,
+  "question_id": 25,
+  "question": "when did the usa join world war one",
+  "answer": "April 1917",
+  "length": 5,
+  "position": "middle",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: who wrote the music phantom of the opera Andrew Lloyd Webber\n\nDocument [2]: the region that stretches between the black and caspian seas The Caucasus Mountains\n\nDocument [3]: The answer to 'when did the usa join world war one' is April 1917.\n\nDocument [4]: what is the largest magnitude earthquake that has occurred in the pacific northwest The 1700 Cascadia earthquake\n\nDocument [5]: who sings too much time on my hands lyrics Tommy Shaw\n\nQuestion: when did the usa join world war one\nAnswer briefly:",
+  "doc_texts": [
+    "who wrote the music phantom of the opera Andrew Lloyd Webber",
+    "the region that stretches between the black and caspian seas The Caucasus Mountains",
+    "The answer to 'when did the usa join world war one' is April 1917.",
+    "what is the largest magnitude earthquake that has occurred in the pacific northwest The 1700 Cascadia earthquake",
+    "who sings too much time on my hands lyrics Tommy Shaw"
+  ],
+  "gold_doc": "The answer to 'when did the usa join world war one' is April 1917.",
+  "gold_index": 2,
+  "response": "April 1917. (Referencing Document [3])",
+  "elapsed_s": 0.99,
+  "trial": 2
+}

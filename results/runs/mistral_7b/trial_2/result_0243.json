@@ -1,0 +1,17 @@
+{
+  "scenario_id": 243,
+  "question_id": 15,
+  "question": "who plays the judge in drop dead diva",
+  "answer": "Lex Medlin",
+  "length": 1,
+  "position": "absent",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: what is the name of the skin between your nostrils the nasal septum\n\nQuestion: who plays the judge in drop dead diva\nAnswer briefly:",
+  "doc_texts": [
+    "what is the name of the skin between your nostrils the nasal septum"
+  ],
+  "gold_doc": "The answer to 'who plays the judge in drop dead diva' is Lex Medlin.",
+  "gold_index": -1,
+  "response": "I don't know. The provided document does not contain information about the cast of \"Drop Dead Diva.\"",
+  "elapsed_s": 1.45,
+  "trial": 2
+}

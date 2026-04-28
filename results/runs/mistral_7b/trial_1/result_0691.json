@@ -1,0 +1,17 @@
+{
+  "scenario_id": 691,
+  "question_id": 43,
+  "question": "if there is a line that lies parallel to the horizon it is said to be",
+  "answer": "A vanishing point",
+  "length": 1,
+  "position": "absent",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: the art and science of making objects from clay is called Ceramic art\n\nQuestion: if there is a line that lies parallel to the horizon it is said to be\nAnswer briefly:",
+  "doc_texts": [
+    "the art and science of making objects from clay is called Ceramic art"
+  ],
+  "gold_doc": "The answer to 'if there is a line that lies parallel to the horizon it is said to be' is A vanishing point.",
+  "gold_index": -1,
+  "response": "horizontal",
+  "elapsed_s": 0.13,
+  "trial": 1
+}

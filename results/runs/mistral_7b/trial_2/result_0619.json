@@ -1,0 +1,26 @@
+{
+  "scenario_id": 619,
+  "question_id": 38,
+  "question": "which site of an enzyme is called allosteric site",
+  "answer": "regulatory site",
+  "length": 10,
+  "position": "absent",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: when did avatar the last airbender first air February 2005\n\nDocument [2]: if there is a line that lies parallel to the horizon it is said to be A vanishing point\n\nDocument [3]: when does shadowhunters season 2 episode 17 come out February\u00a013,\u00a02017\n\nDocument [4]: what does the m number mean on a pint glass imperial fluid ounces\n\nDocument [5]: what was the united states foreign policy after ww1 started neutrality\n\nDocument [6]: all the motor neurons that control the skeletal muscles are efferent nerves\n\nDocument [7]: what is the largest magnitude earthquake that has occurred in the pacific northwest The 1700 Cascadia earthquake\n\nDocument [8]: the art and science of making objects from clay is called Ceramic art\n\nDocument [9]: what is the big gold dome in jerusalem Dome of the Rock\n\nDocument [10]: where is the new football stadium in atlanta Mercedes-Benz Stadium\n\nQuestion: which site of an enzyme is called allosteric site\nAnswer briefly:",
+  "doc_texts": [
+    "when did avatar the last airbender first air February 2005",
+    "if there is a line that lies parallel to the horizon it is said to be A vanishing point",
+    "when does shadowhunters season 2 episode 17 come out February\u00a013,\u00a02017",
+    "what does the m number mean on a pint glass imperial fluid ounces",
+    "what was the united states foreign policy after ww1 started neutrality",
+    "all the motor neurons that control the skeletal muscles are efferent nerves",
+    "what is the largest magnitude earthquake that has occurred in the pacific northwest The 1700 Cascadia earthquake",
+    "the art and science of making objects from clay is called Ceramic art",
+    "what is the big gold dome in jerusalem Dome of the Rock",
+    "where is the new football stadium in atlanta Mercedes-Benz Stadium"
+  ],
+  "gold_doc": "The answer to 'which site of an enzyme is called allosteric site' is regulatory site.",
+  "gold_index": -1,
+  "response": "I don't know. The documents provided do not contain information about enzyme allosteric sites.",
+  "elapsed_s": 1.46,
+  "trial": 2
+}

@@ -1,0 +1,17 @@
+{
+  "scenario_id": 531,
+  "question_id": 33,
+  "question": "how many episodes are in season 7 of pretty little liars",
+  "answer": "20",
+  "length": 1,
+  "position": "absent",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: nodding your head no is an example of a gesture\n\nQuestion: how many episodes are in season 7 of pretty little liars\nAnswer briefly:",
+  "doc_texts": [
+    "nodding your head no is an example of a gesture"
+  ],
+  "gold_doc": "The answer to 'how many episodes are in season 7 of pretty little liars' is 20.",
+  "gold_index": -1,
+  "response": "I don't know. The document provided does not contain information about the number of episodes in season 7 of Pretty Little Liars.",
+  "elapsed_s": 1.75,
+  "trial": 1
+}
