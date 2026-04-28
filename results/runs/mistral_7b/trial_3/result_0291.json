@@ -1,0 +1,17 @@
+{
+  "scenario_id": 291,
+  "question_id": 18,
+  "question": "what is the largest magnitude earthquake that has occurred in the pacific northwest",
+  "answer": "The 1700 Cascadia earthquake",
+  "length": 1,
+  "position": "absent",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: who plays dr. sloan on kevin saves the world Richard Masur\n\nQuestion: what is the largest magnitude earthquake that has occurred in the pacific northwest\nAnswer briefly:",
+  "doc_texts": [
+    "who plays dr. sloan on kevin saves the world Richard Masur"
+  ],
+  "gold_doc": "The answer to 'what is the largest magnitude earthquake that has occurred in the pacific northwest' is The 1700 Cascadia earthquake.",
+  "gold_index": -1,
+  "response": "I don't know. The given document does not provide information about the largest magnitude earthquake that has occurred in the Pacific Northwest.",
+  "elapsed_s": 1.75,
+  "trial": 3
+}
