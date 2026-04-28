@@ -1,0 +1,17 @@
+{
+  "scenario_id": 115,
+  "question_id": 7,
+  "question": "what type of reaction occurs to form a dipeptide",
+  "answer": "peptide bond",
+  "length": 1,
+  "position": "absent",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: if there is a line that lies parallel to the horizon it is said to be A vanishing point\n\nQuestion: what type of reaction occurs to form a dipeptide\nAnswer briefly:",
+  "doc_texts": [
+    "if there is a line that lies parallel to the horizon it is said to be A vanishing point"
+  ],
+  "gold_doc": "The answer to 'what type of reaction occurs to form a dipeptide' is peptide bond.",
+  "gold_index": -1,
+  "response": "I don't know.",
+  "elapsed_s": 0.37,
+  "trial": 3
+}

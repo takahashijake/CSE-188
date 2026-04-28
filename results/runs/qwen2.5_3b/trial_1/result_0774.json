@@ -1,0 +1,21 @@
+{
+  "scenario_id": 774,
+  "question_id": 48,
+  "question": "where is the new football stadium in atlanta",
+  "answer": "Mercedes-Benz Stadium",
+  "length": 5,
+  "position": "last",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: if there is a line that lies parallel to the horizon it is said to be A vanishing point\n\nDocument [2]: all the motor neurons that control the skeletal muscles are efferent nerves\n\nDocument [3]: georgia out of angus thongs and perfect snogging Georgia Groome as Georgia Nicolson\n\nDocument [4]: when did the golden state warriors win the finals 1947\n\nDocument [5]: The answer to 'where is the new football stadium in atlanta' is Mercedes-Benz Stadium.\n\nQuestion: where is the new football stadium in atlanta\nAnswer briefly:",
+  "doc_texts": [
+    "if there is a line that lies parallel to the horizon it is said to be A vanishing point",
+    "all the motor neurons that control the skeletal muscles are efferent nerves",
+    "georgia out of angus thongs and perfect snogging Georgia Groome as Georgia Nicolson",
+    "when did the golden state warriors win the finals 1947",
+    "The answer to 'where is the new football stadium in atlanta' is Mercedes-Benz Stadium."
+  ],
+  "gold_doc": "The answer to 'where is the new football stadium in atlanta' is Mercedes-Benz Stadium.",
+  "gold_index": 4,
+  "response": "The new football stadium in Atlanta is located at Mercedes-Benz Stadium.",
+  "elapsed_s": 0.42,
+  "trial": 1
+}

@@ -1,0 +1,26 @@
+{
+  "scenario_id": 648,
+  "question_id": 40,
+  "question": "where do kidneys for kidney transplant come from",
+  "answer": "living-donor",
+  "length": 10,
+  "position": "first",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'where do kidneys for kidney transplant come from' is living-donor.\n\nDocument [2]: what is the big gold dome in jerusalem Dome of the Rock\n\nDocument [3]: who won the academy award for best original musical score Alexandre Desplat\n\nDocument [4]: when does shadowhunters season 2 episode 17 come out February\u00a013,\u00a02017\n\nDocument [5]: who is the actor that plays ducky on ncis David McCallum\n\nDocument [6]: which site of an enzyme is called allosteric site regulatory site\n\nDocument [7]: when did avatar the last airbender first air February 2005\n\nDocument [8]: when did the movie peter pan come out 2003\n\nDocument [9]: batman and robin episode only fools and horses \"Heroes and Villains\"\n\nDocument [10]: where was 2017 beauty and the beast filmed Surrey, United Kingdom\n\nQuestion: where do kidneys for kidney transplant come from\nAnswer briefly:",
+  "doc_texts": [
+    "The answer to 'where do kidneys for kidney transplant come from' is living-donor.",
+    "what is the big gold dome in jerusalem Dome of the Rock",
+    "who won the academy award for best original musical score Alexandre Desplat",
+    "when does shadowhunters season 2 episode 17 come out February\u00a013,\u00a02017",
+    "who is the actor that plays ducky on ncis David McCallum",
+    "which site of an enzyme is called allosteric site regulatory site",
+    "when did avatar the last airbender first air February 2005",
+    "when did the movie peter pan come out 2003",
+    "batman and robin episode only fools and horses \"Heroes and Villains\"",
+    "where was 2017 beauty and the beast filmed Surrey, United Kingdom"
+  ],
+  "gold_doc": "The answer to 'where do kidneys for kidney transplant come from' is living-donor.",
+  "gold_index": 0,
+  "response": "living-donor",
+  "elapsed_s": 0.29,
+  "trial": 1
+}

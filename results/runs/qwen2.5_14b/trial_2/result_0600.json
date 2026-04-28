@@ -1,0 +1,26 @@
+{
+  "scenario_id": 600,
+  "question_id": 37,
+  "question": "what is the name of the skin between your nostrils",
+  "answer": "septum",
+  "length": 10,
+  "position": "first",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'what is the name of the skin between your nostrils' is septum.\n\nDocument [2]: what has been the origin of most classical dances of india the Sanskrit text Natya Shastra\n\nDocument [3]: where is the new football stadium in atlanta Mercedes-Benz Stadium\n\nDocument [4]: when did the golden state warriors win the finals 1947\n\nDocument [5]: where was 2017 beauty and the beast filmed Surrey, United Kingdom\n\nDocument [6]: when does shadowhunters season 2 episode 17 come out February\u00a013,\u00a02017\n\nDocument [7]: what is the 180 degree line of longitude called 180th meridian or antimeridian\n\nDocument [8]: who is the actor that plays ducky on ncis David McCallum\n\nDocument [9]: who sings i can't take my eyes off of you Frankie Valli\n\nDocument [10]: when did the movie peter pan come out 2003\n\nQuestion: what is the name of the skin between your nostrils\nAnswer briefly:",
+  "doc_texts": [
+    "The answer to 'what is the name of the skin between your nostrils' is septum.",
+    "what has been the origin of most classical dances of india the Sanskrit text Natya Shastra",
+    "where is the new football stadium in atlanta Mercedes-Benz Stadium",
+    "when did the golden state warriors win the finals 1947",
+    "where was 2017 beauty and the beast filmed Surrey, United Kingdom",
+    "when does shadowhunters season 2 episode 17 come out February\u00a013,\u00a02017",
+    "what is the 180 degree line of longitude called 180th meridian or antimeridian",
+    "who is the actor that plays ducky on ncis David McCallum",
+    "who sings i can't take my eyes off of you Frankie Valli",
+    "when did the movie peter pan come out 2003"
+  ],
+  "gold_doc": "The answer to 'what is the name of the skin between your nostrils' is septum.",
+  "gold_index": 0,
+  "response": "septum",
+  "elapsed_s": 0.84,
+  "trial": 2
+}

@@ -1,0 +1,21 @@
+{
+  "scenario_id": 580,
+  "question_id": 36,
+  "question": "who wrote the music phantom of the opera",
+  "answer": "Andrew Lloyd Webber",
+  "length": 5,
+  "position": "first",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'who wrote the music phantom of the opera' is Andrew Lloyd Webber.\n\nDocument [2]: who sang the american anthem at the super bowl Pink\n\nDocument [3]: which site of an enzyme is called allosteric site regulatory site\n\nDocument [4]: what type of reaction occurs to form a dipeptide peptide bond\n\nDocument [5]: when does shadowhunters season 2 episode 17 come out February\u00a013,\u00a02017\n\nQuestion: who wrote the music phantom of the opera\nAnswer briefly:",
+  "doc_texts": [
+    "The answer to 'who wrote the music phantom of the opera' is Andrew Lloyd Webber.",
+    "who sang the american anthem at the super bowl Pink",
+    "which site of an enzyme is called allosteric site regulatory site",
+    "what type of reaction occurs to form a dipeptide peptide bond",
+    "when does shadowhunters season 2 episode 17 come out February\u00a013,\u00a02017"
+  ],
+  "gold_doc": "The answer to 'who wrote the music phantom of the opera' is Andrew Lloyd Webber.",
+  "gold_index": 0,
+  "response": "Andrew Lloyd Webber wrote the music for Phantom of the Opera.",
+  "elapsed_s": 0.85,
+  "trial": 2
+}

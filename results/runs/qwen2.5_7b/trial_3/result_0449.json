@@ -1,0 +1,17 @@
+{
+  "scenario_id": 449,
+  "question_id": 28,
+  "question": "when were the first general elections held in independent india",
+  "answer": "1951\u201352",
+  "length": 1,
+  "position": "middle",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'when were the first general elections held in independent india' is 1951\u201352.\n\nQuestion: when were the first general elections held in independent india\nAnswer briefly:",
+  "doc_texts": [
+    "The answer to 'when were the first general elections held in independent india' is 1951\u201352."
+  ],
+  "gold_doc": "The answer to 'when were the first general elections held in independent india' is 1951\u201352.",
+  "gold_index": 0,
+  "response": "1951\u201352",
+  "elapsed_s": 0.49,
+  "trial": 3
+}

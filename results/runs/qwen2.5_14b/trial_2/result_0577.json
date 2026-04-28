@@ -1,0 +1,17 @@
+{
+  "scenario_id": 577,
+  "question_id": 36,
+  "question": "who wrote the music phantom of the opera",
+  "answer": "Andrew Lloyd Webber",
+  "length": 1,
+  "position": "middle",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'who wrote the music phantom of the opera' is Andrew Lloyd Webber.\n\nQuestion: who wrote the music phantom of the opera\nAnswer briefly:",
+  "doc_texts": [
+    "The answer to 'who wrote the music phantom of the opera' is Andrew Lloyd Webber."
+  ],
+  "gold_doc": "The answer to 'who wrote the music phantom of the opera' is Andrew Lloyd Webber.",
+  "gold_index": 0,
+  "response": "Andrew Lloyd Webber wrote the music for the Phantom of the Opera.",
+  "elapsed_s": 1.72,
+  "trial": 2
+}

@@ -1,0 +1,21 @@
+{
+  "scenario_id": 119,
+  "question_id": 7,
+  "question": "what type of reaction occurs to form a dipeptide",
+  "answer": "peptide bond",
+  "length": 5,
+  "position": "absent",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: what is the big gold dome in jerusalem Dome of the Rock\n\nDocument [2]: the art and science of making objects from clay is called Ceramic art\n\nDocument [3]: where was 2017 beauty and the beast filmed Surrey, United Kingdom\n\nDocument [4]: what was the united states foreign policy after ww1 started neutrality\n\nDocument [5]: when was catch me if you can made 2002\n\nQuestion: what type of reaction occurs to form a dipeptide\nAnswer briefly:",
+  "doc_texts": [
+    "what is the big gold dome in jerusalem Dome of the Rock",
+    "the art and science of making objects from clay is called Ceramic art",
+    "where was 2017 beauty and the beast filmed Surrey, United Kingdom",
+    "what was the united states foreign policy after ww1 started neutrality",
+    "when was catch me if you can made 2002"
+  ],
+  "gold_doc": "The answer to 'what type of reaction occurs to form a dipeptide' is peptide bond.",
+  "gold_index": -1,
+  "response": "I don't know.",
+  "elapsed_s": 0.96,
+  "trial": 2
+}

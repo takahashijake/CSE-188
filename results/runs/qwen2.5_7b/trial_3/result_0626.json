@@ -1,0 +1,17 @@
+{
+  "scenario_id": 626,
+  "question_id": 39,
+  "question": "batman and robin episode only fools and horses",
+  "answer": "\"Heroes and Villains\"",
+  "length": 1,
+  "position": "last",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'batman and robin episode only fools and horses' is \"Heroes and Villains\".\n\nQuestion: batman and robin episode only fools and horses\nAnswer briefly:",
+  "doc_texts": [
+    "The answer to 'batman and robin episode only fools and horses' is \"Heroes and Villains\"."
+  ],
+  "gold_doc": "The answer to 'batman and robin episode only fools and horses' is \"Heroes and Villains\".",
+  "gold_index": 0,
+  "response": "Heroes and Villains",
+  "elapsed_s": 0.31,
+  "trial": 3
+}

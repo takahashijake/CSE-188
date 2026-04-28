@@ -1,0 +1,17 @@
+{
+  "scenario_id": 339,
+  "question_id": 21,
+  "question": "when was catch me if you can made",
+  "answer": "2002",
+  "length": 1,
+  "position": "absent",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: when was the design period known as art deco 1910\u20131939\n\nQuestion: when was catch me if you can made\nAnswer briefly:",
+  "doc_texts": [
+    "when was the design period known as art deco 1910\u20131939"
+  ],
+  "gold_doc": "The answer to 'when was catch me if you can made' is 2002.",
+  "gold_index": -1,
+  "response": "I don't know.\n\nThe provided document does not contain any information about the movie \"Catch Me If You Can.\" It only mentions the time period of the Art Deco design movement (1910-1939).",
+  "elapsed_s": 4.59,
+  "trial": 2
+}

@@ -1,0 +1,21 @@
+{
+  "scenario_id": 309,
+  "question_id": 19,
+  "question": "where was 2017 beauty and the beast filmed",
+  "answer": "Surrey, United Kingdom",
+  "length": 5,
+  "position": "middle",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: who wrote the music phantom of the opera Andrew Lloyd Webber\n\nDocument [2]: who has the most big ten championships in football Michigan\n\nDocument [3]: The answer to 'where was 2017 beauty and the beast filmed' is Surrey, United Kingdom.\n\nDocument [4]: when was catch me if you can made 2002\n\nDocument [5]: what was the united states foreign policy after ww1 started neutrality\n\nQuestion: where was 2017 beauty and the beast filmed\nAnswer briefly:",
+  "doc_texts": [
+    "who wrote the music phantom of the opera Andrew Lloyd Webber",
+    "who has the most big ten championships in football Michigan",
+    "The answer to 'where was 2017 beauty and the beast filmed' is Surrey, United Kingdom.",
+    "when was catch me if you can made 2002",
+    "what was the united states foreign policy after ww1 started neutrality"
+  ],
+  "gold_doc": "The answer to 'where was 2017 beauty and the beast filmed' is Surrey, United Kingdom.",
+  "gold_index": 2,
+  "response": "Surrey, United Kingdom.",
+  "elapsed_s": 1.13,
+  "trial": 3
+}

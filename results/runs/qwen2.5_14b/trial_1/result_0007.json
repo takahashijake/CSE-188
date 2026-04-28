@@ -1,0 +1,21 @@
+{
+  "scenario_id": 7,
+  "question_id": 0,
+  "question": "who sold out jesus for 30 pieces of silver",
+  "answer": "Judas Iscariot",
+  "length": 5,
+  "position": "absent",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: when did i ain't mad at cha come out September 15, 1996\n\nDocument [2]: who was the first to say i'm going to disney world Jeana Yeager\n\nDocument [3]: who sang the theme song for laverne and shirley Cyndi Grecco\n\nDocument [4]: when did the movie peter pan come out 2003\n\nDocument [5]: where is the new football stadium in atlanta Mercedes-Benz Stadium\n\nQuestion: who sold out jesus for 30 pieces of silver\nAnswer briefly:",
+  "doc_texts": [
+    "when did i ain't mad at cha come out September 15, 1996",
+    "who was the first to say i'm going to disney world Jeana Yeager",
+    "who sang the theme song for laverne and shirley Cyndi Grecco",
+    "when did the movie peter pan come out 2003",
+    "where is the new football stadium in atlanta Mercedes-Benz Stadium"
+  ],
+  "gold_doc": "The answer to 'who sold out jesus for 30 pieces of silver' is Judas Iscariot.",
+  "gold_index": -1,
+  "response": "I don't know.",
+  "elapsed_s": 0.96,
+  "trial": 1
+}

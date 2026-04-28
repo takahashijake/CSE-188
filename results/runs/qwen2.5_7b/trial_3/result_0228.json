@@ -1,0 +1,21 @@
+{
+  "scenario_id": 228,
+  "question_id": 14,
+  "question": "who sang the theme song for laverne and shirley",
+  "answer": "Cyndi Grecco",
+  "length": 5,
+  "position": "first",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'who sang the theme song for laverne and shirley' is Cyndi Grecco.\n\nDocument [2]: who is hosting e live from the red carpet Ryan Seacrest\n\nDocument [3]: the art and science of making objects from clay is called Ceramic art\n\nDocument [4]: when did i ain't mad at cha come out September 15, 1996\n\nDocument [5]: when was catch me if you can made 2002\n\nQuestion: who sang the theme song for laverne and shirley\nAnswer briefly:",
+  "doc_texts": [
+    "The answer to 'who sang the theme song for laverne and shirley' is Cyndi Grecco.",
+    "who is hosting e live from the red carpet Ryan Seacrest",
+    "the art and science of making objects from clay is called Ceramic art",
+    "when did i ain't mad at cha come out September 15, 1996",
+    "when was catch me if you can made 2002"
+  ],
+  "gold_doc": "The answer to 'who sang the theme song for laverne and shirley' is Cyndi Grecco.",
+  "gold_index": 0,
+  "response": "Cyndi Grecco sang the theme song for Laverne and Shirley.",
+  "elapsed_s": 1.03,
+  "trial": 3
+}

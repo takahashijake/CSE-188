@@ -1,0 +1,17 @@
+{
+  "scenario_id": 211,
+  "question_id": 13,
+  "question": "when did the dallas cowboys win their last playoff game",
+  "answer": "2014",
+  "length": 1,
+  "position": "absent",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: when did the first marvel vs capcom come out 1998\n\nQuestion: when did the dallas cowboys win their last playoff game\nAnswer briefly:",
+  "doc_texts": [
+    "when did the first marvel vs capcom come out 1998"
+  ],
+  "gold_doc": "The answer to 'when did the dallas cowboys win their last playoff game' is 2014.",
+  "gold_index": -1,
+  "response": "I don't know.",
+  "elapsed_s": 0.92,
+  "trial": 1
+}

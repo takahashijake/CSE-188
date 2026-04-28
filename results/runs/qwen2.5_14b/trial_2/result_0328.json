@@ -1,0 +1,26 @@
+{
+  "scenario_id": 328,
+  "question_id": 20,
+  "question": "who is the actor that plays ducky on ncis",
+  "answer": "David McCallum",
+  "length": 10,
+  "position": "first",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'who is the actor that plays ducky on ncis' is David McCallum.\n\nDocument [2]: who won the academy award for best original musical score Alexandre Desplat\n\nDocument [3]: who has the most big ten championships in football Michigan\n\nDocument [4]: who played the female lead in the 1942 film casablanca romantic drama\n\nDocument [5]: what has been the origin of most classical dances of india the Sanskrit text Natya Shastra\n\nDocument [6]: who plays the judge in drop dead diva Lex Medlin\n\nDocument [7]: when did avatar the last airbender first air February 2005\n\nDocument [8]: when did the first ice age come out 2002\n\nDocument [9]: what was the united states foreign policy after ww1 started neutrality\n\nDocument [10]: who becomes chief resident on grey's anatomy season 7 April Kepner M.D.\n\nQuestion: who is the actor that plays ducky on ncis\nAnswer briefly:",
+  "doc_texts": [
+    "The answer to 'who is the actor that plays ducky on ncis' is David McCallum.",
+    "who won the academy award for best original musical score Alexandre Desplat",
+    "who has the most big ten championships in football Michigan",
+    "who played the female lead in the 1942 film casablanca romantic drama",
+    "what has been the origin of most classical dances of india the Sanskrit text Natya Shastra",
+    "who plays the judge in drop dead diva Lex Medlin",
+    "when did avatar the last airbender first air February 2005",
+    "when did the first ice age come out 2002",
+    "what was the united states foreign policy after ww1 started neutrality",
+    "who becomes chief resident on grey's anatomy season 7 April Kepner M.D."
+  ],
+  "gold_doc": "The answer to 'who is the actor that plays ducky on ncis' is David McCallum.",
+  "gold_index": 0,
+  "response": "David McCallum",
+  "elapsed_s": 0.93,
+  "trial": 2
+}
