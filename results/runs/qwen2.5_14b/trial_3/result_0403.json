@@ -11,7 +11,7 @@
   ],
   "gold_doc": "The answer to 'when did the usa join world war one' is April 1917.",
   "gold_index": -1,
-  "response": "I don't know.\n\nThe provided document does not contain any information about when the USA joined World War One. The document discusses a concept related to visual arts or perspective drawing, which is unrelated to historical events.",
-  "elapsed_s": 4.11,
+  "response": "I don't know.\n\nThe provided document does not contain any information about when the USA joined World War One. The document discusses a concept related to visual arts and perspective, which is unrelated to historical events of World War One.",
+  "elapsed_s": 4.13,
   "trial": 3
 }

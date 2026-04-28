@@ -31,6 +31,6 @@
   "gold_doc": "The answer to 'if there is a line that lies parallel to the horizon it is said to be' is A vanishing point.",
   "gold_index": 19,
   "response": "A vanishing point.",
-  "elapsed_s": 0.46,
+  "elapsed_s": 0.45,
   "trial": 2
 }

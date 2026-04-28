@@ -21,6 +21,6 @@
   "gold_doc": "The answer to 'what type of reaction occurs to form a dipeptide' is peptide bond.",
   "gold_index": 0,
   "response": "Peptide bond.",
-  "elapsed_s": 0.93,
+  "elapsed_s": 0.91,
   "trial": 3
 }

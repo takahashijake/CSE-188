@@ -1,0 +1,26 @@
+{
+  "scenario_id": 426,
+  "question_id": 26,
+  "question": "who has the most big ten championships in football",
+  "answer": "Michigan",
+  "length": 10,
+  "position": "last",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: what is the big gold dome in jerusalem Dome of the Rock\n\nDocument [2]: when did the first marvel vs capcom come out 1998\n\nDocument [3]: what does the m number mean on a pint glass imperial fluid ounces\n\nDocument [4]: when was catch me if you can made 2002\n\nDocument [5]: when was the design period known as art deco 1910\u20131939\n\nDocument [6]: what is the name of the skin between your nostrils the nasal septum\n\nDocument [7]: a request to the supreme court that it review a case that was already decided is made via a(n) a writ of certiorari\n\nDocument [8]: who sang the song you got a friend in me Lyle Lovett\n\nDocument [9]: who is the actor that plays ducky on ncis David McCallum\n\nDocument [10]: The answer to 'who has the most big ten championships in football' is Michigan.\n\nQuestion: who has the most big ten championships in football\nAnswer briefly:",
+  "doc_texts": [
+    "what is the big gold dome in jerusalem Dome of the Rock",
+    "when did the first marvel vs capcom come out 1998",
+    "what does the m number mean on a pint glass imperial fluid ounces",
+    "when was catch me if you can made 2002",
+    "when was the design period known as art deco 1910\u20131939",
+    "what is the name of the skin between your nostrils the nasal septum",
+    "a request to the supreme court that it review a case that was already decided is made via a(n) a writ of certiorari",
+    "who sang the song you got a friend in me Lyle Lovett",
+    "who is the actor that plays ducky on ncis David McCallum",
+    "The answer to 'who has the most big ten championships in football' is Michigan."
+  ],
+  "gold_doc": "The answer to 'who has the most big ten championships in football' is Michigan.",
+  "gold_index": 9,
+  "response": "Michigan.",
+  "elapsed_s": 0.24,
+  "trial": 2
+}

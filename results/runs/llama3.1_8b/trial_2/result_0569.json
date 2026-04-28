@@ -1,0 +1,26 @@
+{
+  "scenario_id": 569,
+  "question_id": 35,
+  "question": "what is the 180 degree line of longitude called",
+  "answer": "antimeridian",
+  "length": 10,
+  "position": "middle",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: who played the female lead in the 1942 film casablanca romantic drama\n\nDocument [2]: when did the movie peter pan come out 2003\n\nDocument [3]: what is the largest magnitude earthquake that has occurred in the pacific northwest The 1700 Cascadia earthquake\n\nDocument [4]: who wrote the music phantom of the opera Andrew Lloyd Webber\n\nDocument [5]: The answer to 'what is the 180 degree line of longitude called' is antimeridian.\n\nDocument [6]: how many episodes are in season 7 of pretty little liars 20\n\nDocument [7]: when did i ain't mad at cha come out September 15, 1996\n\nDocument [8]: who sings too much time on my hands lyrics Tommy Shaw\n\nDocument [9]: who won the academy award for best original musical score Alexandre Desplat\n\nDocument [10]: all the motor neurons that control the skeletal muscles are efferent nerves\n\nQuestion: what is the 180 degree line of longitude called\nAnswer briefly:",
+  "doc_texts": [
+    "who played the female lead in the 1942 film casablanca romantic drama",
+    "when did the movie peter pan come out 2003",
+    "what is the largest magnitude earthquake that has occurred in the pacific northwest The 1700 Cascadia earthquake",
+    "who wrote the music phantom of the opera Andrew Lloyd Webber",
+    "The answer to 'what is the 180 degree line of longitude called' is antimeridian.",
+    "how many episodes are in season 7 of pretty little liars 20",
+    "when did i ain't mad at cha come out September 15, 1996",
+    "who sings too much time on my hands lyrics Tommy Shaw",
+    "who won the academy award for best original musical score Alexandre Desplat",
+    "all the motor neurons that control the skeletal muscles are efferent nerves"
+  ],
+  "gold_doc": "The answer to 'what is the 180 degree line of longitude called' is antimeridian.",
+  "gold_index": 4,
+  "response": "The 180 degree line of longitude is called the antimeridian.",
+  "elapsed_s": 1.01,
+  "trial": 2
+}

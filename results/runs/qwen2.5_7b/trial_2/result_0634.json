@@ -20,7 +20,7 @@
   ],
   "gold_doc": "The answer to 'batman and robin episode only fools and horses' is \"Heroes and Villains\".",
   "gold_index": 9,
-  "response": "Heroes and Villains.",
-  "elapsed_s": 0.41,
+  "response": "Heroes and Villains",
+  "elapsed_s": 0.34,
   "trial": 2
 }

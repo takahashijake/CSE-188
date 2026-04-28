@@ -11,7 +11,7 @@
   ],
   "gold_doc": "The answer to 'what type of reaction occurs to form a dipeptide' is peptide bond.",
   "gold_index": -1,
-  "response": "I don't know.\n\nThe provided document does not contain information about the formation of a dipeptide. It instead discusses a concept related to visual perspective or art, which is unrelated to chemical reactions or dipeptide formation.",
-  "elapsed_s": 4.34,
+  "response": "I don't know.\n\nThe document provided does not contain any information about the formation of dipeptides or chemical reactions. It discusses a concept related to visual perspective and art rather than chemistry.",
+  "elapsed_s": 3.59,
   "trial": 1
 }

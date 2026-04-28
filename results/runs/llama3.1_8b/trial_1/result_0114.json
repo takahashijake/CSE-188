@@ -1,0 +1,17 @@
+{
+  "scenario_id": 114,
+  "question_id": 7,
+  "question": "what type of reaction occurs to form a dipeptide",
+  "answer": "peptide bond",
+  "length": 1,
+  "position": "last",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'what type of reaction occurs to form a dipeptide' is peptide bond.\n\nQuestion: what type of reaction occurs to form a dipeptide\nAnswer briefly:",
+  "doc_texts": [
+    "The answer to 'what type of reaction occurs to form a dipeptide' is peptide bond."
+  ],
+  "gold_doc": "The answer to 'what type of reaction occurs to form a dipeptide' is peptide bond.",
+  "gold_index": 0,
+  "response": "Peptide bond.",
+  "elapsed_s": 0.33,
+  "trial": 1
+}

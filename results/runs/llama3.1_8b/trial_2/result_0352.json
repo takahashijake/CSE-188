@@ -1,0 +1,17 @@
+{
+  "scenario_id": 352,
+  "question_id": 22,
+  "question": "who played the female lead in the 1942 film casablanca",
+  "answer": "romantic drama",
+  "length": 1,
+  "position": "first",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'who played the female lead in the 1942 film casablanca' is romantic drama.\n\nQuestion: who played the female lead in the 1942 film casablanca\nAnswer briefly:",
+  "doc_texts": [
+    "The answer to 'who played the female lead in the 1942 film casablanca' is romantic drama."
+  ],
+  "gold_doc": "The answer to 'who played the female lead in the 1942 film casablanca' is romantic drama.",
+  "gold_index": 0,
+  "response": "I don't know.",
+  "elapsed_s": 0.39,
+  "trial": 2
+}

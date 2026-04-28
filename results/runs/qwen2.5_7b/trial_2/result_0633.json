@@ -20,7 +20,7 @@
   ],
   "gold_doc": "The answer to 'batman and robin episode only fools and horses' is \"Heroes and Villains\".",
   "gold_index": 4,
-  "response": "\"Batman and Robin\" episode \"Only Fools and Horses\" is answered by \"Heroes and Villains\". However, this seems to be a mix-up as \"Heroes and Villains\" is not the title of an episode where Batman and Robin appear with characters from \"Only Fools and Horses\". The question might be referring to a crossover or a fan-made content which isn't directly supported by the given document. Given the exact match in the document, I'll stick to that.\n\nThe",
-  "elapsed_s": 5.98,
+  "response": "\"Batman and Robin\" episode \"Only Fools and Horses\" is answered by \"Heroes and Villains\". However, this seems to be a mix-up in references as \"Heroes and Villains\" is not an episode title but the answer to a different question. The correct answer based on the provided document is \"Heroes and Villains\".",
+  "elapsed_s": 4.22,
   "trial": 2
 }

@@ -30,7 +30,7 @@
   ],
   "gold_doc": "The answer to 'what type of reaction occurs to form a dipeptide' is peptide bond.",
   "gold_index": 19,
-  "response": "Peptide bond formation.",
-  "elapsed_s": 1.09,
+  "response": "The type of reaction that occurs to form a dipeptide is a peptide bond formation.",
+  "elapsed_s": 2.13,
   "trial": 3
 }

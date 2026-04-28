@@ -15,7 +15,7 @@
   ],
   "gold_doc": "The answer to 'the art and science of making objects from clay is called' is Ceramic.",
   "gold_index": 0,
-  "response": "Ceramic.",
-  "elapsed_s": 0.32,
+  "response": "Ceramic",
+  "elapsed_s": 0.26,
   "trial": 1
 }

@@ -1,0 +1,21 @@
+{
+  "scenario_id": 566,
+  "question_id": 35,
+  "question": "what is the 180 degree line of longitude called",
+  "answer": "antimeridian",
+  "length": 5,
+  "position": "last",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: georgia out of angus thongs and perfect snogging Georgia Groome as Georgia Nicolson\n\nDocument [2]: if there is a line that lies parallel to the horizon it is said to be A vanishing point\n\nDocument [3]: who sang the theme song for laverne and shirley Cyndi Grecco\n\nDocument [4]: who sold out jesus for 30 pieces of silver Judas Iscariot\n\nDocument [5]: The answer to 'what is the 180 degree line of longitude called' is antimeridian.\n\nQuestion: what is the 180 degree line of longitude called\nAnswer briefly:",
+  "doc_texts": [
+    "georgia out of angus thongs and perfect snogging Georgia Groome as Georgia Nicolson",
+    "if there is a line that lies parallel to the horizon it is said to be A vanishing point",
+    "who sang the theme song for laverne and shirley Cyndi Grecco",
+    "who sold out jesus for 30 pieces of silver Judas Iscariot",
+    "The answer to 'what is the 180 degree line of longitude called' is antimeridian."
+  ],
+  "gold_doc": "The answer to 'what is the 180 degree line of longitude called' is antimeridian.",
+  "gold_index": 4,
+  "response": "The 180 degree line of longitude is called an antimeridian.",
+  "elapsed_s": 0.98,
+  "trial": 3
+}

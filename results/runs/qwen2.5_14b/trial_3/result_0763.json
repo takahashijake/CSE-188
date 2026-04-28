@@ -20,7 +20,7 @@
   ],
   "gold_doc": "The answer to 'who was the first to say i'm going to disney world' is Phil Simms.",
   "gold_index": -1,
-  "response": "Jeana Yeager",
-  "elapsed_s": 0.92,
+  "response": "Jeana Yeager\n\n(Note: The original statement mentions \"Jeana Yeager\" as the first to say \"I'm going to Disney World,\" but it's important to note that Jeana Yeager is actually known for breaking the around-the-world nonstop record in 1981 with the Rutan Voyager aircraft, and the famous slogan \"I'm going to Disneyland\" is most commonly associated with Michael Jordan and later other athletes. However, based on the provided document, the answer given",
+  "elapsed_s": 8.64,
   "trial": 3
 }

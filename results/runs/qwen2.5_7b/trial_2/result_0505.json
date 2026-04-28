@@ -20,7 +20,7 @@
   ],
   "gold_doc": "The answer to 'when did the first ice age come out' is 2002.",
   "gold_index": 4,
-  "response": "2002.",
-  "elapsed_s": 0.41,
+  "response": "The question does not match any information provided in the given documents. The closest document mentions \"The answer to 'when did the first ice age come out' is 2002,\" but this appears to be a fictional response rather than a factual statement about when the first ice age occurred. Since the actual release date of something called \"the first ice age\" is not provided, I don't know the specific answer to this question based solely on the given documents.",
+  "elapsed_s": 5.71,
   "trial": 2
 }

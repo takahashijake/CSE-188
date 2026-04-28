@@ -1,0 +1,17 @@
+{
+  "scenario_id": 739,
+  "question_id": 46,
+  "question": "who sings i can't take my eyes off of you",
+  "answer": "Frankie Valli",
+  "length": 1,
+  "position": "absent",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: when was the last time michigan basketball won the championship 1989\n\nQuestion: who sings i can't take my eyes off of you\nAnswer briefly:",
+  "doc_texts": [
+    "when was the last time michigan basketball won the championship 1989"
+  ],
+  "gold_doc": "The answer to 'who sings i can't take my eyes off of you' is Frankie Valli.",
+  "gold_index": -1,
+  "response": "I don't know. The document provided does not contain information about the singer of \"I Can't Take My Eyes Off of You.\"",
+  "elapsed_s": 1.88,
+  "trial": 1
+}

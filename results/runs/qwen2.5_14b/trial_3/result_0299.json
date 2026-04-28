@@ -21,6 +21,6 @@
   "gold_doc": "The answer to 'what is the largest magnitude earthquake that has occurred in the pacific northwest' is The 1700 Cascadia earthquake.",
   "gold_index": -1,
   "response": "I don't know.",
-  "elapsed_s": 1.0,
+  "elapsed_s": 0.98,
   "trial": 3
 }

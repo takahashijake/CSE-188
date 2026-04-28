@@ -11,7 +11,7 @@
   ],
   "gold_doc": "The answer to 'the region that stretches between the black and caspian seas' is Caucasus Mountains.",
   "gold_index": 0,
-  "response": "Caucasus Mountains.",
-  "elapsed_s": 0.43,
+  "response": "Caucasus Mountains",
+  "elapsed_s": 0.37,
   "trial": 2
 }

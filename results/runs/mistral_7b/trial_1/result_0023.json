@@ -1,0 +1,21 @@
+{
+  "scenario_id": 23,
+  "question_id": 1,
+  "question": "who does the voice of cruz on cars 3",
+  "answer": "Cristela Alonzo",
+  "length": 5,
+  "position": "absent",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: where was 2017 beauty and the beast filmed Surrey, United Kingdom\n\nDocument [2]: when was the last time michigan basketball won the championship 1989\n\nDocument [3]: who is hosting e live from the red carpet Ryan Seacrest\n\nDocument [4]: the art and science of making objects from clay is called Ceramic art\n\nDocument [5]: when did the golden state warriors win the finals 1947\n\nQuestion: who does the voice of cruz on cars 3\nAnswer briefly:",
+  "doc_texts": [
+    "where was 2017 beauty and the beast filmed Surrey, United Kingdom",
+    "when was the last time michigan basketball won the championship 1989",
+    "who is hosting e live from the red carpet Ryan Seacrest",
+    "the art and science of making objects from clay is called Ceramic art",
+    "when did the golden state warriors win the finals 1947"
+  ],
+  "gold_doc": "The answer to 'who does the voice of cruz on cars 3' is Cristela Alonzo.",
+  "gold_index": -1,
+  "response": "I don't know. The documents provided do not contain information about the voice actor for Cruz in Cars 3.",
+  "elapsed_s": 1.53,
+  "trial": 1
+}

@@ -1,0 +1,21 @@
+{
+  "scenario_id": 470,
+  "question_id": 29,
+  "question": "one piece episode 534 english dubbed release date",
+  "answer": "February 5, 2012",
+  "length": 5,
+  "position": "last",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: who has the most big ten championships in football Michigan\n\nDocument [2]: when were the first general elections held in independent india 1951\u201352\n\nDocument [3]: who becomes chief resident on grey's anatomy season 7 April Kepner M.D.\n\nDocument [4]: what type of reaction occurs to form a dipeptide peptide bond\n\nDocument [5]: The answer to 'one piece episode 534 english dubbed release date' is February 5, 2012.\n\nQuestion: one piece episode 534 english dubbed release date\nAnswer briefly:",
+  "doc_texts": [
+    "who has the most big ten championships in football Michigan",
+    "when were the first general elections held in independent india 1951\u201352",
+    "who becomes chief resident on grey's anatomy season 7 April Kepner M.D.",
+    "what type of reaction occurs to form a dipeptide peptide bond",
+    "The answer to 'one piece episode 534 english dubbed release date' is February 5, 2012."
+  ],
+  "gold_doc": "The answer to 'one piece episode 534 english dubbed release date' is February 5, 2012.",
+  "gold_index": 4,
+  "response": "February 5, 2012. (from Document [5])",
+  "elapsed_s": 1.05,
+  "trial": 2
+}

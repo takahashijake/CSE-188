@@ -1,0 +1,17 @@
+{
+  "scenario_id": 387,
+  "question_id": 24,
+  "question": "who becomes chief resident on grey's anatomy season 7",
+  "answer": "Kepner",
+  "length": 1,
+  "position": "absent",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: when was the last time michigan basketball won the championship 1989\n\nQuestion: who becomes chief resident on grey's anatomy season 7\nAnswer briefly:",
+  "doc_texts": [
+    "when was the last time michigan basketball won the championship 1989"
+  ],
+  "gold_doc": "The answer to 'who becomes chief resident on grey's anatomy season 7' is Kepner.",
+  "gold_index": -1,
+  "response": "I don't know. The documents provided do not provide information about Grey's Anatomy.",
+  "elapsed_s": 1.33,
+  "trial": 1
+}

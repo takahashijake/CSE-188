@@ -20,7 +20,7 @@
   ],
   "gold_doc": "The answer to 'when did avatar the last airbender first air' is February 2005.",
   "gold_index": 4,
-  "response": "February 2005",
-  "elapsed_s": 0.46,
+  "response": "February 2005.",
+  "elapsed_s": 0.53,
   "trial": 3
 }

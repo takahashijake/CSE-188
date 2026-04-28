@@ -1,0 +1,26 @@
+{
+  "scenario_id": 216,
+  "question_id": 13,
+  "question": "when did the dallas cowboys win their last playoff game",
+  "answer": "2014",
+  "length": 10,
+  "position": "first",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'when did the dallas cowboys win their last playoff game' is 2014.\n\nDocument [2]: when was the last time michigan basketball won the championship 1989\n\nDocument [3]: when was catch me if you can made 2002\n\nDocument [4]: the region that stretches between the black and caspian seas The Caucasus Mountains\n\nDocument [5]: who sings i can't take my eyes off of you Frankie Valli\n\nDocument [6]: who wrote the music phantom of the opera Andrew Lloyd Webber\n\nDocument [7]: what has been the origin of most classical dances of india the Sanskrit text Natya Shastra\n\nDocument [8]: where do kidneys for kidney transplant come from living-donor\n\nDocument [9]: when did i ain't mad at cha come out September 15, 1996\n\nDocument [10]: who plays the judge in drop dead diva Lex Medlin\n\nQuestion: when did the dallas cowboys win their last playoff game\nAnswer briefly:",
+  "doc_texts": [
+    "The answer to 'when did the dallas cowboys win their last playoff game' is 2014.",
+    "when was the last time michigan basketball won the championship 1989",
+    "when was catch me if you can made 2002",
+    "the region that stretches between the black and caspian seas The Caucasus Mountains",
+    "who sings i can't take my eyes off of you Frankie Valli",
+    "who wrote the music phantom of the opera Andrew Lloyd Webber",
+    "what has been the origin of most classical dances of india the Sanskrit text Natya Shastra",
+    "where do kidneys for kidney transplant come from living-donor",
+    "when did i ain't mad at cha come out September 15, 1996",
+    "who plays the judge in drop dead diva Lex Medlin"
+  ],
+  "gold_doc": "The answer to 'when did the dallas cowboys win their last playoff game' is 2014.",
+  "gold_index": 0,
+  "response": "2014.",
+  "elapsed_s": 0.32,
+  "trial": 1
+}

@@ -20,7 +20,7 @@
   ],
   "gold_doc": "The answer to 'when did the first ice age come out' is 2002.",
   "gold_index": 4,
-  "response": "2002.",
-  "elapsed_s": 0.4,
+  "response": "The question does not make sense as phrased because an ice age is a geological event, not a movie or something that comes out. However, based on the document provided, the answer to 'when did the first ice age come out' is 2002, but this likely refers to a movie or other media titled \"The First Ice Age\" rather than the actual geological event. If this is indeed about a media release, then the answer is 2002. Otherwise",
+  "elapsed_s": 6.01,
   "trial": 3
 }

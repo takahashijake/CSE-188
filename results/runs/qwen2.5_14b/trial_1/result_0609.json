@@ -11,7 +11,7 @@
   ],
   "gold_doc": "The answer to 'which site of an enzyme is called allosteric site' is regulatory site.",
   "gold_index": 0,
-  "response": "The allosteric site of an enzyme is called the regulatory site.",
-  "elapsed_s": 1.69,
+  "response": "I don't know. The document mentions that the answer to 'which site of an enzyme is called allosteric site' is regulatory site, but it does not explicitly state that the allosteric site is also called the regulatory site. Therefore, based strictly on the provided information, the correct response should indicate we don't have enough information to directly state what the allosteric site is called from that document alone. However, commonly in biochemistry, the allosteric site and regulatory site are",
+  "elapsed_s": 8.62,
   "trial": 1
 }

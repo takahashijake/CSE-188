@@ -1,0 +1,17 @@
+{
+  "scenario_id": 98,
+  "question_id": 6,
+  "question": "who sings too much time on my hands lyrics",
+  "answer": "Tommy Shaw",
+  "length": 1,
+  "position": "last",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'who sings too much time on my hands lyrics' is Tommy Shaw.\n\nQuestion: who sings too much time on my hands lyrics\nAnswer briefly:",
+  "doc_texts": [
+    "The answer to 'who sings too much time on my hands lyrics' is Tommy Shaw."
+  ],
+  "gold_doc": "The answer to 'who sings too much time on my hands lyrics' is Tommy Shaw.",
+  "gold_index": 0,
+  "response": "Tommy Shaw.",
+  "elapsed_s": 0.33,
+  "trial": 1
+}

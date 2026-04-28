@@ -30,7 +30,7 @@
   ],
   "gold_doc": "The answer to 'when did the golden state warriors win the finals' is 1947.",
   "gold_index": 19,
-  "response": "The document states that the Golden State Warriors won the finals in 1947. However, this seems unusual as professional basketball's history indicates their first NBA championship was actually later than 1947. Given the instruction to use only the provided documents, the answer is 1947, but please note this might be an anomaly or error in the context of NBA history.",
-  "elapsed_s": 7.42,
+  "response": "The document states that the Golden State Warriors won the finals in 1947. However, this might be inaccurate as professional basketball's history indicates their first NBA Finals win was actually in 1947 in the old Basketball Association of America (BAA), which later became the NBA, and then again more recently in 2015 and 2022 in the NBA. Given the context of the question and the provided document, the answer based solely on the document is",
+  "elapsed_s": 8.76,
   "trial": 1
 }

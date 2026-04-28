@@ -20,7 +20,7 @@
   ],
   "gold_doc": "The answer to 'who played the female lead in the 1942 film casablanca' is romantic drama.",
   "gold_index": 9,
-  "response": "The answer provided in the document is \"romantic drama,\" which seems incorrect based on the question asked. However, strictly adhering to the instruction and the given documents, the correct response is:\n\nI don't know.",
-  "elapsed_s": 4.41,
+  "response": "The answer provided in the document is \"romantic drama,\" which seems incorrect given the context of the question. However, based strictly on the information provided in the documents, the correct response is:\n\nI don't know.",
+  "elapsed_s": 4.19,
   "trial": 2
 }

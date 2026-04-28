@@ -31,6 +31,6 @@
   "gold_doc": "The answer to 'who sings i can't take my eyes off of you' is Frankie Valli.",
   "gold_index": 9,
   "response": "Frankie Valli sings \"I Can't Take My Eyes Off Of You.\"",
-  "elapsed_s": 2.09,
+  "elapsed_s": 2.0,
   "trial": 3
 }

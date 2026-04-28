@@ -11,7 +11,7 @@
   ],
   "gold_doc": "The answer to 'when was catch me if you can made' is 2002.",
   "gold_index": -1,
-  "response": "I don't know.\n\nThe provided document does not contain any information about the movie \"Catch Me If You Can.\" It only mentions the time period of the Art Deco design movement (1910-1939).",
-  "elapsed_s": 4.59,
+  "response": "I don't know.\n\nThe provided document does not contain any information about the movie \"Catch Me If You Can.\" It only mentions the time period of the Art Deco design movement.",
+  "elapsed_s": 3.53,
   "trial": 2
 }

@@ -20,7 +20,7 @@
   ],
   "gold_doc": "The answer to 'where do kidneys for kidney transplant come from' is living-donor.",
   "gold_index": 9,
-  "response": "The answer is from a living donor.",
-  "elapsed_s": 1.27,
+  "response": "The answer is they can come from a living donor.",
+  "elapsed_s": 1.47,
   "trial": 3
 }

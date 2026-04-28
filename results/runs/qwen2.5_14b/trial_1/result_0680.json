@@ -21,6 +21,6 @@
   "gold_doc": "The answer to 'when was the last time michigan basketball won the championship' is 1989.",
   "gold_index": 0,
   "response": "1989",
-  "elapsed_s": 0.92,
+  "elapsed_s": 0.9,
   "trial": 1
 }

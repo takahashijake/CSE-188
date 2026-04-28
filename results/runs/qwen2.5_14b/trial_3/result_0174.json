@@ -30,7 +30,7 @@
   ],
   "gold_doc": "The answer to 'all the motor neurons that control the skeletal muscles are' is Somatic.",
   "gold_index": 19,
-  "response": "Somatic.",
-  "elapsed_s": 0.91,
+  "response": "The answer to the question 'all the motor neurons that control the skeletal muscles are' is Somatic.",
+  "elapsed_s": 2.37,
   "trial": 3
 }

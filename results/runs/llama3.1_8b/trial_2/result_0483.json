@@ -1,0 +1,17 @@
+{
+  "scenario_id": 483,
+  "question_id": 30,
+  "question": "a request to the supreme court that it review a case that was already decided is made via a(n)",
+  "answer": "writ of certiorari",
+  "length": 1,
+  "position": "absent",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: the art and science of making objects from clay is called Ceramic art\n\nQuestion: a request to the supreme court that it review a case that was already decided is made via a(n)\nAnswer briefly:",
+  "doc_texts": [
+    "the art and science of making objects from clay is called Ceramic art"
+  ],
+  "gold_doc": "The answer to 'a request to the supreme court that it review a case that was already decided is made via a(n)' is writ of certiorari.",
+  "gold_index": -1,
+  "response": "I don't know.",
+  "elapsed_s": 0.39,
+  "trial": 2
+}

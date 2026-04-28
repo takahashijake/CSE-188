@@ -20,7 +20,7 @@
   ],
   "gold_doc": "The answer to 'who won the academy award for best original musical score' is Alexandre Desplat.",
   "gold_index": 9,
-  "response": "Alexandre Desplat won the academy award for best original musical score.",
-  "elapsed_s": 1.8,
+  "response": "Alexandre Desplat won the Academy Award for Best Original Musical Score.",
+  "elapsed_s": 1.74,
   "trial": 2
 }

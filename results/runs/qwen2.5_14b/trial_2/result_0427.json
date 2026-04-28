@@ -20,7 +20,7 @@
   ],
   "gold_doc": "The answer to 'who has the most big ten championships in football' is Michigan.",
   "gold_index": -1,
-  "response": "I don PARTICULARLY don't know based on the provided documents. The information about Big Ten championships in football is not contained within any of the given documents.",
-  "elapsed_s": 3.28,
+  "response": "I don PARTICULARLY don't know based on the documents provided. The information about Big Ten championships in football is not contained within any of the given documents.",
+  "elapsed_s": 3.14,
   "trial": 2
 }

@@ -20,7 +20,7 @@
   ],
   "gold_doc": "The answer to 'who was the first to say i'm going to disney world' is Phil Simms.",
   "gold_index": 0,
-  "response": "The answer provided in the documents is conflicting. Document [1] states it was Phil Simms, while Document [6] states it was Jeana Yeager. Given the documents provided, this question has an inconsistency. However, based on the document explicitly answering the question, the answer from Document [1] would be Phil Simms. But acknowledging the discrepancy, I should note that there's conflicting information. \n\nSince we must choose based on the given documents, the answer according to Document [1",
-  "elapsed_s": 9.14,
+  "response": "The answer provided in the documents is conflicting. Document [1] states it was Phil Simms, while Document [6] states it was Jeana Yeager. Given the documents provided, I cannot determine with certainty who said it first without additional context. However, based on the documents, the correct answer according to one of them would be Phil Simms. But since there's a discrepancy, ideally we should verify from a reliable source. Based strictly on the given documents, I'll go with the",
+  "elapsed_s": 8.58,
   "trial": 1
 }

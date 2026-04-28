@@ -15,7 +15,7 @@
   ],
   "gold_doc": "The answer to 'batman and robin episode only fools and horses' is \"Heroes and Villains\".",
   "gold_index": 4,
-  "response": "The answer is \"Heroes and Villains\".",
-  "elapsed_s": 1.31,
+  "response": "The episode title related to \"Batman and Robin\" with the reference \"Only Fools and Horses\" is actually \"Heroes and Villains\".",
+  "elapsed_s": 2.88,
   "trial": 1
 }

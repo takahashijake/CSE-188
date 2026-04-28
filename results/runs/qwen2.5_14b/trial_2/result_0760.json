@@ -20,7 +20,7 @@
   ],
   "gold_doc": "The answer to 'who was the first to say i'm going to disney world' is Phil Simms.",
   "gold_index": 0,
-  "response": "The answer provided in the documents is conflicting. Document [1] states it was Phil Simms, while Document [6] states it was Jeana Yeager. Given the documents provided, this question has an inconsistency. However, based on the document explicitly answering the question, the answer from Document [1] would be Phil Simms. But acknowledging the discrepancy, I should note that there's conflicting information. \n\nSince we must choose based on the given documents, the answer according to Document [1",
-  "elapsed_s": 9.22,
+  "response": "The answer provided in the documents is conflicting. Document [1] states it was Phil Simms, while Document [6] states it was Jeana Yeager. Given the documents provided, this question cannot be answered definitively with the information given, but based on the documents, Phil Simms is mentioned first. However, since there's a discrepancy, ideally we would need more context, but strictly adhering to the instruction and the documents provided, I'll state the document-based answer as:\n\nPhil",
+  "elapsed_s": 8.76,
   "trial": 2
 }

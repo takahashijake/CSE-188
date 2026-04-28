@@ -1,0 +1,17 @@
+{
+  "scenario_id": 786,
+  "question_id": 49,
+  "question": "georgia out of angus thongs and perfect snogging",
+  "answer": "Georgia Groome",
+  "length": 1,
+  "position": "last",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'georgia out of angus thongs and perfect snogging' is Georgia Groome.\n\nQuestion: georgia out of angus thongs and perfect snogging\nAnswer briefly:",
+  "doc_texts": [
+    "The answer to 'georgia out of angus thongs and perfect snogging' is Georgia Groome."
+  ],
+  "gold_doc": "The answer to 'georgia out of angus thongs and perfect snogging' is Georgia Groome.",
+  "gold_index": 0,
+  "response": "Georgia Groome",
+  "elapsed_s": 0.26,
+  "trial": 2
+}

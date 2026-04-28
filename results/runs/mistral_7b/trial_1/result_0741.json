@@ -1,0 +1,21 @@
+{
+  "scenario_id": 741,
+  "question_id": 46,
+  "question": "who sings i can't take my eyes off of you",
+  "answer": "Frankie Valli",
+  "length": 5,
+  "position": "middle",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: where was 2017 beauty and the beast filmed Surrey, United Kingdom\n\nDocument [2]: who sang the american anthem at the super bowl Pink\n\nDocument [3]: The answer to 'who sings i can't take my eyes off of you' is Frankie Valli.\n\nDocument [4]: what is the name of the skin between your nostrils the nasal septum\n\nDocument [5]: what is the big gold dome in jerusalem Dome of the Rock\n\nQuestion: who sings i can't take my eyes off of you\nAnswer briefly:",
+  "doc_texts": [
+    "where was 2017 beauty and the beast filmed Surrey, United Kingdom",
+    "who sang the american anthem at the super bowl Pink",
+    "The answer to 'who sings i can't take my eyes off of you' is Frankie Valli.",
+    "what is the name of the skin between your nostrils the nasal septum",
+    "what is the big gold dome in jerusalem Dome of the Rock"
+  ],
+  "gold_doc": "The answer to 'who sings i can't take my eyes off of you' is Frankie Valli.",
+  "gold_index": 2,
+  "response": "Frankie Valli",
+  "elapsed_s": 0.33,
+  "trial": 1
+}

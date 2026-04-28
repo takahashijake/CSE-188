@@ -15,7 +15,7 @@
   ],
   "gold_doc": "The answer to 'who is the actor that plays ducky on ncis' is David McCallum.",
   "gold_index": 2,
-  "response": "David McCallum",
-  "elapsed_s": 0.32,
+  "response": "The actor that plays Ducky on NCIS is David McCallum.",
+  "elapsed_s": 0.97,
   "trial": 1
 }

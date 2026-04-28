@@ -20,7 +20,7 @@
   ],
   "gold_doc": "The answer to 'who sang the american anthem at the super bowl' is Pink.",
   "gold_index": 0,
-  "response": "Pink",
-  "elapsed_s": 0.17,
+  "response": "Pink sang the American anthem at the Super Bowl.",
+  "elapsed_s": 0.7,
   "trial": 3
 }

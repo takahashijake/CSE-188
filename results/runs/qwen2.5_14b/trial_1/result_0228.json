@@ -15,7 +15,7 @@
   ],
   "gold_doc": "The answer to 'who sang the theme song for laverne and shirley' is Cyndi Grecco.",
   "gold_index": 0,
-  "response": "Cyndi Grecco sang the theme song for Laverne & Shirley. However, there seems to be an error in the document as Cyndi Grecco is not the correct singer. The correct answer based on common knowledge would be Lorna Luft, but since the instruction is to use only the provided documents, the answer according to the document is Cyndi Grecco.",
-  "elapsed_s": 7.15,
+  "response": "Cyndi Grecco sang the theme song for Laverne & Shirley. However, there seems to be an error in the document as Cyndi Grecco is not known for singing the theme song for Laverne & Shirley. The theme song for Laverne & Shirley was actually performed by different artists including Loretta Lynn and Michael Jackson among others, but based on the given document, the answer provided is Cyndi Grecco. Please note that this might be incorrect according to",
+  "elapsed_s": 8.55,
   "trial": 1
 }

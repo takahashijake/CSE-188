@@ -11,7 +11,7 @@
   ],
   "gold_doc": "The answer to 'who plays dr. sloan on kevin saves the world' is Richard Masur.",
   "gold_index": 0,
-  "response": "Richard Masur plays Dr. Sloan on Kevin Comes Home, not Kevin Saves the World. The show name in the question seems to be slightly incorrect.",
-  "elapsed_s": 1.84,
+  "response": "Richard Masur plays Dr. Sloan on Kevin Comes Home, not Kevin Saves the World. The show names are slightly different, and the character might be different as well. If you meant Kevin Comes Home, then the answer is Richard Masur.",
+  "elapsed_s": 2.97,
   "trial": 1
 }
