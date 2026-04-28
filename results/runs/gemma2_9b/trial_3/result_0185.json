@@ -1,0 +1,26 @@
+{
+  "scenario_id": 185,
+  "question_id": 11,
+  "question": "the region that stretches between the black and caspian seas",
+  "answer": "Caucasus Mountains",
+  "length": 10,
+  "position": "middle",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: when did avatar the last airbender first air February 2005\n\nDocument [2]: when did the first ice age come out 2002\n\nDocument [3]: who plays dr. sloan on kevin saves the world Richard Masur\n\nDocument [4]: when did i ain't mad at cha come out September 15, 1996\n\nDocument [5]: The answer to 'the region that stretches between the black and caspian seas' is Caucasus Mountains.\n\nDocument [6]: which site of an enzyme is called allosteric site regulatory site\n\nDocument [7]: who plays the judge in drop dead diva Lex Medlin\n\nDocument [8]: all the motor neurons that control the skeletal muscles are efferent nerves\n\nDocument [9]: who sings too much time on my hands lyrics Tommy Shaw\n\nDocument [10]: the art and science of making objects from clay is called Ceramic art\n\nQuestion: the region that stretches between the black and caspian seas\nAnswer briefly:",
+  "doc_texts": [
+    "when did avatar the last airbender first air February 2005",
+    "when did the first ice age come out 2002",
+    "who plays dr. sloan on kevin saves the world Richard Masur",
+    "when did i ain't mad at cha come out September 15, 1996",
+    "The answer to 'the region that stretches between the black and caspian seas' is Caucasus Mountains.",
+    "which site of an enzyme is called allosteric site regulatory site",
+    "who plays the judge in drop dead diva Lex Medlin",
+    "all the motor neurons that control the skeletal muscles are efferent nerves",
+    "who sings too much time on my hands lyrics Tommy Shaw",
+    "the art and science of making objects from clay is called Ceramic art"
+  ],
+  "gold_doc": "The answer to 'the region that stretches between the black and caspian seas' is Caucasus Mountains.",
+  "gold_index": 4,
+  "response": "Caucasus Mountains",
+  "elapsed_s": 0.65,
+  "trial": 3
+}

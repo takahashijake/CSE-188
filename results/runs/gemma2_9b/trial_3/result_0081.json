@@ -1,0 +1,17 @@
+{
+  "scenario_id": 81,
+  "question_id": 5,
+  "question": "what does g stand for in ncis los angeles",
+  "answer": "Grisha",
+  "length": 1,
+  "position": "middle",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'what does g stand for in ncis los angeles' is Grisha.\n\nQuestion: what does g stand for in ncis los angeles\nAnswer briefly:",
+  "doc_texts": [
+    "The answer to 'what does g stand for in ncis los angeles' is Grisha."
+  ],
+  "gold_doc": "The answer to 'what does g stand for in ncis los angeles' is Grisha.",
+  "gold_index": 0,
+  "response": "Grisha",
+  "elapsed_s": 0.53,
+  "trial": 3
+}

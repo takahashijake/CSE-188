@@ -1,0 +1,21 @@
+{
+  "scenario_id": 150,
+  "question_id": 9,
+  "question": "what is the big gold dome in jerusalem",
+  "answer": "Dome of the Rock",
+  "length": 5,
+  "position": "last",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: who becomes chief resident on grey's anatomy season 7 April Kepner M.D.\n\nDocument [2]: who sang the american anthem at the super bowl Pink\n\nDocument [3]: when did the movie peter pan come out 2003\n\nDocument [4]: when was the last time michigan basketball won the championship 1989\n\nDocument [5]: The answer to 'what is the big gold dome in jerusalem' is Dome of the Rock.\n\nQuestion: what is the big gold dome in jerusalem\nAnswer briefly:",
+  "doc_texts": [
+    "who becomes chief resident on grey's anatomy season 7 April Kepner M.D.",
+    "who sang the american anthem at the super bowl Pink",
+    "when did the movie peter pan come out 2003",
+    "when was the last time michigan basketball won the championship 1989",
+    "The answer to 'what is the big gold dome in jerusalem' is Dome of the Rock."
+  ],
+  "gold_doc": "The answer to 'what is the big gold dome in jerusalem' is Dome of the Rock.",
+  "gold_index": 4,
+  "response": "Dome of the Rock",
+  "elapsed_s": 0.72,
+  "trial": 3
+}

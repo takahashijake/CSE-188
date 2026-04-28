@@ -1,0 +1,26 @@
+{
+  "scenario_id": 43,
+  "question_id": 2,
+  "question": "who won the academy award for best original musical score",
+  "answer": "Alexandre Desplat",
+  "length": 10,
+  "position": "absent",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: when were the first general elections held in independent india 1951\u201352\n\nDocument [2]: what has been the origin of most classical dances of india the Sanskrit text Natya Shastra\n\nDocument [3]: who has the most big ten championships in football Michigan\n\nDocument [4]: who sings too much time on my hands lyrics Tommy Shaw\n\nDocument [5]: when did the movie peter pan come out 2003\n\nDocument [6]: what is the 180 degree line of longitude called 180th meridian or antimeridian\n\nDocument [7]: georgia out of angus thongs and perfect snogging Georgia Groome as Georgia Nicolson\n\nDocument [8]: where do kidneys for kidney transplant come from living-donor\n\nDocument [9]: all the motor neurons that control the skeletal muscles are efferent nerves\n\nDocument [10]: what is the largest magnitude earthquake that has occurred in the pacific northwest The 1700 Cascadia earthquake\n\nQuestion: who won the academy award for best original musical score\nAnswer briefly:",
+  "doc_texts": [
+    "when were the first general elections held in independent india 1951\u201352",
+    "what has been the origin of most classical dances of india the Sanskrit text Natya Shastra",
+    "who has the most big ten championships in football Michigan",
+    "who sings too much time on my hands lyrics Tommy Shaw",
+    "when did the movie peter pan come out 2003",
+    "what is the 180 degree line of longitude called 180th meridian or antimeridian",
+    "georgia out of angus thongs and perfect snogging Georgia Groome as Georgia Nicolson",
+    "where do kidneys for kidney transplant come from living-donor",
+    "all the motor neurons that control the skeletal muscles are efferent nerves",
+    "what is the largest magnitude earthquake that has occurred in the pacific northwest The 1700 Cascadia earthquake"
+  ],
+  "gold_doc": "The answer to 'who won the academy award for best original musical score' is Alexandre Desplat.",
+  "gold_index": -1,
+  "response": "I don't know.",
+  "elapsed_s": 0.93,
+  "trial": 2
+}

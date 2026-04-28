@@ -1,0 +1,26 @@
+{
+  "scenario_id": 504,
+  "question_id": 31,
+  "question": "when did the first ice age come out",
+  "answer": "2002",
+  "length": 10,
+  "position": "first",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'when did the first ice age come out' is 2002.\n\nDocument [2]: when were the first general elections held in independent india 1951\u201352\n\nDocument [3]: georgia out of angus thongs and perfect snogging Georgia Groome as Georgia Nicolson\n\nDocument [4]: what type of reaction occurs to form a dipeptide peptide bond\n\nDocument [5]: who sings too much time on my hands lyrics Tommy Shaw\n\nDocument [6]: who won the academy award for best original musical score Alexandre Desplat\n\nDocument [7]: who sold out jesus for 30 pieces of silver Judas Iscariot\n\nDocument [8]: when did the first marvel vs capcom come out 1998\n\nDocument [9]: who sang the american anthem at the super bowl Pink\n\nDocument [10]: if there is a line that lies parallel to the horizon it is said to be A vanishing point\n\nQuestion: when did the first ice age come out\nAnswer briefly:",
+  "doc_texts": [
+    "The answer to 'when did the first ice age come out' is 2002.",
+    "when were the first general elections held in independent india 1951\u201352",
+    "georgia out of angus thongs and perfect snogging Georgia Groome as Georgia Nicolson",
+    "what type of reaction occurs to form a dipeptide peptide bond",
+    "who sings too much time on my hands lyrics Tommy Shaw",
+    "who won the academy award for best original musical score Alexandre Desplat",
+    "who sold out jesus for 30 pieces of silver Judas Iscariot",
+    "when did the first marvel vs capcom come out 1998",
+    "who sang the american anthem at the super bowl Pink",
+    "if there is a line that lies parallel to the horizon it is said to be A vanishing point"
+  ],
+  "gold_doc": "The answer to 'when did the first ice age come out' is 2002.",
+  "gold_index": 0,
+  "response": "2002",
+  "elapsed_s": 0.74,
+  "trial": 2
+}

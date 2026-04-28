@@ -1,0 +1,21 @@
+{
+  "scenario_id": 695,
+  "question_id": 43,
+  "question": "if there is a line that lies parallel to the horizon it is said to be",
+  "answer": "A vanishing point",
+  "length": 5,
+  "position": "absent",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: what is the 180 degree line of longitude called 180th meridian or antimeridian\n\nDocument [2]: who is hosting e live from the red carpet Ryan Seacrest\n\nDocument [3]: who wrote the music phantom of the opera Andrew Lloyd Webber\n\nDocument [4]: who sang the theme song for laverne and shirley Cyndi Grecco\n\nDocument [5]: the art and science of making objects from clay is called Ceramic art\n\nQuestion: if there is a line that lies parallel to the horizon it is said to be\nAnswer briefly:",
+  "doc_texts": [
+    "what is the 180 degree line of longitude called 180th meridian or antimeridian",
+    "who is hosting e live from the red carpet Ryan Seacrest",
+    "who wrote the music phantom of the opera Andrew Lloyd Webber",
+    "who sang the theme song for laverne and shirley Cyndi Grecco",
+    "the art and science of making objects from clay is called Ceramic art"
+  ],
+  "gold_doc": "The answer to 'if there is a line that lies parallel to the horizon it is said to be' is A vanishing point.",
+  "gold_index": -1,
+  "response": "I don't know.",
+  "elapsed_s": 0.89,
+  "trial": 2
+}

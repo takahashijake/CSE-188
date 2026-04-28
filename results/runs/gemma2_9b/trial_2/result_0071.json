@@ -1,0 +1,21 @@
+{
+  "scenario_id": 71,
+  "question_id": 4,
+  "question": "who is hosting e live from the red carpet",
+  "answer": "Ryan Seacrest",
+  "length": 5,
+  "position": "absent",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: when did avatar the last airbender first air February 2005\n\nDocument [2]: when did the golden state warriors win the finals 1947\n\nDocument [3]: what is the name of the skin between your nostrils the nasal septum\n\nDocument [4]: the region that stretches between the black and caspian seas The Caucasus Mountains\n\nDocument [5]: who becomes chief resident on grey's anatomy season 7 April Kepner M.D.\n\nQuestion: who is hosting e live from the red carpet\nAnswer briefly:",
+  "doc_texts": [
+    "when did avatar the last airbender first air February 2005",
+    "when did the golden state warriors win the finals 1947",
+    "what is the name of the skin between your nostrils the nasal septum",
+    "the region that stretches between the black and caspian seas The Caucasus Mountains",
+    "who becomes chief resident on grey's anatomy season 7 April Kepner M.D."
+  ],
+  "gold_doc": "The answer to 'who is hosting e live from the red carpet' is Ryan Seacrest.",
+  "gold_index": -1,
+  "response": "I don't know.",
+  "elapsed_s": 0.89,
+  "trial": 2
+}

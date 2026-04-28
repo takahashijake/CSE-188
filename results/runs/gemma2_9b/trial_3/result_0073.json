@@ -1,0 +1,26 @@
+{
+  "scenario_id": 73,
+  "question_id": 4,
+  "question": "who is hosting e live from the red carpet",
+  "answer": "Ryan Seacrest",
+  "length": 10,
+  "position": "middle",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: the region that stretches between the black and caspian seas The Caucasus Mountains\n\nDocument [2]: what was the united states foreign policy after ww1 started neutrality\n\nDocument [3]: what type of reaction occurs to form a dipeptide peptide bond\n\nDocument [4]: what is the name of the skin between your nostrils the nasal septum\n\nDocument [5]: The answer to 'who is hosting e live from the red carpet' is Ryan Seacrest.\n\nDocument [6]: who sang the american anthem at the super bowl Pink\n\nDocument [7]: when did the first marvel vs capcom come out 1998\n\nDocument [8]: who plays the judge in drop dead diva Lex Medlin\n\nDocument [9]: how many episodes are in season 7 of pretty little liars 20\n\nDocument [10]: who sold out jesus for 30 pieces of silver Judas Iscariot\n\nQuestion: who is hosting e live from the red carpet\nAnswer briefly:",
+  "doc_texts": [
+    "the region that stretches between the black and caspian seas The Caucasus Mountains",
+    "what was the united states foreign policy after ww1 started neutrality",
+    "what type of reaction occurs to form a dipeptide peptide bond",
+    "what is the name of the skin between your nostrils the nasal septum",
+    "The answer to 'who is hosting e live from the red carpet' is Ryan Seacrest.",
+    "who sang the american anthem at the super bowl Pink",
+    "when did the first marvel vs capcom come out 1998",
+    "who plays the judge in drop dead diva Lex Medlin",
+    "how many episodes are in season 7 of pretty little liars 20",
+    "who sold out jesus for 30 pieces of silver Judas Iscariot"
+  ],
+  "gold_doc": "The answer to 'who is hosting e live from the red carpet' is Ryan Seacrest.",
+  "gold_index": 4,
+  "response": "Ryan Seacrest",
+  "elapsed_s": 0.65,
+  "trial": 3
+}

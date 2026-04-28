@@ -1,0 +1,17 @@
+{
+  "scenario_id": 163,
+  "question_id": 10,
+  "question": "all the motor neurons that control the skeletal muscles are",
+  "answer": "Somatic",
+  "length": 1,
+  "position": "absent",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: when were the first general elections held in independent india 1951\u201352\n\nQuestion: all the motor neurons that control the skeletal muscles are\nAnswer briefly:",
+  "doc_texts": [
+    "when were the first general elections held in independent india 1951\u201352"
+  ],
+  "gold_doc": "The answer to 'all the motor neurons that control the skeletal muscles are' is Somatic.",
+  "gold_index": -1,
+  "response": "I don't know.",
+  "elapsed_s": 0.87,
+  "trial": 3
+}
