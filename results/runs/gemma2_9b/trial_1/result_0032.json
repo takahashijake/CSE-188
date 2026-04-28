@@ -1,0 +1,17 @@
+{
+  "scenario_id": 32,
+  "question_id": 2,
+  "question": "who won the academy award for best original musical score",
+  "answer": "Alexandre Desplat",
+  "length": 1,
+  "position": "first",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'who won the academy award for best original musical score' is Alexandre Desplat.\n\nQuestion: who won the academy award for best original musical score\nAnswer briefly:",
+  "doc_texts": [
+    "The answer to 'who won the academy award for best original musical score' is Alexandre Desplat."
+  ],
+  "gold_doc": "The answer to 'who won the academy award for best original musical score' is Alexandre Desplat.",
+  "gold_index": 0,
+  "response": "Alexandre Desplat.",
+  "elapsed_s": 0.7,
+  "trial": 1
+}
