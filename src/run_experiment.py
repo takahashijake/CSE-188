@@ -25,8 +25,6 @@ from transformers import (
 # ── GPU stability fix ─────────────────────────────────────────────────────────
 os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
 
-# ── Reproducibility ───────────────────────────────────────────────────────────
-torch.manual_seed(0)
 
 # ── Paths ────────────────────────────────────────────────────────────────────
 SCENARIOS_PATH = "data/nq_open/contexts.json"

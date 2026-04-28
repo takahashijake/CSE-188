@@ -1,0 +1,21 @@
+{
+  "scenario_id": 724,
+  "question_id": 45,
+  "question": "what has been the origin of most classical dances of india",
+  "answer": "Natya Shastra",
+  "length": 5,
+  "position": "first",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: The answer to 'what has been the origin of most classical dances of india' is Natya Shastra.\n\nDocument [2]: who sang the theme song for laverne and shirley Cyndi Grecco\n\nDocument [3]: batman and robin episode only fools and horses \"Heroes and Villains\"\n\nDocument [4]: the art and science of making objects from clay is called Ceramic art\n\nDocument [5]: what does the m number mean on a pint glass imperial fluid ounces\n\nQuestion: what has been the origin of most classical dances of india\nAnswer briefly:",
+  "doc_texts": [
+    "The answer to 'what has been the origin of most classical dances of india' is Natya Shastra.",
+    "who sang the theme song for laverne and shirley Cyndi Grecco",
+    "batman and robin episode only fools and horses \"Heroes and Villains\"",
+    "the art and science of making objects from clay is called Ceramic art",
+    "what does the m number mean on a pint glass imperial fluid ounces"
+  ],
+  "gold_doc": "The answer to 'what has been the origin of most classical dances of india' is Natya Shastra.",
+  "gold_index": 0,
+  "response": "The origin of most classical dances of India can be traced back to Natya Shastra.",
+  "elapsed_s": 1.36,
+  "trial": 3
+}

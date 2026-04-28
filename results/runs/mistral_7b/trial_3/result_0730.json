@@ -1,0 +1,26 @@
+{
+  "scenario_id": 730,
+  "question_id": 45,
+  "question": "what has been the origin of most classical dances of india",
+  "answer": "Natya Shastra",
+  "length": 10,
+  "position": "last",
+  "prompt": "Answer the question using only the documents below.\nIf the answer is not in the documents, say \"I don't know.\"\n\nDocument [1]: the region that stretches between the black and caspian seas The Caucasus Mountains\n\nDocument [2]: when was the last time michigan basketball won the championship 1989\n\nDocument [3]: who wrote the music phantom of the opera Andrew Lloyd Webber\n\nDocument [4]: when did avatar the last airbender first air February 2005\n\nDocument [5]: what is the 180 degree line of longitude called 180th meridian or antimeridian\n\nDocument [6]: one piece episode 534 english dubbed release date February 5, 2012\n\nDocument [7]: when did the movie peter pan come out 2003\n\nDocument [8]: who sings i can't take my eyes off of you Frankie Valli\n\nDocument [9]: who is hosting e live from the red carpet Ryan Seacrest\n\nDocument [10]: The answer to 'what has been the origin of most classical dances of india' is Natya Shastra.\n\nQuestion: what has been the origin of most classical dances of india\nAnswer briefly:",
+  "doc_texts": [
+    "the region that stretches between the black and caspian seas The Caucasus Mountains",
+    "when was the last time michigan basketball won the championship 1989",
+    "who wrote the music phantom of the opera Andrew Lloyd Webber",
+    "when did avatar the last airbender first air February 2005",
+    "what is the 180 degree line of longitude called 180th meridian or antimeridian",
+    "one piece episode 534 english dubbed release date February 5, 2012",
+    "when did the movie peter pan come out 2003",
+    "who sings i can't take my eyes off of you Frankie Valli",
+    "who is hosting e live from the red carpet Ryan Seacrest",
+    "The answer to 'what has been the origin of most classical dances of india' is Natya Shastra."
+  ],
+  "gold_doc": "The answer to 'what has been the origin of most classical dances of india' is Natya Shastra.",
+  "gold_index": 9,
+  "response": "Natya Shastra",
+  "elapsed_s": 0.43,
+  "trial": 3
+}
