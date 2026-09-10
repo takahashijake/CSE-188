@@ -55,7 +55,24 @@ def sanitize(name):
 
 
 def already_done(outdir, sid):
-    return (outdir / f"result_{sid:04d}.json").exists()
+    path = outdir / f"result_{sid:04d}.json"
+    try:
+        with path.open() as f:
+            result = json.load(f)
+    except (OSError, json.JSONDecodeError):
+        return False
+
+    required_fields = {
+        "scenario_id", "question_id", "question", "answer", "length",
+        "position", "prompt", "doc_texts", "gold_doc", "gold_index",
+        "response", "trial", "model_key", "model_id", "scenario_seed",
+        "generation_config",
+    }
+    return (
+        isinstance(result, dict)
+        and result.get("scenario_id") == sid
+        and required_fields <= result.keys()
+    )
 
 
 def clear_memory():
@@ -191,8 +208,10 @@ def save(outdir, sid, scenario, response, elapsed, trial, run_metadata):
     }
 
     path = outdir / f"result_{sid:04d}.json"
-    with path.open("w") as f:
+    temporary_path = path.with_suffix(".json.tmp")
+    with temporary_path.open("w") as f:
         json.dump(data, f, indent=2)
+    os.replace(temporary_path, path)
 
 
 def file_sha256(path):
@@ -296,6 +315,8 @@ def main():
     scenarios_path = args.scenarios.resolve()
     with scenarios_path.open() as f:
         scenarios = json.load(f)
+    if not isinstance(scenarios, list) or not scenarios:
+        raise ValueError(f"Scenario file must contain a non-empty list: {scenarios_path}")
 
     full_scenario_count = len(scenarios)
     if args.limit is not None:

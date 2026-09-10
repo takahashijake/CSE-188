@@ -60,7 +60,8 @@ Machine-readable evidence:
 │   ├── classify_response.py    # apply the four response labels
 │   └── analyze_results.py      # aggregate raw runs and regenerate figures
 ├── tests/
-│   └── test_classify_response.py
+│   ├── test_classify_response.py
+│   └── test_run_experiment.py
 ├── results/
 │   └── summary/                # small, curated aggregate results
 └── figures/                    # representative portfolio plots
