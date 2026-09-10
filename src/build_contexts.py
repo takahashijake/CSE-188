@@ -8,9 +8,11 @@ Output: data/nq_open/contexts.json
     A list of scenario dicts, one per (question, length, position).
 """
 
+import argparse
 import json
 import random
-import os
+from pathlib import Path
+
 from datasets import load_dataset
 from tqdm import tqdm
 
@@ -20,7 +22,8 @@ NUM_QUESTIONS   = 50        # how many questions to sample
 CONTEXT_LENGTHS = [1, 5, 10, 20]   # number of documents in context window
 POSITIONS       = ["first", "middle", "last", "absent"]
 RANDOM_SEED     = 42
-OUTPUT_PATH     = "data/nq_open/contexts.json"
+REPO_ROOT       = Path(__file__).resolve().parents[1]
+OUTPUT_PATH     = REPO_ROOT / "data/nq_open/contexts.json"
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -79,8 +82,8 @@ def build_prompt(context: str, question: str) -> str:
 def load_nq(num_questions: int, seed: int):
     """
     Load Natural Questions (open version) and return a clean subset.
-    Each item: {question, answer, gold_doc}
-    Filters out questions with missing context or multi-word ambiguous answers.
+    Each item contains a question and one short reference answer.
+    Filters out questions with missing or unusually long/short answers.
     """
     print("Loading Natural Questions dataset (this may take a minute)...")
     ds = load_dataset("nq_open", split="validation")  # ~3.6k examples
@@ -135,7 +138,7 @@ def load_distractor_pool(questions: list, seed: int):
 
     # Collect all unique non-empty paragraphs from the dataset
     # NQ open doesn't include full passages, so we synthesize distractors
-    # from other questions' answer contexts
+    # from other questions and their first listed answers
     all_paragraphs = []
     for item in ds:
         q = item["question"].strip()
@@ -229,22 +232,48 @@ def build_contexts(questions: list, distractor_pool: dict) -> list:
     return scenarios
 
 
-def main():
-    os.makedirs("data/nq_open", exist_ok=True)
-    random.seed(RANDOM_SEED)
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description=(
+            "Build the fixed Natural Questions-derived context-position "
+            "experiment dataset."
+        )
+    )
+    parser.add_argument(
+        "--num-questions", type=int, default=NUM_QUESTIONS,
+        help=f"Number of validation questions to sample (default: {NUM_QUESTIONS}).",
+    )
+    parser.add_argument(
+        "--seed", type=int, default=RANDOM_SEED,
+        help=f"Seed used for question and distractor sampling (default: {RANDOM_SEED}).",
+    )
+    parser.add_argument(
+        "--output", type=Path, default=OUTPUT_PATH,
+        help=f"Output JSON path (default: {OUTPUT_PATH}).",
+    )
+    return parser.parse_args()
 
-    questions       = load_nq(NUM_QUESTIONS, RANDOM_SEED)
-    distractor_pool = load_distractor_pool(questions, RANDOM_SEED)
+
+def main():
+    args = parse_args()
+    if args.num_questions < 1:
+        raise ValueError("--num-questions must be positive")
+
+    args.output.parent.mkdir(parents=True, exist_ok=True)
+    random.seed(args.seed)
+
+    questions       = load_nq(args.num_questions, args.seed)
+    distractor_pool = load_distractor_pool(questions, args.seed)
     scenarios       = build_contexts(questions, distractor_pool)
 
-    with open(OUTPUT_PATH, "w") as f:
+    with args.output.open("w") as f:
         json.dump(scenarios, f, indent=2)
 
-    print(f"\nDone. {len(scenarios)} scenarios saved to {OUTPUT_PATH}")
-    print(f"Breakdown: {NUM_QUESTIONS} questions × "
+    print(f"\nDone. {len(scenarios)} scenarios saved to {args.output}")
+    print(f"Breakdown: {len(questions)} questions × "
           f"{len(CONTEXT_LENGTHS)} lengths × "
           f"{len(POSITIONS)} positions = "
-          f"{NUM_QUESTIONS * len(CONTEXT_LENGTHS) * len(POSITIONS)} expected")
+          f"{len(questions) * len(CONTEXT_LENGTHS) * len(POSITIONS)} expected")
 
 
 if __name__ == "__main__":

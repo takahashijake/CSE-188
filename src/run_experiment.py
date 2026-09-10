@@ -1,35 +1,37 @@
-"""
-run_experiment.py — robust, reproducible multi-model experiment runner
+"""Run sampled generation trials for the context-position experiment.
 
-Fixes:
-- Saves ALL fields required for classification
-- Deterministic inference (no randomness)
-- Stable GPU memory handling (L4 safe)
-- Consistent chat formatting across models
-- Clean resume support
+Each scenario gets a deterministic per-trial seed. This preserves stochastic
+decoding while making interrupted and resumed runs reproducible.
 """
 
+import argparse
+import gc
+import hashlib
+import importlib.metadata
 import json
 import os
 import time
-import argparse
-import gc
+from pathlib import Path
+
+# Configure CUDA allocation before importing torch.
+os.environ.setdefault("PYTORCH_ALLOC_CONF", "expandable_segments:True")
+
 import torch
 from tqdm import tqdm
 from transformers import (
     AutoTokenizer,
     AutoModelForCausalLM,
-    BitsAndBytesConfig
+    BitsAndBytesConfig,
+    set_seed,
 )
 
-# ── GPU stability fix ─────────────────────────────────────────────────────────
-os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
-
-
 # ── Paths ────────────────────────────────────────────────────────────────────
-SCENARIOS_PATH = "data/nq_open/contexts.json"
-RESULTS_DIR = "results/runs"
+REPO_ROOT = Path(__file__).resolve().parents[1]
+SCENARIOS_PATH = REPO_ROOT / "data/nq_open/contexts.json"
+RESULTS_DIR = REPO_ROOT / "results/runs"
 MAX_NEW_TOKENS = 100
+TEMPERATURE = 0.7
+RANDOM_SEED = 42
 
 # ── Model map ───────────────────────────────────────────────────────────────
 MODEL_MAP = {
@@ -53,12 +55,13 @@ def sanitize(name):
 
 
 def already_done(outdir, sid):
-    return os.path.exists(os.path.join(outdir, f"result_{sid:04d}.json"))
+    return (outdir / f"result_{sid:04d}.json").exists()
 
 
 def clear_memory():
     gc.collect()
-    torch.cuda.empty_cache()
+    if torch.cuda.is_available():
+        torch.cuda.empty_cache()
 
 
 # ── Prompt builder ───────────────────────────────────────────────────────────
@@ -81,13 +84,13 @@ def build_input(tokenizer, prompt):
 
 # ── Load model ───────────────────────────────────────────────────────────────
 
-def load_model(model_key):
+def load_model(model_key, revision=None):
     hf_name = MODEL_MAP[model_key]
     use_4bit = model_key in NEEDS_4BIT
 
     print(f"\nLoading: {hf_name}")
 
-    tokenizer = AutoTokenizer.from_pretrained(hf_name)
+    tokenizer = AutoTokenizer.from_pretrained(hf_name, revision=revision)
 
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
@@ -103,6 +106,7 @@ def load_model(model_key):
 
         model = AutoModelForCausalLM.from_pretrained(
             hf_name,
+            revision=revision,
             quantization_config=bnb,
             device_map="auto",
             low_cpu_mem_usage=True,
@@ -111,6 +115,7 @@ def load_model(model_key):
     else:
         model = AutoModelForCausalLM.from_pretrained(
             hf_name,
+            revision=revision,
             torch_dtype=torch.bfloat16,
             device_map="auto",
             low_cpu_mem_usage=True,
@@ -125,7 +130,7 @@ def load_model(model_key):
 
 # ── Inference ────────────────────────────────────────────────────────────────
 
-def query(tokenizer, model, prompt):
+def query(tokenizer, model, prompt, max_new_tokens, temperature):
     inputs = build_input(tokenizer, prompt)
 
     device = next(model.parameters()).device
@@ -136,9 +141,9 @@ def query(tokenizer, model, prompt):
     with torch.no_grad():
         output = model.generate(
             inputs,
-            max_new_tokens=MAX_NEW_TOKENS,
-            do_sample=True,        # 🔥 deterministic
-            temperature=0.7,
+            max_new_tokens=max_new_tokens,
+            do_sample=True,
+            temperature=temperature,
             pad_token_id=tokenizer.eos_token_id,
         )
 
@@ -154,7 +159,7 @@ def query(tokenizer, model, prompt):
 
 # ── Save ─────────────────────────────────────────────────────────────────────
 
-def save(outdir, sid, scenario, response, elapsed, trial):
+def save(outdir, sid, scenario, response, elapsed, trial, run_metadata):
     """Save FULL schema required by classifier"""
 
     data = {
@@ -178,40 +183,154 @@ def save(outdir, sid, scenario, response, elapsed, trial):
         "response": response,
         "elapsed_s": round(elapsed, 2),
         "trial": trial,
+        "model_key": run_metadata["model_key"],
+        "model_id": run_metadata["model_id"],
+        "model_revision": run_metadata.get("resolved_model_revision"),
+        "scenario_seed": run_metadata["base_seed"] + trial * 100_000 + sid,
+        "generation_config": run_metadata["generation_config"],
     }
 
-    path = os.path.join(outdir, f"result_{sid:04d}.json")
-    with open(path, "w") as f:
+    path = outdir / f"result_{sid:04d}.json"
+    with path.open("w") as f:
         json.dump(data, f, indent=2)
+
+
+def file_sha256(path):
+    digest = hashlib.sha256()
+    with path.open("rb") as f:
+        for chunk in iter(lambda: f.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def prepare_run_manifest(outdir, metadata):
+    """Create a manifest and reject resumes with incompatible settings."""
+    manifest_path = outdir / "run_config.json"
+    if manifest_path.exists():
+        with manifest_path.open() as f:
+            existing = json.load(f)
+        mismatches = {
+            key: (existing.get(key), value)
+            for key, value in metadata.items()
+            if existing.get(key) != value
+        }
+        if mismatches:
+            raise RuntimeError(
+                f"Existing run manifest does not match requested settings: {mismatches}"
+            )
+    elif any(outdir.glob("result_*.json")):
+        raise RuntimeError(
+            f"Refusing to resume legacy results without a manifest in {outdir}. "
+            "Choose a new trial/output directory."
+        )
+    else:
+        with manifest_path.open("w") as f:
+            json.dump(metadata, f, indent=2)
+
+
+def finalize_run_manifest(outdir, metadata, model):
+    """Record the resolved Hub commit and prevent revision-mixed resumes."""
+    manifest_path = outdir / "run_config.json"
+    resolved_revision = getattr(model.config, "_commit_hash", None)
+    with manifest_path.open() as f:
+        existing = json.load(f)
+    previous_revision = existing.get("resolved_model_revision")
+    if previous_revision and previous_revision != resolved_revision:
+        raise RuntimeError(
+            "Resolved model revision changed for an existing trial: "
+            f"{previous_revision} != {resolved_revision}"
+        )
+    metadata["resolved_model_revision"] = resolved_revision
+    with manifest_path.open("w") as f:
+        json.dump(metadata, f, indent=2)
+
+
+def package_versions():
+    versions = {}
+    for package in ("accelerate", "bitsandbytes", "torch", "transformers"):
+        try:
+            versions[package] = importlib.metadata.version(package)
+        except importlib.metadata.PackageNotFoundError:
+            versions[package] = "not-installed"
+    return versions
 
 
 # ── Main ─────────────────────────────────────────────────────────────────────
 
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--model", default="qwen2.5:3b")
-    parser.add_argument("--trial", type=int, default=1)
-    parser.add_argument("--limit", type=int, default=None)
-    args = parser.parse_args()
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description="Run one model/trial over generated context scenarios."
+    )
+    parser.add_argument(
+        "--model", choices=sorted(MODEL_MAP), default="qwen2.5:3b",
+        help="Short model key (default: qwen2.5:3b).",
+    )
+    parser.add_argument("--trial", type=int, default=1, help="Positive trial number.")
+    parser.add_argument(
+        "--limit", type=int, default=None,
+        help="Run only the first N scenarios for a smoke test.",
+    )
+    parser.add_argument("--seed", type=int, default=RANDOM_SEED)
+    parser.add_argument("--max-new-tokens", type=int, default=MAX_NEW_TOKENS)
+    parser.add_argument("--temperature", type=float, default=TEMPERATURE)
+    parser.add_argument(
+        "--revision", default=None,
+        help="Optional Hugging Face branch, tag, or commit hash.",
+    )
+    parser.add_argument("--scenarios", type=Path, default=SCENARIOS_PATH)
+    parser.add_argument("--results-dir", type=Path, default=RESULTS_DIR)
+    return parser.parse_args()
 
-    with open(SCENARIOS_PATH) as f:
+
+def main():
+    args = parse_args()
+    if args.trial < 1:
+        raise ValueError("--trial must be positive")
+    if args.limit is not None and args.limit < 1:
+        raise ValueError("--limit must be positive")
+    if args.max_new_tokens < 1:
+        raise ValueError("--max-new-tokens must be positive")
+    if args.temperature <= 0:
+        raise ValueError("--temperature must be greater than zero for sampling")
+
+    scenarios_path = args.scenarios.resolve()
+    with scenarios_path.open() as f:
         scenarios = json.load(f)
 
-    if args.limit:
+    full_scenario_count = len(scenarios)
+    if args.limit is not None:
         scenarios = scenarios[:args.limit]
 
-    model_dir = os.path.join(RESULTS_DIR, sanitize(args.model))
-    os.makedirs(model_dir, exist_ok=True)
+    model_dir = args.results_dir.resolve() / sanitize(args.model)
+    outdir = model_dir / f"trial_{args.trial}"
+    outdir.mkdir(parents=True, exist_ok=True)
 
-    outdir = os.path.join(model_dir, f"trial_{args.trial}")
-    os.makedirs(outdir, exist_ok=True)
+    run_metadata = {
+        "model_key": args.model,
+        "model_id": MODEL_MAP[args.model],
+        "requested_model_revision": args.revision,
+        "trial": args.trial,
+        "base_seed": args.seed,
+        "generation_config": {
+            "do_sample": True,
+            "temperature": args.temperature,
+            "max_new_tokens": args.max_new_tokens,
+        },
+        "scenarios_sha256": file_sha256(scenarios_path),
+        "scenario_count": full_scenario_count,
+        "limit": args.limit,
+        "package_versions": package_versions(),
+    }
+    prepare_run_manifest(outdir, run_metadata)
 
     clear_memory()
-    tokenizer, model = load_model(args.model)
+    tokenizer, model = load_model(args.model, args.revision)
+    finalize_run_manifest(outdir, run_metadata, model)
 
     print(f"\nRunning {args.model} | {len(scenarios)} samples\n")
 
     skipped = 0
+    failures = []
     times = []
 
     for i, sc in enumerate(tqdm(scenarios)):
@@ -220,19 +339,28 @@ def main():
             continue
 
         try:
-            resp, t = query(tokenizer, model, sc["prompt"])
-            save(outdir, i, sc, resp, t, args.trial)
+            scenario_seed = args.seed + args.trial * 100_000 + i
+            set_seed(scenario_seed)
+            resp, t = query(
+                tokenizer, model, sc["prompt"],
+                args.max_new_tokens, args.temperature,
+            )
+            save(outdir, i, sc, resp, t, args.trial, run_metadata)
             times.append(t)
 
         except Exception as e:
+            failures.append(i)
             print(f"Error {i}: {e}")
 
     clear_memory()
 
     print("\nDONE")
     print("Skipped:", skipped)
+    print("Failed:", len(failures))
     if times:
         print("Avg time:", sum(times)/len(times))
+    if failures:
+        raise SystemExit(f"Run incomplete; failed scenario IDs: {failures}")
 
 
 if __name__ == "__main__":

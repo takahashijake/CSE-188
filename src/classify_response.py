@@ -11,7 +11,7 @@ hallucinated - answer matches nothing in the context
 
 Output:
 results/runs/{model}/trial_N/classifications.json (per trial)
-results/runs/{model}/classifications_combined.json (averaged across trials)
+results/runs/{model}/classifications_combined.json (majority label across trials)
 
 Usage:
 python3 src/classify_response.py --model qwen2.5:3b
@@ -22,12 +22,14 @@ import json
 import os
 import re
 import argparse
+from pathlib import Path
 from tqdm import tqdm
 from collections import defaultdict
 
 # ── Config ────────────────────────────────────────────────────────────────────
 
-RESULTS_DIR = "results/runs"
+REPO_ROOT = Path(__file__).resolve().parents[1]
+RESULTS_DIR = REPO_ROOT / "results/runs"
 
 ABSTAIN_PHRASES = [
     "i dont know",        # after normalization, apostrophe is stripped
@@ -297,7 +299,9 @@ def combine_trials(all_trial_classifications: list, model_dir: str, model: str):
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(
+        description="Classify response JSON files for one model across all trials."
+    )
     parser.add_argument(
         "--model", type=str, default="qwen2.5:3b",
         help="Model name (must match folder in results/runs/)"
@@ -306,22 +310,27 @@ def main():
         "--show-samples", action="store_true",
         help="Print sample responses for each category (for manual validation)"
     )
+    parser.add_argument(
+        "--results-dir", type=Path, default=RESULTS_DIR,
+        help=f"Root run directory (default: {RESULTS_DIR}).",
+    )
     args = parser.parse_args()
 
     model_tag = args.model.replace(":", "_").replace("/", "_")
-    model_dir = os.path.join(RESULTS_DIR, model_tag)
+    model_dir = os.path.join(args.results_dir.resolve(), model_tag)
 
     if not os.path.exists(model_dir):
-        print(f"ERROR: No results found at {model_dir}")
-        print("Run run_experiment.py first.")
-        return
+        raise SystemExit(
+            f"ERROR: No results found at {model_dir}. Run run_experiment.py first."
+        )
 
     trial_dirs = find_trial_dirs(model_dir)
 
     if not trial_dirs:
-        print(f"ERROR: No trial subdirectories found in {model_dir}")
-        print("Expected folders named trial_1, trial_2, etc.")
-        return
+        raise SystemExit(
+            f"ERROR: No trial subdirectories found in {model_dir}. "
+            "Expected folders named trial_1, trial_2, etc."
+        )
 
     print(f"Model: {args.model}")
     print(f"Found {len(trial_dirs)} trial(s): "

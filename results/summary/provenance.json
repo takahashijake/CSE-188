@@ -1,0 +1,27 @@
+{
+  "source": "results/runs/*/trial_*/result_*.json",
+  "classification_script": "src/classify_response.py",
+  "models": [
+    "qwen2.5_3b",
+    "qwen2.5_7b",
+    "qwen2.5_14b",
+    "mistral_7b",
+    "llama3.1_8b",
+    "gemma2_9b",
+    "phi3_mini",
+    "phi3_medium"
+  ],
+  "source_files": 19200,
+  "valid_responses": 19199,
+  "invalid_responses": 1,
+  "invalid_files": [
+    {
+      "path": "results/runs/qwen2.5_14b/trial_2/result_0631.json",
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    }
+  ],
+  "notes": [
+    "Rates pool valid responses across trials; they are not majority-vote rates.",
+    "The labels are lexical heuristics and are not human factuality judgments."
+  ]
+}
